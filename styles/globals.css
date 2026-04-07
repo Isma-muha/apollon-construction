@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { html { scroll-behavior: smooth; } body { @apply font-sans bg-cream text-ink antialiased; } }
+@layer utilities {
+  .skip-link { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0; }
+  .skip-link:focus { position:fixed;top:1rem;left:1rem;z-index:50;padding:.5rem 1rem;background:#1B6B30;color:#fff;border-radius:.25rem;width:auto;height:auto;clip:auto; }
+}
