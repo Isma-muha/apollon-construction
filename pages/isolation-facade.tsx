@@ -2,6 +2,7 @@ import type { GetStaticProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import LeadForm from '../components/LeadForm'
@@ -58,7 +59,7 @@ const IsolationFacadePage: NextPage = () => {
 
   return (
     <Layout>
-      <head>
+      <Head>
         <title>{c.title}</title>
         <meta name="description" content={c.desc} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -66,7 +67,7 @@ const IsolationFacadePage: NextPage = () => {
           name: 'Isolation thermique extérieure (ITE)', provider: { '@type': 'LocalBusiness', name: 'Apollon Construction' },
           areaServed: 'Bruxelles', description: c.desc,
         })}} />
-      </head>
+      </Head>
 
       {/* HERO — above the fold CTA */}
       <section className="bg-ink relative overflow-hidden">
@@ -107,7 +108,7 @@ const IsolationFacadePage: NextPage = () => {
           </div>
           <div className="space-y-4">
             <div className="rounded-lg overflow-hidden border border-cream-3 bg-cream-3">
-              <img src="/images/chantier-facade-1.jpg" alt="Isolation façade chantier Apollon Construction Bruxelles" className="w-full h-64 object-cover" />
+              <img src="/images/chantier-facade-1.jpg" alt="Isolation façade chantier Apollon Construction Bruxelles" className=" loading="lazy"w-full h-64 object-cover" />
             </div>
             {/* PRIMES */}
             <div className="bg-green/8 border border-green/20 rounded-lg p-5">
@@ -132,8 +133,33 @@ const IsolationFacadePage: NextPage = () => {
             { src: '/images/chantier-facade-2.jpg', alt: 'Ravalement façade immeuble Bruxelles' },
           ].map(({ src, alt }) => (
             <div key={src} className="rounded-lg overflow-hidden border border-cream-3 bg-cream-3 h-48">
-              <img src={src} alt={alt} className="w-full h-full object-cover" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+              <img src={src} alt={alt} className=" loading="lazy"w-full h-full object-cover" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ — améliore le Quality Score Google Ads */}
+      <section className="py-16 px-[5%] bg-cream-2">
+        <h2 className="font-serif text-3xl font-normal text-ink mb-8">
+          {locale==='nl'?'Veelgestelde vragen':locale==='en'?'Frequently asked questions':'Questions fréquentes'}
+        </h2>
+        <div className="space-y-4 max-w-2xl">
+          {[
+            { q: locale==='nl'?'Wat kost buitenmuurisolatie in Brussel?':locale==='en'?'How much does external wall insulation cost in Brussels?':'Combien coûte une isolation de façade à Bruxelles ?',
+              a: locale==='nl'?'De prijs varieert tussen 80 en 150€/m² afhankelijk van het isolatietype (EPS, steenwol) en de afwerking. Vraag een gratis offerte aan voor een exacte schatting.':locale==='en'?'The price ranges from €80 to €150/m² depending on the insulation type (EPS, rock wool) and finish. Request a free quote for an exact estimate.':'Le prix varie entre 80 et 150€/m² selon le type d'isolation (EPS, laine de roche) et la finition. Demandez un devis gratuit pour une estimation précise.' },
+            { q: locale==='nl'?'Hoelang duurt de uitvoering?':locale==='en'?'How long does the work take?':'Combien de temps durent les travaux ?',
+              a: locale==='nl'?'Voor een gemiddelde woning duurt BUI 5 tot 10 werkdagen. We werken snel en houden uw dagelijks leven zo weinig mogelijk in de war.':locale==='en'?'For an average house, EWI takes 5 to 10 working days. We work efficiently and minimise disruption to your daily life.':'Pour une maison moyenne, une ITE prend 5 à 10 jours ouvrables. On travaille efficacement en minimisant les perturbations.' },
+            { q: locale==='nl'?'Welke premies zijn beschikbaar voor gevelisolatie?':locale==='en'?'What grants are available for facade insulation?':'Quelles sont les primes disponibles pour l'isolation de façade ?',
+              a: locale==='nl'?'In Wallonië tot 75€/m² via Prime Habitation. In Vlaanderen MijnVerbouwPremie tot 35%. Brussel: RENOLUTION opgeschort voor 2025-2026. Wij begeleiden u bij de aanvraag.':locale==='en'?'In Wallonia up to €75/m² via Prime Habitation. In Flanders MijnVerbouwPremie up to 35%. Brussels: RENOLUTION suspended for 2025-2026. We guide you through the application.':'En Wallonie jusqu'à 75€/m² via Prime Habitation. En Flandre MijnVerbouwPremie jusqu'à 35%. Bruxelles : RENOLUTION suspendue 2025-2026. On vous accompagne dans la démarche.' },
+          ].map(({ q, a }) => (
+            <details key={q} className="bg-white border border-cream-3 rounded-lg group">
+              <summary className="flex items-center justify-between p-5 cursor-pointer font-medium text-ink text-sm list-none">
+                {q}
+                <span className="text-green font-light text-lg ml-4 flex-shrink-0">+</span>
+              </summary>
+              <p className="px-5 pb-5 text-muted font-light text-sm leading-relaxed">{a}</p>
+            </details>
           ))}
         </div>
       </section>

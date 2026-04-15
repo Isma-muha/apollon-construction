@@ -67,7 +67,12 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
   return (
     <div className="bg-cream-2 rounded-xl border border-cream-3 p-8">
       <h3 className="font-serif text-2xl font-normal text-ink mb-1">{t.h}</h3>
-      <p className="text-muted text-sm font-light mb-6">{t.sub}</p>
+      <p className="text-muted text-sm font-light mb-3">{t.sub}</p>
+      <div className="flex flex-wrap gap-2 mb-5">
+        {['★★★★★ 5.0 Google', '✓ Batibouw+', '✓ RC Pro assurée'].map(b => (
+          <span key={b} className="bg-green/10 border border-green/20 text-green text-xs px-2.5 py-1 rounded-full font-medium">{b}</span>
+        ))}
+      </div>
       <form onSubmit={handleSubmit} noValidate>
         <input type="text" name="_gotcha" style={{ display: 'none' }} />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">

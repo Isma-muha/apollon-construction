@@ -42,7 +42,7 @@ const Home: NextPage = () => {
 
       {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        <img src="/images/facade-before-after.jpg" alt={t('meta.home_title')} className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/images/facade-before-after.jpg" alt={t('meta.home_title')} className="absolute inset-0 w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/70 to-transparent" />
         <div className="relative z-10 px-[5%] max-w-xl py-20">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-medium text-white mb-8">
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
             <Link href="#services" className="border border-white/30 text-white px-8 py-3.5 rounded text-sm font-normal hover:border-white/70 transition-colors">{t('hero.btn_secondary')}</Link>
           </div>
           <div className="flex gap-6 flex-wrap">
-            {[t('hero.badge_rgie'), t('hero.badge_rc'), t('hero.badge_48h')].map(b => (
+            {[t('hero.badge_rgie'), t('hero.badge_rc'), locale==='nl'?'Offerte binnen 48u':locale==='en'?'Quote within 48h':'Devis sous 48h'].map(b => (
               <div key={b} className="flex items-center gap-2 text-sm text-white/80 font-light">
                 <span className="w-2 h-2 rounded-full bg-green" aria-hidden="true" />{b}
               </div>
@@ -181,7 +181,7 @@ const Home: NextPage = () => {
           {portfolio.map(({ src, tag, title, span }) => (
             <li key={src} className={`relative rounded-lg overflow-hidden group ${span}`}>
               <div className="relative h-56 overflow-hidden bg-cream-3">
-                <img src={src} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { (e.target as HTMLImageElement).style.display='none' }} />
+                <img src={src} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display='none' }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-4">
                   <span className="block text-[10px] tracking-widest uppercase text-white/65 mb-1">{tag}</span>
@@ -328,7 +328,7 @@ const Home: NextPage = () => {
             <Link href="/contact" className="inline-block bg-green text-white px-8 py-3.5 rounded text-sm font-medium hover:bg-green-mid transition-colors">{t('contact.email_btn')}</Link>
           </div>
           <div className="bg-ink rounded-xl p-10 text-white text-center">
-            <p className="font-serif text-3xl font-normal mb-4">{t('hero.badge_48h')}</p>
+            <p className="font-serif text-3xl font-normal mb-4">{locale==='nl'?'Offerte binnen 48u':locale==='en'?'Quote within 48h':'Devis sous 48h'}</p>
             <p className="text-white/65 font-light mb-8">{t('contact.desc')}</p>
             <Link href="/contact" className="block bg-green text-white px-8 py-3.5 rounded text-sm font-medium hover:bg-green-mid transition-colors">{t('nav.cta')} →</Link>
           </div>

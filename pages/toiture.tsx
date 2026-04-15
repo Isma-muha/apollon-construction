@@ -2,6 +2,7 @@ import type { GetStaticProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import LeadForm from '../components/LeadForm'
@@ -59,7 +60,7 @@ const ToiturePage: NextPage = () => {
 
   return (
     <Layout>
-      <head>
+      <Head>
         <title>{c.title}</title>
         <meta name="description" content={c.desc} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -67,7 +68,7 @@ const ToiturePage: NextPage = () => {
           name: 'Réfection et réparation de toiture', provider: { '@type': 'LocalBusiness', name: 'Apollon Construction' },
           areaServed: 'Bruxelles', description: c.desc,
         })}} />
-      </head>
+      </Head>
 
       {/* HERO above the fold */}
       <section className="bg-ink relative overflow-hidden">
@@ -114,10 +115,10 @@ const ToiturePage: NextPage = () => {
           </div>
           <div className="space-y-4">
             <div className="rounded-lg overflow-hidden border border-cream-3">
-              <img src="/images/toiture-ardoise.jpg" alt="Toiture ardoise rénovée Apollon Construction" className="w-full h-56 object-cover" />
+              <img src="/images/toiture-ardoise.jpg" alt="Toiture ardoise rénovée Apollon Construction" className=" loading="lazy"w-full h-56 object-cover" />
             </div>
             <div className="rounded-lg overflow-hidden border border-cream-3">
-              <img src="/images/toiture-plate.jpg" alt="Toiture plate étanchéité Bruxelles" className="w-full h-48 object-cover" />
+              <img src="/images/toiture-plate.jpg" alt="Toiture plate étanchéité Bruxelles" className=" loading="lazy"w-full h-48 object-cover" />
             </div>
             <div className="bg-green/8 border border-green/20 rounded-lg p-5">
               <p className="font-medium text-green mb-2">{c.prime_h}</p>
@@ -127,6 +128,31 @@ const ToiturePage: NextPage = () => {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-[5%] bg-white">
+        <h2 className="font-serif text-3xl font-normal text-ink mb-8">
+          {locale==='nl'?'Veelgestelde vragen':locale==='en'?'Frequently asked questions':'Questions fréquentes'}
+        </h2>
+        <div className="space-y-4 max-w-2xl">
+          {[
+            { q: locale==='nl'?'Wat kost een dakrenovatie in Brussel?':locale==='en'?'How much does a roof renovation cost in Brussels?':'Combien coûte une réfection de toiture à Bruxelles ?',
+              a: locale==='nl'?'De prijs varieert sterk: gedeeltelijk herstel vanaf 500€, volledige renovatie tussen 8.000 en 25.000€ afhankelijk van het daktype en de oppervlakte. Gratis diagnose ter plaatse.':locale==='en'?'Prices vary widely: partial repair from €500, full renovation between €8,000 and €25,000 depending on roof type and surface area. Free on-site diagnosis.':'Les prix varient : réparation partielle à partir de 500€, réfection complète entre 8.000 et 25.000€ selon le type et la surface. Diagnostic gratuit sur site.' },
+            { q: locale==='nl'?'Is een energieaudit verplicht voor de dakpremie in Wallonië?':locale==='en'?'Is an energy audit required for the roofing grant in Wallonia?':'Faut-il un audit énergétique pour la prime toiture en Wallonie ?',
+              a: locale==='nl'?'Nee. Depuis le 14 februari 2025 is de energieaudit niet meer verplicht voor dakwerken in Wallonië. U kunt direct een aanvraag indienen.':locale==='en'?'No. Since 14 February 2025, the energy audit is no longer required for roofing works in Wallonia. You can apply directly.':'Non. Depuis le 14 février 2025, l'audit énergétique n'est plus obligatoire pour les travaux de toiture en Wallonie. Vous pouvez déposer la demande directement.' },
+            { q: locale==='nl'?'Hoe lang duurt een volledige dakrenovatie?':locale==='en'?'How long does a full roof renovation take?':'Combien de temps dure une réfection complète ?',
+              a: locale==='nl'?'Tussen 3 en 10 werkdagen voor een doorsnee woning. We werken snel en netjes, met minimale hinder.':locale==='en'?'Between 3 and 10 working days for an average house. We work quickly and cleanly, with minimal disruption.':'Entre 3 et 10 jours ouvrables pour une maison moyenne. On travaille vite et proprement, avec un minimum de perturbations.' },
+          ].map(({ q, a }) => (
+            <details key={q} className="bg-cream-2 border border-cream-3 rounded-lg">
+              <summary className="flex items-center justify-between p-5 cursor-pointer font-medium text-ink text-sm list-none">
+                {q}
+                <span className="text-green font-light text-lg ml-4 flex-shrink-0">+</span>
+              </summary>
+              <p className="px-5 pb-5 text-muted font-light text-sm leading-relaxed">{a}</p>
+            </details>
+          ))}
         </div>
       </section>
 

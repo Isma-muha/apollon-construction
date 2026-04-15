@@ -5,7 +5,7 @@ import Script from 'next/script'
 import '../styles/globals.css'
 
 // Replace GTM_ID with your real GTM ID (e.g. GTM-XXXXXXX)
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-XXXXXXX'
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-PLDGJCSW'
 
 function App({ Component, pageProps }: AppProps) {
   return (
