@@ -14,11 +14,11 @@ const PrimesPage: NextPage = () => {
     fr: {
       title: 'Primes Rénovation 2025-2026 — Bruxelles, Wallonie, Flandre',
       desc: "Guide complet des primes de rénovation en Belgique. Wallonie: Prime Habitation. Bruxelles: RENOLUTION suspendue. Flandre: MijnVerbouwPremie.",
-      update: '✓ Mis à jour — avril 2025 · Valable jusqu\'au 30 septembre 2026',
+      update: '✓ Mis à jour — avril 2026 · Valable jusqu\'au 30 septembre 2026',
       ov_h: 'Situation par région', bc: 'Accueil',
       regions: [
         { flag:'🟡', title:'Wallonie', status:'✓ Primes actives', badge:'bg-green/10 text-green border-green/20', amount:"Jusqu'à 70%", desc:"Prime Habitation depuis le 14 fév. 2025. Audit non obligatoire pour la toiture. Valable jusqu'au 30 sept. 2026." },
-        { flag:'🔴', title:'Bruxelles', status:'⚠ Suspendues 2025', badge:'bg-red-50 text-red-700 border-red-200', amount:'Suspendu', desc:"Primes RENOLUTION suspendues pour factures 2025. Pour factures 2024 : jusqu'à 75€/m² toiture." },
+        { flag:'🔴', title:'Bruxelles', status:'⚠ Suspendues 2025-2026', badge:'bg-red-50 text-red-700 border-red-200', amount:'Suspendu', desc:"Primes RENOLUTION suspendues pour factures 2025-2026. Dossiers 2024 approuvés : paiement en cours (56M€ débloqués). Transition vers prêts à taux zéro dès 2027." },
         { flag:'🟢', title:'Flandre', status:'✓ Primes actives', badge:'bg-green/10 text-green border-green/20', amount:"Jusqu'à 35%", desc:"MijnVerbouwPremie actif. Max 4.025€ pour la toiture. Prime PEB jusqu'au 30 juin 2026." },
       ],
       wal: {
@@ -34,7 +34,7 @@ const PrimesPage: NextPage = () => {
       bru: {
         h: 'Bruxelles — RENOLUTION',
         alert: '🔴 Primes RENOLUTION suspendues pour les factures 2025. Attendez la décision du nouveau gouvernement.',
-        p2: 'Pour les factures datées de 2024, vous pouvez encore introduire une demande.',
+        p2: 'Pour les factures datées de 2024 dont le dossier a été approuvé, les paiements sont en cours. Aucune nouvelle demande n\'est possible pour les factures 2025 ou 2026.',
         th: ['Travaux','Cat. I','Cat. II','Cat. III'],
         rows: [['Isolation toiture','75 €/m²','55 €/m²','35 €/m²'],['Isolation façade (ITE)','30 €/m²','25 €/m²','20 €/m²'],['Bonus biosourcé','+10 €/m²','+10 €/m²','+10 €/m²']],
         note: 'Montants valables uniquement pour factures datées de 2024.',
@@ -53,11 +53,11 @@ const PrimesPage: NextPage = () => {
     nl: {
       title: 'Renovatiepremies 2025-2026 — Brussel, Wallonië, Vlaanderen',
       desc: "Complete gids van de renovatiepremies in België. Wallonië: Prime Habitation. Brussel: RENOLUTION opgeschort. Vlaanderen: MijnVerbouwPremie.",
-      update: '✓ Bijgewerkt — april 2025 · Geldig tot 30 september 2026',
+      update: '✓ Bijgewerkt — april 2026 · Geldig tot 30 september 2026',
       ov_h: 'Situatie per gewest', bc: 'Startpagina',
       regions: [
         { flag:'🟡', title:'Wallonië', status:'✓ Premies actief', badge:'bg-green/10 text-green border-green/20', amount:'Tot 70%', desc:'Prime Habitation depuis le 14 fév. 2025. Geen audit vereist voor dakwerken. Geldig tot 30 sept. 2026.' },
-        { flag:'🔴', title:'Brussel', status:'⚠ Opgeschort 2025', badge:'bg-red-50 text-red-700 border-red-200', amount:'Opgeschort', desc:'RENOLUTION premies opgeschort voor facturen 2025. Voor facturen 2024: tot 75€/m² dak.' },
+        { flag:'🔴', title:'Brussel', status:'⚠ Opgeschort 2025-2026', badge:'bg-red-50 text-red-700 border-red-200', amount:'Opgeschort', desc:'RENOLUTION premies opgeschort voor facturen 2025-2026. Goedgekeurde dossiers 2024: betalingen in uitvoering (56M€ vrijgemaakt). Overgang naar renteloze leningen vanaf 2027.' },
         { flag:'🟢', title:'Vlaanderen', status:'✓ Premies actief', badge:'bg-green/10 text-green border-green/20', amount:'Tot 35%', desc:'MijnVerbouwPremie actief. Max 4.025€ voor het dak. EPC-premie tot 30 juni 2026.' },
       ],
       wal: {
@@ -73,7 +73,7 @@ const PrimesPage: NextPage = () => {
       bru: {
         h: 'Brussel — RENOLUTION',
         alert: '🔴 RENOLUTION premies opgeschort voor facturen van 2025. Wacht op de beslissing van de nieuwe Brusselse regering.',
-        p2: 'Voor facturen van 2024 kunt u nog een aanvraag indienen.',
+        p2: 'Voor facturen van 2024 waarvan het dossier is goedgekeurd, zijn de betalingen in uitvoering. Geen nieuwe aanvraag mogelijk voor facturen 2025 of 2026.',
         th: ['Type werken','Cat. I','Cat. II','Cat. III'],
         rows: [['Dakisolatie','75 €/m²','55 €/m²','35 €/m²'],['Gevelisolatie (BUI)','30 €/m²','25 €/m²','20 €/m²'],['Biobased bonus','+10 €/m²','+10 €/m²','+10 €/m²']],
         note: 'Bedragen alleen geldig voor facturen gedateerd in 2024.',
@@ -92,11 +92,11 @@ const PrimesPage: NextPage = () => {
     en: {
       title: 'Renovation Grants 2025-2026 — Brussels, Wallonia, Flanders',
       desc: "Complete guide to renovation grants in Belgium. Wallonia: Prime Habitation. Brussels: RENOLUTION suspended. Flanders: MijnVerbouwPremie.",
-      update: '✓ Updated — April 2025 · Valid until 30 September 2026',
+      update: '✓ Updated — April 2026 · Valid until 30 September 2026',
       ov_h: 'Situation by region', bc: 'Home',
       regions: [
         { flag:'🟡', title:'Wallonia', status:'✓ Grants active', badge:'bg-green/10 text-green border-green/20', amount:'Up to 70%', desc:'Prime Habitation since 14 Feb. 2025. No audit required for roofing. Valid until 30 Sept. 2026.' },
-        { flag:'🔴', title:'Brussels', status:'⚠ Suspended 2025', badge:'bg-red-50 text-red-700 border-red-200', amount:'Suspended', desc:'RENOLUTION grants suspended for 2025 invoices. For 2024 invoices: up to €75/m² roofing.' },
+        { flag:'🔴', title:'Brussels', status:'⚠ Suspended 2025-2026', badge:'bg-red-50 text-red-700 border-red-200', amount:'Suspended', desc:'RENOLUTION grants suspended for 2025-2026 invoices. Approved 2024 files: payments in progress (€56M released). Transition to interest-free loans from 2027.' },
         { flag:'🟢', title:'Flanders', status:'✓ Grants active', badge:'bg-green/10 text-green border-green/20', amount:'Up to 35%', desc:'MijnVerbouwPremie active. Max €4,025 for roofing. EPC grant until 30 June 2026.' },
       ],
       wal: {
@@ -112,7 +112,7 @@ const PrimesPage: NextPage = () => {
       bru: {
         h: 'Brussels — RENOLUTION',
         alert: '🔴 RENOLUTION grants suspended for 2025 invoices. Wait for the new Brussels government\'s decision.',
-        p2: 'For invoices dated 2024, you can still submit an application.',
+        p2: 'For invoices dated 2024 with an approved file, payments are in progress. No new applications are possible for 2025 or 2026 invoices.',
         th: ['Works','Cat. I','Cat. II','Cat. III'],
         rows: [['Roof insulation','€75/m²','€55/m²','€35/m²'],['Facade insulation (EWI)','€30/m²','€25/m²','€20/m²'],['Bio-based bonus','+€10/m²','+€10/m²','+€10/m²']],
         note: 'Amounts valid only for invoices dated 2024.',
