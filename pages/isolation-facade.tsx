@@ -108,7 +108,7 @@ const IsolationFacadePage: NextPage = () => {
           </div>
           <div className="space-y-4">
             <div className="rounded-lg overflow-hidden border border-cream-3 bg-cream-3">
-              <img src="/images/chantier-facade-1.jpg" alt="Isolation façade chantier Apollon Construction Bruxelles" className=" loading="lazy"w-full h-64 object-cover" />
+              <img src="/images/chantier-facade-1.jpg" alt="Isolation façade chantier Apollon Construction Bruxelles" className="w-full h-64 object-cover" loading="lazy" loading="lazy" />
             </div>
             {/* PRIMES */}
             <div className="bg-green/8 border border-green/20 rounded-lg p-5">
@@ -133,7 +133,7 @@ const IsolationFacadePage: NextPage = () => {
             { src: '/images/chantier-facade-2.jpg', alt: 'Ravalement façade immeuble Bruxelles' },
           ].map(({ src, alt }) => (
             <div key={src} className="rounded-lg overflow-hidden border border-cream-3 bg-cream-3 h-48">
-              <img src={src} alt={alt} className=" loading="lazy"w-full h-full object-cover" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+              <img src={src} alt={alt} className="w-full h-full object-cover" loading="lazy" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
             </div>
           ))}
         </div>

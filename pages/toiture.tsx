@@ -115,10 +115,10 @@ const ToiturePage: NextPage = () => {
           </div>
           <div className="space-y-4">
             <div className="rounded-lg overflow-hidden border border-cream-3">
-              <img src="/images/toiture-ardoise.jpg" alt="Toiture ardoise rénovée Apollon Construction" className=" loading="lazy"w-full h-56 object-cover" />
+              <img src="/images/toiture-ardoise.jpg" alt="Toiture ardoise rénovée Apollon Construction" className="w-full h-56 object-cover" loading="lazy" loading="lazy" />
             </div>
             <div className="rounded-lg overflow-hidden border border-cream-3">
-              <img src="/images/toiture-plate.jpg" alt="Toiture plate étanchéité Bruxelles" className=" loading="lazy"w-full h-48 object-cover" />
+              <img src="/images/toiture-plate.jpg" alt="Toiture plate étanchéité Bruxelles" className="w-full h-48 object-cover" loading="lazy" loading="lazy" />
             </div>
             <div className="bg-green/8 border border-green/20 rounded-lg p-5">
               <p className="font-medium text-green mb-2">{c.prime_h}</p>
