@@ -166,8 +166,8 @@ const Home: NextPage = () => {
             </ul>
           </div>
           <div className="bg-ink rounded-xl p-10 text-white">
-            <h3 className="font-serif text-2xl font-normal text-white mb-5">{locale==='nl'?'"We beloven niet de grootste te zijn. We beloven de meest serieuze te zijn."':locale==='en'?'"We don't promise to be the biggest. We promise to be the most serious."':'"On ne promet pas d'être les plus gros. On promet d'être les plus sérieux."'}</h3>
-            <p className="text-white/65 font-light leading-relaxed mb-8">{locale==='nl'?'Elke werf telt. We behandelen de uwe alsof het de onze was — want onze reputatie hangt er van af.':locale==='en'?'Every project counts. We treat yours as if it were ours — because our reputation depends on it.':'Chaque chantier compte. On traite le vôtre comme si c'était le nôtre — parce que notre réputation en dépend.'}</p>
+            <h3 className="font-serif text-2xl font-normal text-white mb-5">{locale==='nl'?'"We beloven niet de grootste te zijn. We beloven de meest serieuze te zijn."':locale==='en'?'"We don\'t promise to be the biggest. We promise to be the most serious."':'"On ne promet pas d\'être les plus gros. On promet d\'être les plus sérieux."'}</h3>
+            <p className="text-white/65 font-light leading-relaxed mb-8">{locale==='nl'?'Elke werf telt. We behandelen de uwe alsof het de onze was — want onze reputatie hangt er van af.':locale==='en'?'Every project counts. We treat yours as if it were ours — because our reputation depends on it.':'Chaque chantier compte. On traite le vôtre comme si c\'était le nôtre — parce que notre réputation en dépend.'}</p>
             <a href="/contact" className="inline-block bg-green text-white px-8 py-3.5 rounded text-sm font-medium hover:bg-green-mid transition-colors">{locale==='nl'?'Gratis offerte aanvragen':locale==='en'?'Request a free quote':'Demander un devis gratuit'}</a>
           </div>
         </div>
