@@ -108,7 +108,7 @@ const IsolationFacadePage: NextPage = () => {
           </div>
           <div className="space-y-4">
             <div className="rounded-lg overflow-hidden border border-cream-3 bg-cream-3">
-              <img src="/images/chantier-facade-1.jpg" alt="Isolation façade chantier Apollon Construction Bruxelles" className="w-full h-64 object-cover" loading="lazy" loading="lazy" />
+              <img src="/images/chantier-facade-1.jpg" alt="Isolation façade chantier Apollon Construction Bruxelles" className="w-full h-64 object-cover" loading="lazy" />
             </div>
             {/* PRIMES */}
             <div className="bg-green/8 border border-green/20 rounded-lg p-5">
