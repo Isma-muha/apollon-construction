@@ -4,7 +4,6 @@ import { Toaster } from 'react-hot-toast'
 import Script from 'next/script'
 import '../styles/globals.css'
 
-// Replace GTM_ID with your real GTM ID (e.g. GTM-XXXXXXX)
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-PLDGJCSW'
 
 function App({ Component, pageProps }: AppProps) {
@@ -21,11 +20,20 @@ function App({ Component, pageProps }: AppProps) {
           })(window,document,'script','dataLayer','${GTM_ID}');
         `}
       </Script>
+      {/* Google Ads */}
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-18095607023" strategy="afterInteractive" />
+      <Script id="google-ads" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18095607023');
+        `}
+      </Script>
       {/* GTM noscript */}
       <noscript>
         <iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`} height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
       </noscript>
-
       <Component {...pageProps} />
       <Toaster position="bottom-center" toastOptions={{ duration: 5000, style: { background: '#1C1A14', color: '#fff', borderRadius: '6px' } }} />
     </>
