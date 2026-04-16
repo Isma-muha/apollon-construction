@@ -50,6 +50,14 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
         if (typeof window !== 'undefined' && (window as any).dataLayer) {
           (window as any).dataLayer.push({ event: 'form_submit', service: data.service || service })
         }
+        // Google Ads conversion
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          ;(window as any).gtag('event', 'conversion', {
+            send_to: 'AW-18095607023/gymrCNHzo50cEO-Z1LRD',
+            value: 1.0,
+            currency: 'EUR',
+          })
+        }
       }
     } catch {}
     setIsSubmitting(false)
