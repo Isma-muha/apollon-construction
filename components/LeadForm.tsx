@@ -16,19 +16,22 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
       fmsg: 'Message (optionnel)', btn: 'Demander un devis gratuit →',
       rgpd: 'Données protégées (RGPD)',
       success: '✓ Message envoyé ! Nous vous répondons sous 24h.',
-      opts: ['Isolation thermique extérieure (ITE)', 'Toiture inclinée', 'Toiture plate / Étanchéité', 'Façade & Ravalement', 'Rénovation intérieure', 'Électricité RGIE', 'Autre'] },
+      opts: ['Isolation thermique extérieure (ITE)', 'Toiture inclinée', 'Toiture plate / Étanchéité', 'Façade & Ravalement', 'Rénovation intérieure', 'Électricité RGIE', 'Autre']
+    },
     nl: { h: 'Gratis offerte binnen 48u', sub: 'Vrijblijvend — Gegarandeerd antwoord',
       fname: 'Naam', fphone: 'Telefoon *', femail: 'E-mail *', fservice: 'Type werken',
       fmsg: 'Bericht (optioneel)', btn: 'Gratis offerte aanvragen →',
       rgpd: 'Gegevens beschermd (AVG)',
       success: '✓ Bericht verzonden! We antwoorden u binnen 24u.',
-      opts: ['Buitenmuurisolatie (BUI)', 'Hellend dak', 'Plat dak / Waterdichting', 'Gevel & Bepleistering', 'Binnenrenovatie', 'Elektriciteit AREI', 'Andere'] },
+      opts: ['Buitenmuurisolatie (BUI)', 'Hellend dak', 'Plat dak / Waterdichting', 'Gevel & Bepleistering', 'Binnenrenovatie', 'Elektriciteit AREI', 'Andere']
+    },
     en: { h: 'Free quote within 48h', sub: 'No commitment — Guaranteed response',
       fname: 'Name', fphone: 'Phone *', femail: 'Email *', fservice: 'Type of works',
       fmsg: 'Message (optional)', btn: 'Request a free quote →',
       rgpd: 'Data protected (GDPR)',
       success: '✓ Message sent! We\'ll respond within 24h.',
-      opts: ['External thermal insulation (EWI)', 'Pitched roof', 'Flat roof / Waterproofing', 'Facade & Rendering', 'Interior renovation', 'Electrical RGIE', 'Other'] },
+      opts: ['External thermal insulation (EWI)', 'Pitched roof', 'Flat roof / Waterproofing', 'Facade & Rendering', 'Interior renovation', 'Electrical RGIE', 'Other']
+    },
   }
   const t = L[locale as keyof typeof L] || L.fr
 
@@ -37,8 +40,9 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
     setIsSubmitting(true)
     const form = e.currentTarget
     const data = Object.fromEntries(new FormData(form))
+
     try {
-      const res = await fetch('https://formspree.io/f/mvzvdenn', {
+      const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(data),
@@ -46,11 +50,9 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
       if (res.ok) {
         setSent(true)
         form.reset()
-        // GTM tracking
         if (typeof window !== 'undefined' && (window as any).dataLayer) {
           (window as any).dataLayer.push({ event: 'form_submit', service: data.service || service })
         }
-        // Google Ads conversion
         if (typeof window !== 'undefined' && (window as any).gtag) {
           ;(window as any).gtag('event', 'conversion', {
             send_to: 'AW-18095607023/gymrCNHzo50cEO-Z1LRD',
@@ -60,6 +62,7 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
         }
       }
     } catch {}
+
     setIsSubmitting(false)
   }
 
@@ -95,8 +98,7 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
           </select>
         </div>
         <div className="mb-6"><label className={lbl}>{t.fmsg}</label><textarea name="message" rows={3} className={`${inp} resize-none`} /></div>
-        <button type="submit" disabled={isSubmitting}
-          className={`w-full py-3.5 rounded text-white text-sm font-medium transition-all min-h-[48px] ${isSubmitting ? 'bg-green/60' : 'bg-green hover:bg-green-mid'}`}>
+        <button type="submit" disabled={isSubmitting} className={`w-full py-3.5 rounded text-white text-sm font-medium transition-all min-h-[48px] ${isSubmitting ? 'bg-green/60' : 'bg-green hover:bg-green-mid'}`}>
           {isSubmitting ? '...' : t.btn}
         </button>
         <p className="text-muted text-xs font-light text-center mt-3">🔒 {t.rgpd}</p>
