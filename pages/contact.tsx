@@ -42,7 +42,7 @@ const ContactPage: NextPage = () => {
       const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ ...payload, telephone: (payload as any).tel, nom: (payload as any).nom }),
       })
       if (res.ok) { toast.success(t('contact.success')); reset(); setSent(true) }
       else throw new Error()
