@@ -31,7 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (body._gotcha) return res.status(200).json({ ok: true });
 
   const name = (body.name || body.nom || '').trim().slice(0, 120);
-  const phone = (body.phone || body.telephone || '').trim().slice(0, 40);
+  const phone = (body.phone || body.telephone || body.tel || '').trim().slice(0, 40);
   const email = (body.email || '').trim().slice(0, 200);
   const type = (body.type || body.service || '').trim().slice(0, 100);
   const message = (body.message || '').trim().slice(0, 4000);
