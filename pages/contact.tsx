@@ -34,31 +34,19 @@ const ContactPage: NextPage = () => {
     resolver: zodResolver(schema),
   })
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: FormData) => {
+    if (isSubmitting) return
     setIsSubmitting(true)
+    const { _honeypot, ...payload } = data
     try {
       const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       })
-      if (res.ok) {
-        setSent(true)
-        reset()
-        if (typeof window !== 'undefined' && (window as any).dataLayer) {
-          (window as any).dataLayer.push({ event: 'form_submit', service: data.service || '' })
-        }
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'conversion', {
-            send_to: 'AW-18095607023/gymrCNHzo50cEO-Z1LRD',
-            value: 1.0,
-            currency: 'EUR',
-          })
-        }
-      }
-    } catch {}
-    setIsSubmitting(false)
-  } catch { toast.error(t('contact.error')) }
+      if (res.ok) { toast.success(t('contact.success')); reset(); setSent(true) }
+      else throw new Error()
+    } catch { toast.error(t('contact.error')) }
     finally { setIsSubmitting(false) }
   }
 
