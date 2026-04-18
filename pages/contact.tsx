@@ -39,7 +39,7 @@ const ContactPage: NextPage = () => {
     setIsSubmitting(true)
     const { _honeypot, ...payload } = data
     try {
-      const res = await fetch('https://formspree.io/f/mvzvdenn', {
+      const res = await '/api/lead'
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(payload),
