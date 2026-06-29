@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import PhotoSlider from '../components/PhotoSlider'
 
 const ZONES = ['Bruxelles-Ville','Ixelles','Uccle','Etterbeek','Auderghem','Woluwe-Saint-Lambert','Woluwe-Saint-Pierre','Forest','Molenbeek','Saint-Gilles','Anderlecht','Schaerbeek','Laeken','Jette','Dilbeek','Brabant Wallon','Brabant Flamand']
 
@@ -263,20 +264,7 @@ const Home: NextPage = () => {
       <section className="py-20 px-[5%] bg-cream-2">
         <p className="flex items-center gap-2 text-xs font-medium text-clay tracking-widest uppercase mb-3"><span className="w-6 h-px bg-clay" aria-hidden="true" />{t('portfolio.tag')}</p>
         <h2 className="font-serif text-4xl font-normal text-ink mb-10">{t('portfolio.h2')}</h2>
-        <ul className="grid grid-cols-3 gap-4" role="list">
-          {portfolio.map(({ src, tag, title, span }) => (
-            <li key={src} className={`relative rounded-lg overflow-hidden group ${span}`}>
-              <div className="relative h-56 overflow-hidden bg-cream-3">
-                <img src={src} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display='none' }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-4">
-                  <span className="block text-[10px] tracking-widest uppercase text-white/65 mb-1">{tag}</span>
-                  <p className="font-serif text-sm text-white">{title}</p>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <PhotoSlider slides={portfolio} />
       </section>
 
       {/* PAGE CARDS */}
