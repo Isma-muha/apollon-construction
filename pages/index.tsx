@@ -12,6 +12,9 @@ const Home: NextPage = () => {
   const { t } = useTranslation('common')
   const { locale } = useRouter()
 
+  // ⚠ Promo été 2026 — repasser à false (ou supprimer le bloc) après le 31/08/2026
+  const SHOW_SUMMER_PROMO = true
+
   const services = [
     { icon: '🏗️', num: '01', title: t('services.facade_title'), desc: t('services.facade_desc') },
     { icon: '🏠', num: '02', title: t('services.roof_title'), desc: t('services.roof_desc') },
@@ -27,6 +30,10 @@ const Home: NextPage = () => {
     { src: '/images/chantier-ardoise-2.jpg', tag: locale==='nl'?'Dak':locale==='en'?'Roofing':'Toiture', title: locale==='nl'?'Plaatsing leien in uitvoering':locale==='en'?'Slate laying in progress':'Chantier pose ardoises en cours', span: '' },
     { src: '/images/chantier-facade-2.jpg', tag: locale==='nl'?'Gevel':locale==='en'?'Facade':'Façade', title: locale==='nl'?'Gevelbepleistering appartementsgebouw':locale==='en'?'Apartment building facade rendering':'Ravalement et enduit façade immeuble', span: '' },
     { src: '/images/ite-chantier.jpg', tag: locale==='nl'?'BUI':locale==='en'?'EWI':'ITE', title: locale==='nl'?'Volledige buitenmuurisolatie':locale==='en'?'Complete external wall insulation':"Isolation par l'extérieur complète", span: 'col-span-2' },
+    { src: '/images/chantier-sdb-1.jpg', tag: locale==='nl'?'Badkamer':locale==='en'?'Bathroom':'Salle de bain', title: locale==='nl'?'Volledige badkamer, inloopdouche':locale==='en'?'Full bathroom, walk-in shower':'Salle de bain complète, douche à l’italienne', span: 'col-span-2' },
+    { src: '/images/chantier-cuisine.jpg', tag: locale==='nl'?'Keuken':locale==='en'?'Kitchen':'Cuisine', title: locale==='nl'?'Maatwerk keuken':locale==='en'?'Custom fitted kitchen':'Cuisine équipée sur mesure', span: '' },
+    { src: '/images/chantier-sdb-2.jpg', tag: locale==='nl'?'Badkamer':locale==='en'?'Bathroom':'Salle de bain', title: locale==='nl'?'Badkamer met gouden afwerking':locale==='en'?'Bathroom with gold finishes':'Salle de bain, finitions dorées', span: '' },
+    { src: '/images/chantier-renovation.jpg', tag: locale==='nl'?'Renovatie':locale==='en'?'Renovation':'Rénovation', title: locale==='nl'?'Binnenrenovatie en schilderwerk':locale==='en'?'Interior renovation and painting':'Rénovation intérieure et peinture', span: 'col-span-2' },
   ]
 
   const methodeSteps = [
@@ -73,6 +80,29 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <SEO title={t('meta.home_title')} description={t('meta.home_desc')} />
+
+      {/* PROMO ÉTÉ 2026 */}
+      {SHOW_SUMMER_PROMO && (
+        <Link
+          href="/contact"
+          aria-label={locale==='nl'?'Zomeractie 2026 — −10% op elk getekend bestek vóór 31/08':locale==='en'?'Summer 2026 offer — −10% on every quote signed before 31/08':'Offre été 2026 — −10% sur tout devis signé avant le 31/08'}
+          className="block relative bg-ink overflow-hidden group"
+        >
+          <img src="/images/promo-ete-2026.jpg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-30" />
+          <div className="relative flex flex-col items-center justify-center py-6 md:py-8 px-[5%]">
+            <img
+              src="/images/promo-ete-2026.jpg"
+              alt={locale==='nl'?'Zomer 2026 — −10% op elk getekend bestek — Apollon Construction':locale==='en'?'Summer 2026 — −10% on every signed quote — Apollon Construction':'Été 2026 — −10% sur tout devis signé — Apollon Construction'}
+              className="max-h-[64vh] w-auto max-w-full rounded-xl shadow-2xl group-hover:scale-[1.01] transition-transform duration-300"
+              loading="eager"
+            />
+            <p className="mt-4 text-center text-white/80 text-sm font-light tracking-wide">
+              {locale==='nl'?'Geldig voor elk bestek getekend vóór 31/08/2026 — ':locale==='en'?'Valid for every quote signed before 31/08/2026 — ':'Valable pour tout devis signé avant le 31/08/2026 — '}
+              <span className="text-green-light font-medium underline underline-offset-2">{locale==='nl'?'offerte aanvragen →':locale==='en'?'get a quote →':'demander un devis →'}</span>
+            </p>
+          </div>
+        </Link>
+      )}
 
       {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">

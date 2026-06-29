@@ -22,6 +22,26 @@ export default function Navbar() {
         <img src="/logo.svg" alt="Apollon Construction" style={{ height: '52px', width: 'auto', display: 'block' }} />
       </Link>
 
+      {/* Apollon Solutions — pôle énergie & technique */}
+      <Link
+        href="/solutions"
+        aria-label={locale === 'nl' ? 'Ontdek Apollon Solutions — warmtepomp, zonnepanelen, elektriciteit' : locale === 'en' ? 'Discover Apollon Solutions — heat pump, solar, electricity' : 'Découvrir Apollon Solutions — pompe à chaleur, solaire, électricité'}
+        className="hidden lg:flex items-center gap-2.5 rounded-xl border border-green/20 bg-green/[0.06] pl-2 pr-4 py-1.5 hover:bg-green/10 hover:-translate-y-0.5 transition-all group"
+      >
+        <span className="w-9 h-9 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+          <svg viewBox="0 0 24 24" className="w-5 h-5 text-white" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" /></svg>
+        </span>
+        <span className="leading-tight">
+          <span className="flex items-center gap-1.5 text-green font-semibold text-sm">
+            Apollon Solutions
+            <span className="transition-transform group-hover:translate-x-0.5" aria-hidden="true">→</span>
+          </span>
+          <span className="block text-[11px] text-muted font-light">
+            {locale === 'nl' ? 'Warmtepomp · Zonnepanelen · Elektriciteit' : locale === 'en' ? 'Heat pump · Solar · Electricity' : 'Pompe à chaleur · Solaire · Électricité'}
+          </span>
+        </span>
+      </Link>
+
       {/* Desktop */}
       <ul className="hidden md:flex gap-5 items-center list-none" role="list">
         {links.map(l => (
@@ -44,6 +64,10 @@ export default function Navbar() {
       </button>
 
       <div id="mobile-menu" aria-hidden={!open} className={['fixed top-[calc(43px+58px)] left-0 right-0 z-30 bg-white border-b border-cream-3 flex flex-col gap-3 px-[5%] transition-all duration-300', open ? 'py-5 opacity-100 pointer-events-auto' : 'py-0 opacity-0 pointer-events-none h-0 overflow-hidden'].join(' ')}>
+        <Link href="/solutions" className="flex items-center gap-2 text-green text-base py-2 border-b border-cream-3 font-semibold" onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
+          <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" /></svg>
+          Apollon Solutions →
+        </Link>
         {links.map(l => (
           <Link key={l.href} href={l.href} className="text-ink-2 text-base py-2 border-b border-cream-3 font-medium" onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
             {l.label}
