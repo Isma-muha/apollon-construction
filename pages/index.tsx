@@ -123,8 +123,8 @@ const Home: NextPage = () => {
             <span className="w-1.5 h-1.5 rounded-full bg-green" aria-hidden="true" />{t('hero.tag')}
           </div>
           <h1 className="font-serif text-5xl md:text-6xl font-normal leading-tight text-white mb-6">
-            {t('hero.h1_line1')}<br />
-            <em className="text-green not-italic">{t('hero.h1_line2')}</em><br />
+            <em className="text-green not-italic">{t('hero.h1_line1')}</em><br />
+            {t('hero.h1_line2')}<br />
             {t('hero.h1_line3')}
           </h1>
           <p className="text-white/75 font-light text-lg leading-relaxed max-w-md mb-10">{t('hero.desc')}</p>

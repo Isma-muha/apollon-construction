@@ -4,19 +4,19 @@ import { InstagramIcon, FacebookIcon } from './Icons'
 export default function Topbar() {
   const { t } = useTranslation('common')
   return (
-    <div className="bg-green text-white py-2 px-[5%] flex justify-between items-center flex-wrap gap-2 relative z-50">
-      <div className="flex gap-5 items-center flex-wrap">
-        <a href="tel:+32486278852" className="text-white font-bold text-sm md:text-base hover:text-white/80 transition-colors flex items-center gap-1.5">
-          📞 <span>0486 27 88 52</span><span className="text-white/60 text-xs font-normal">(FR)</span>
+    <div className="bg-green text-white py-1.5 px-[5%] flex justify-between items-center gap-3 relative z-50">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-0 min-w-0">
+        <a href="tel:+32486278852" className="text-white text-[13px] md:text-base font-medium md:font-semibold hover:text-white/80 transition-colors flex items-center gap-1.5 whitespace-nowrap leading-tight">
+          📞 <span>0486 27 88 52</span><span className="text-white/55 text-[10px] md:text-xs font-normal">(FR)</span>
         </a>
-        <a href="tel:+32499896086" className="text-white font-bold text-sm md:text-base hover:text-white/80 transition-colors flex items-center gap-1.5">
-          📞 <span>0499 89 60 86</span><span className="text-white/60 text-xs font-normal">(NL)</span>
+        <a href="tel:+32499896086" className="text-white text-[13px] md:text-base font-medium md:font-semibold hover:text-white/80 transition-colors flex items-center gap-1.5 whitespace-nowrap leading-tight">
+          📞 <span>0499 89 60 86</span><span className="text-white/55 text-[10px] md:text-xs font-normal">(NL)</span>
         </a>
         <a href="mailto:info@apollonconstruction.be" className="text-white/80 hover:text-white transition-colors text-sm hidden lg:block">
           ✉ info@apollonconstruction.be
         </a>
       </div>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center flex-shrink-0">
         <LanguageSwitcher compact />
         <a href="https://www.instagram.com/apollon.construction" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-7 h-7 bg-white/15 rounded flex items-center justify-center hover:bg-white/30 transition-colors">
           <InstagramIcon className="w-4 h-4 text-white" />
