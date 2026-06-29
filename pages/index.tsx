@@ -19,9 +19,8 @@ const Home: NextPage = () => {
     { icon: '🏗️', num: '01', title: t('services.facade_title'), desc: t('services.facade_desc') },
     { icon: '🏠', num: '02', title: t('services.roof_title'), desc: t('services.roof_desc') },
     { icon: '🔨', num: '03', title: t('services.reno_title'), desc: t('services.reno_desc') },
-    { icon: '⚡', num: '04', title: t('services.elec_title'), desc: t('services.elec_desc') },
-    { icon: '✨', num: '05', title: t('services.finish_title'), desc: t('services.finish_desc') },
-    { icon: '📋', num: '06', title: t('services.coord_title'), desc: t('services.coord_desc') },
+    { icon: '✨', num: '04', title: t('services.finish_title'), desc: t('services.finish_desc') },
+    { icon: '📋', num: '05', title: t('services.coord_title'), desc: t('services.coord_desc') },
   ]
 
   const portfolio = [
@@ -125,7 +124,7 @@ const Home: NextPage = () => {
           </div>
           <h1 className="font-serif text-5xl md:text-6xl font-normal leading-tight text-white mb-6">
             {t('hero.h1_line1')}<br />
-            & <em className="text-green not-italic">{t('hero.h1_line2')}</em><br />
+            <em className="text-green not-italic">{t('hero.h1_line2')}</em><br />
             {t('hero.h1_line3')}
           </h1>
           <p className="text-white/75 font-light text-lg leading-relaxed max-w-md mb-10">{t('hero.desc')}</p>

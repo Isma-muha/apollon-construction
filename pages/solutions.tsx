@@ -74,6 +74,7 @@ const SolutionsPage: NextPage = () => {
         { q: 'Travaillez-vous avec les syndics et les architectes ?', a: 'Oui, pour les immeubles, les parties communes (chaufferie, électricité, ventilation) et les projets de rénovation énergétique.' },
       ],
       svc: 'Énergie & technique',
+      formOpts: ['Pompe à chaleur', 'Panneaux solaires', 'Climatisation', 'Électricité (RGIE)', 'Ventilation (VMC)', 'Borne de recharge', 'Autre'],
     },
     nl: {
       title: 'Warmtepomp, zonnepanelen & elektriciteit in Brussel | Apollon Solutions',
@@ -122,6 +123,7 @@ const SolutionsPage: NextPage = () => {
         { q: 'Werken jullie met syndici en architecten?', a: 'Ja, voor gebouwen, gemeenschappelijke delen (stookplaats, elektriciteit, ventilatie) en energierenovatieprojecten.' },
       ],
       svc: 'Energie & techniek',
+      formOpts: ['Warmtepomp', 'Zonnepanelen', 'Airconditioning', 'Elektriciteit (AREI)', 'Ventilatie (VMC)', 'Laadpaal', 'Andere'],
     },
     en: {
       title: 'Heat pump, solar panels & electricity in Brussels | Apollon Solutions',
@@ -170,6 +172,7 @@ const SolutionsPage: NextPage = () => {
         { q: 'Do you work with building managers and architects?', a: 'Yes, for buildings, common areas (boiler room, electricity, ventilation) and energy renovation projects.' },
       ],
       svc: 'Energy & technical',
+      formOpts: ['Heat pump', 'Solar panels', 'Air conditioning', 'Electrical (RGIE)', 'Ventilation (MVHR)', 'EV charger', 'Other'],
     },
   }
   const c = C[locale as keyof typeof C] || C.fr
@@ -202,7 +205,7 @@ const SolutionsPage: NextPage = () => {
               ))}
             </div>
           </div>
-          <div><LeadForm service={c.svc} /></div>
+          <div><LeadForm service={c.svc} options={c.formOpts} /></div>
         </div>
       </section>
 
@@ -301,7 +304,7 @@ const SolutionsPage: NextPage = () => {
       {/* FORM */}
       <section className="py-16 px-[5%] bg-cream-2">
         <div className="max-w-xl mx-auto">
-          <LeadForm service={c.svc} />
+          <LeadForm service={c.svc} options={c.formOpts} />
         </div>
       </section>
     </Layout>
