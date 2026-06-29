@@ -83,25 +83,36 @@ const Home: NextPage = () => {
 
       {/* PROMO ÉTÉ 2026 */}
       {SHOW_SUMMER_PROMO && (
-        <Link
-          href="/contact"
-          aria-label={locale==='nl'?'Zomeractie 2026 — −10% op elk getekend bestek vóór 31/08':locale==='en'?'Summer 2026 offer — −10% on every quote signed before 31/08':'Offre été 2026 — −10% sur tout devis signé avant le 31/08'}
-          className="block relative bg-ink overflow-hidden group"
-        >
-          <img src="/images/promo-ete-2026.jpg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-30" />
-          <div className="relative flex flex-col items-center justify-center py-6 md:py-8 px-[5%]">
-            <img
-              src="/images/promo-ete-2026.jpg"
-              alt={locale==='nl'?'Zomer 2026 — −10% op elk getekend bestek — Apollon Construction':locale==='en'?'Summer 2026 — −10% on every signed quote — Apollon Construction':'Été 2026 — −10% sur tout devis signé — Apollon Construction'}
-              className="max-h-[64vh] w-auto max-w-full rounded-xl shadow-2xl group-hover:scale-[1.01] transition-transform duration-300"
-              loading="eager"
-            />
-            <p className="mt-4 text-center text-white/80 text-sm font-light tracking-wide">
-              {locale==='nl'?'Geldig voor elk bestek getekend vóór 31/08/2026 — ':locale==='en'?'Valid for every quote signed before 31/08/2026 — ':'Valable pour tout devis signé avant le 31/08/2026 — '}
-              <span className="text-green-light font-medium underline underline-offset-2">{locale==='nl'?'offerte aanvragen →':locale==='en'?'get a quote →':'demander un devis →'}</span>
-            </p>
+        <section className="bg-ink overflow-hidden">
+          <div className="md:flex md:items-stretch">
+            <div className="flex-1 px-[5%] md:px-12 py-10 md:py-0 flex flex-col justify-center md:min-h-[440px]">
+              <p className="text-green-light text-xs font-medium tracking-[0.18em] uppercase mb-3">
+                {locale==='nl'?'Zomeractie 2026':locale==='en'?'Summer offer 2026':'Offre été 2026'}
+              </p>
+              <h2 className="font-serif text-white leading-tight mb-3">
+                <span className="block text-5xl md:text-6xl">−10%</span>
+                <span className="block text-xl md:text-2xl font-light text-white/85 mt-2">
+                  {locale==='nl'?'op elk getekend bestek':locale==='en'?'on every signed quote':'sur tout devis signé'}
+                </span>
+              </h2>
+              <p className="text-white/60 text-sm md:text-base font-light mb-6 max-w-md">
+                {locale==='nl'?'Voor al uw werken getekend vóór 31 augustus 2026.':locale==='en'?'For all works signed before 31 August 2026.':'Pour tous vos travaux signés avant le 31 août 2026.'}
+              </p>
+              <Link href="/contact" className="inline-flex items-center gap-2 self-start bg-green hover:bg-green-mid text-white text-sm font-medium px-6 py-3 rounded transition-colors">
+                {locale==='nl'?'Offerte aanvragen':locale==='en'?'Get a quote':'Demander un devis'}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+            <div className="md:flex-none">
+              <img
+                src="/images/promo-ete-2026.jpg"
+                alt={locale==='nl'?'Zomer 2026 — −10% op elk getekend bestek — Apollon Construction':locale==='en'?'Summer 2026 — −10% on every signed quote — Apollon Construction':'Été 2026 — −10% sur tout devis signé — Apollon Construction'}
+                className="block w-full md:w-auto md:h-[440px]"
+                loading="eager"
+              />
+            </div>
           </div>
-        </Link>
+        </section>
       )}
 
       {/* HERO */}
