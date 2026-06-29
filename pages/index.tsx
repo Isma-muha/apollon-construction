@@ -12,13 +12,15 @@ const Home: NextPage = () => {
   const { t } = useTranslation('common')
   const { locale } = useRouter()
 
+  // ⚠ Promo été 2026 — repasser à false (ou supprimer le bloc) après le 31/08/2026
+  const SHOW_SUMMER_PROMO = true
+
   const services = [
     { icon: '🏗️', num: '01', title: t('services.facade_title'), desc: t('services.facade_desc') },
     { icon: '🏠', num: '02', title: t('services.roof_title'), desc: t('services.roof_desc') },
     { icon: '🔨', num: '03', title: t('services.reno_title'), desc: t('services.reno_desc') },
-    { icon: '⚡', num: '04', title: t('services.elec_title'), desc: t('services.elec_desc') },
-    { icon: '✨', num: '05', title: t('services.finish_title'), desc: t('services.finish_desc') },
-    { icon: '📋', num: '06', title: t('services.coord_title'), desc: t('services.coord_desc') },
+    { icon: '✨', num: '04', title: t('services.finish_title'), desc: t('services.finish_desc') },
+    { icon: '📋', num: '05', title: t('services.coord_title'), desc: t('services.coord_desc') },
   ]
 
   const portfolio = [
@@ -27,6 +29,10 @@ const Home: NextPage = () => {
     { src: '/images/chantier-ardoise-2.jpg', tag: locale==='nl'?'Dak':locale==='en'?'Roofing':'Toiture', title: locale==='nl'?'Plaatsing leien in uitvoering':locale==='en'?'Slate laying in progress':'Chantier pose ardoises en cours', span: '' },
     { src: '/images/chantier-facade-2.jpg', tag: locale==='nl'?'Gevel':locale==='en'?'Facade':'Façade', title: locale==='nl'?'Gevelbepleistering appartementsgebouw':locale==='en'?'Apartment building facade rendering':'Ravalement et enduit façade immeuble', span: '' },
     { src: '/images/ite-chantier.jpg', tag: locale==='nl'?'BUI':locale==='en'?'EWI':'ITE', title: locale==='nl'?'Volledige buitenmuurisolatie':locale==='en'?'Complete external wall insulation':"Isolation par l'extérieur complète", span: 'col-span-2' },
+    { src: '/images/chantier-sdb-1.jpg', tag: locale==='nl'?'Badkamer':locale==='en'?'Bathroom':'Salle de bain', title: locale==='nl'?'Volledige badkamer, inloopdouche':locale==='en'?'Full bathroom, walk-in shower':'Salle de bain complète, douche à l’italienne', span: 'col-span-2' },
+    { src: '/images/chantier-cuisine.jpg', tag: locale==='nl'?'Keuken':locale==='en'?'Kitchen':'Cuisine', title: locale==='nl'?'Maatwerk keuken':locale==='en'?'Custom fitted kitchen':'Cuisine équipée sur mesure', span: '' },
+    { src: '/images/chantier-sdb-2.jpg', tag: locale==='nl'?'Badkamer':locale==='en'?'Bathroom':'Salle de bain', title: locale==='nl'?'Badkamer met gouden afwerking':locale==='en'?'Bathroom with gold finishes':'Salle de bain, finitions dorées', span: '' },
+    { src: '/images/chantier-renovation.jpg', tag: locale==='nl'?'Renovatie':locale==='en'?'Renovation':'Rénovation', title: locale==='nl'?'Binnenrenovatie en schilderwerk':locale==='en'?'Interior renovation and painting':'Rénovation intérieure et peinture', span: 'col-span-2' },
   ]
 
   const methodeSteps = [
@@ -74,6 +80,40 @@ const Home: NextPage = () => {
     <Layout>
       <SEO title={t('meta.home_title')} description={t('meta.home_desc')} />
 
+      {/* PROMO ÉTÉ 2026 */}
+      {SHOW_SUMMER_PROMO && (
+        <section className="bg-ink overflow-hidden">
+          <div className="md:flex md:items-stretch">
+            <div className="flex-1 px-[5%] md:px-12 py-10 md:py-0 flex flex-col justify-center md:min-h-[440px]">
+              <p className="text-green-light text-xs font-medium tracking-[0.18em] uppercase mb-3">
+                {locale==='nl'?'Zomeractie 2026':locale==='en'?'Summer offer 2026':'Offre été 2026'}
+              </p>
+              <h2 className="font-serif text-white leading-tight mb-3">
+                <span className="block text-5xl md:text-6xl">−10%</span>
+                <span className="block text-xl md:text-2xl font-light text-white/85 mt-2">
+                  {locale==='nl'?'op elk getekend bestek':locale==='en'?'on every signed quote':'sur tout devis signé'}
+                </span>
+              </h2>
+              <p className="text-white/60 text-sm md:text-base font-light mb-6 max-w-md">
+                {locale==='nl'?'Voor al uw werken getekend vóór 31 augustus 2026.':locale==='en'?'For all works signed before 31 August 2026.':'Pour tous vos travaux signés avant le 31 août 2026.'}
+              </p>
+              <Link href="/contact" className="inline-flex items-center gap-2 self-start bg-green hover:bg-green-mid text-white text-sm font-medium px-6 py-3 rounded transition-colors">
+                {locale==='nl'?'Offerte aanvragen':locale==='en'?'Get a quote':'Demander un devis'}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+            <div className="md:flex-none">
+              <img
+                src="/images/promo-ete-2026.jpg"
+                alt={locale==='nl'?'Zomer 2026 — −10% op elk getekend bestek — Apollon Construction':locale==='en'?'Summer 2026 — −10% on every signed quote — Apollon Construction':'Été 2026 — −10% sur tout devis signé — Apollon Construction'}
+                className="block w-full md:w-auto md:h-[440px]"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <img src="/images/facade-before-after.jpg" alt={t('meta.home_title')} className="absolute inset-0 w-full h-full object-cover" loading="eager" />
@@ -84,7 +124,7 @@ const Home: NextPage = () => {
           </div>
           <h1 className="font-serif text-5xl md:text-6xl font-normal leading-tight text-white mb-6">
             {t('hero.h1_line1')}<br />
-            & <em className="text-green not-italic">{t('hero.h1_line2')}</em><br />
+            <em className="text-green not-italic">{t('hero.h1_line2')}</em><br />
             {t('hero.h1_line3')}
           </h1>
           <p className="text-white/75 font-light text-lg leading-relaxed max-w-md mb-10">{t('hero.desc')}</p>

@@ -3,9 +3,10 @@ import { useRouter } from 'next/router'
 
 interface LeadFormProps {
   service?: string
+  options?: string[]
 }
 
-export default function LeadForm({ service = '' }: LeadFormProps) {
+export default function LeadForm({ service = '', options }: LeadFormProps) {
   const { locale } = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [sent, setSent] = useState(false)
@@ -94,7 +95,7 @@ export default function LeadForm({ service = '' }: LeadFormProps) {
         <div className="mb-4">
           <label className={lbl}>{t.fservice}</label>
           <select name="service" defaultValue={service} className={inp}>
-            {t.opts.map(o => <option key={o} value={o}>{o}</option>)}
+            {(options && options.length ? options : t.opts).map(o => <option key={o} value={o}>{o}</option>)}
           </select>
         </div>
         <div className="mb-6"><label className={lbl}>{t.fmsg}</label><textarea name="message" rows={3} className={`${inp} resize-none`} /></div>

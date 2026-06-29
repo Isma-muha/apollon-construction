@@ -29,6 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <ul className="space-y-1.5 list-none">
               <li><Link href="/#services" className="text-white/40 text-sm font-light hover:text-white/80">{t('nav.services')}</Link></li>
               <li><Link href="/facade-toiture" className="text-white/40 text-sm font-light hover:text-white/80">{t('nav.facade')}</Link></li>
+              <li><Link href="/solutions" className="text-white/40 text-sm font-light hover:text-white/80">Apollon Solutions</Link></li>
               <li><Link href="/primes" className="text-white/40 text-sm font-light hover:text-white/80">{t('nav.primes')}</Link></li>
               <li><Link href="/contact" className="text-white/40 text-sm font-light hover:text-white/80">Contact</Link></li>
             </ul>
