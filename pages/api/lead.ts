@@ -61,7 +61,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     <div style="font-family:system-ui,sans-serif;max-width:600px;color:#111">
       <p>Bonjour ${escape(name) || ''},</p>
       <p>Nous avons bien reçu votre demande de devis pour <b>${escape(type) || 'vos travaux'}</b>. Un de nos conseillers vous contactera dans les <b>48 heures ouvrables</b>.</p>
-      <p>Urgence : FR 0486 27 88 52 — NL 0499 89 60 86</p>
+      <p>Urgence : 0499 89 60 86</p>
       <p>Cordialement,<br><b>Apollon Construction</b><br>Bruxelles — TVA BE1025.392.245</p>
     </div>
   `;

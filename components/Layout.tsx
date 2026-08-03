@@ -16,8 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <img src="/logo.svg" alt="Apollon Construction" style={{ height:'52px', width:'auto', marginBottom:'1rem', filter:'brightness(0) invert(1)', display:'block' }} />
             <a href="mailto:info@apollonconstruction.be" className="block text-white/50 text-sm font-light hover:text-white/80 mb-2">info@apollonconstruction.be</a>
-            <a href="tel:+32486278852" className="block text-white font-bold text-base hover:text-white/80">0486 27 88 52 <span className="text-white/40 text-xs font-normal">(FR)</span></a>
-            <a href="tel:+32499896086" className="block text-white font-bold text-base hover:text-white/80">0499 89 60 86 <span className="text-white/40 text-xs font-normal">(NL)</span></a>
+            <a href="tel:+32499896086" className="block text-white font-bold text-base hover:text-white/80">0499 89 60 86</a>
             <div className="flex gap-2 mt-3">
               <a href="https://www.instagram.com/apollon.construction" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-white/20"><InstagramIcon className="w-4 h-4 text-white/60" /></a>
               <a href="https://www.facebook.com/profile.php?id=61570944591480" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-white/20"><FacebookIcon className="w-4 h-4 text-white/60" /></a>

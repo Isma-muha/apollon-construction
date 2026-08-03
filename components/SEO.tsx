@@ -6,7 +6,7 @@ export default function SEO({ title, description, noindex = false }: { title: st
   const canonical = `${SITE}${locale && locale !== 'fr' ? `/${locale}` : ''}${pathname === '/' ? '' : pathname}`
   const schema = {
     '@context':'https://schema.org','@type':'LocalBusiness',name:'Apollon Construction',legalName:'Apollon Group SRL',description:'Entreprise de façade, toiture et rénovation à Bruxelles',url:SITE,
-    telephone:['+32486278852','+32499896086'],email:'info@apollonconstruction.be',vatID:'BE1025.392.245',
+    telephone:'+32499896086',email:'info@apollonconstruction.be',vatID:'BE1025.392.245',
     address:{'@type':'PostalAddress',streetAddress:'Oudesmidsestraat 20',postalCode:'1700',addressLocality:'Dilbeek',addressRegion:'Vlaams-Brabant',addressCountry:'BE'},
     areaServed:['Bruxelles','Ixelles','Uccle','Etterbeek','Auderghem','Saint-Gilles','Anderlecht','Schaerbeek'],
     sameAs:['https://www.instagram.com/apollon.construction','https://www.facebook.com/profile.php?id=61570944591480'],

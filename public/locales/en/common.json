@@ -19,8 +19,7 @@
   },
   "topbar": {
     "email": "info@apollonconstruction.be",
-    "phone_fr": "0486 27 88 52",
-    "phone_nl": "0499 89 60 86"
+    "phone": "0499 89 60 86"
   },
   "lang": {
     "switcher_label": "Choose language",

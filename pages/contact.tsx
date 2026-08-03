@@ -66,7 +66,7 @@ const ContactPage: NextPage = () => {
           <div className="md:col-span-2">
             <h2 className="font-serif text-2xl font-normal text-ink mb-6">Nos coordonnées</h2>
             <address className="not-italic space-y-4 mb-8">
-              {[{icon:'📍',label:t('contact.zone_label'),value:t('contact.zone_value')},{icon:'📞',label:'Téléphone (FR)',value:'0486 27 88 52',href:'tel:+32486278852'},{icon:'📞',label:'Telefoon (NL)',value:'0499 89 60 86',href:'tel:+32499896086'},{icon:'✉',label:'Email',value:'info@apollonconstruction.be',href:'mailto:info@apollonconstruction.be'},{icon:'⏰',label:t('contact.hours_label'),value:t('contact.hours_value')}].map(({icon,label,value,href})=>(
+              {[{icon:'📍',label:t('contact.zone_label'),value:t('contact.zone_value')},{icon:'📞',label:t('contact.phone_label'),value:'0499 89 60 86',href:'tel:+32499896086'},{icon:'✉',label:'Email',value:'info@apollonconstruction.be',href:'mailto:info@apollonconstruction.be'},{icon:'⏰',label:t('contact.hours_label'),value:t('contact.hours_value')}].map(({icon,label,value,href})=>(
                 <div key={label} className="flex items-start gap-3">
                   <div className="w-9 h-9 bg-cream border border-cream-3 rounded-lg flex items-center justify-center text-sm flex-shrink-0 mt-0.5" aria-hidden="true">{icon}</div>
                   <div className="text-sm"><strong className="block font-medium text-ink mb-0.5">{label}</strong>{href?<a href={href} className="text-green hover:underline font-light">{value}</a>:<span className="text-muted font-light">{value}</span>}</div>

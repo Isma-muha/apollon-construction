@@ -387,8 +387,7 @@ const Home: NextPage = () => {
               {[
                 { icon:'📍', label: locale==='nl'?'Zetel':locale==='en'?'Headquarters':'Siège', value:'Dilbeek' },
                 { icon:'🗺️', label: locale==='nl'?'Werkgebied':locale==='en'?'Area covered':'Zone', value: locale==='nl'?'Brussel 19 gemeenten, Brabant wallon & flamand':locale==='en'?'Brussels 19 municipalities, Walloon & Flemish Brabant':'Bruxelles 19 communes, Brabant wallon & flamand' },
-                { icon:'📞', label: locale==='nl'?'Telefoon (FR)':locale==='en'?'Phone (FR)':'Téléphone (FR)', value:'0486 27 88 52', href:'tel:+32486278852' },
-                { icon:'📞', label: locale==='nl'?'Telefoon (NL)':locale==='en'?'Phone (NL)':'Téléphone (NL)', value:'0499 89 60 86', href:'tel:+32499896086' },
+                { icon:'📞', label:t('contact.phone_label'), value:'0499 89 60 86', href:'tel:+32499896086' },
                 { icon:'✉', label:'Email', value:'info@apollonconstruction.be', href:'mailto:info@apollonconstruction.be' },
                 { icon:'⏰', label:t('contact.hours_label'), value:t('contact.hours_value') },
               ].map(({ icon, label, value, href }) => (

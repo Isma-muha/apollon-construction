@@ -6,11 +6,8 @@ export default function Topbar() {
   return (
     <div className="bg-green text-white py-1.5 px-[5%] flex justify-between items-center gap-3 relative z-50">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-0 min-w-0">
-        <a href="tel:+32486278852" className="text-white text-[13px] md:text-base font-medium md:font-semibold hover:text-white/80 transition-colors flex items-center gap-1.5 whitespace-nowrap leading-tight">
-          📞 <span>0486 27 88 52</span><span className="text-white/55 text-[10px] md:text-xs font-normal">(FR)</span>
-        </a>
         <a href="tel:+32499896086" className="text-white text-[13px] md:text-base font-medium md:font-semibold hover:text-white/80 transition-colors flex items-center gap-1.5 whitespace-nowrap leading-tight">
-          📞 <span>0499 89 60 86</span><span className="text-white/55 text-[10px] md:text-xs font-normal">(NL)</span>
+          📞 <span>0499 89 60 86</span>
         </a>
         <a href="mailto:info@apollonconstruction.be" className="text-white/80 hover:text-white transition-colors text-sm hidden lg:block">
           ✉ info@apollonconstruction.be
