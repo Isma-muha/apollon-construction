@@ -1,0 +1,1477 @@
+{
+ "primes": {
+  "fr": {
+   "title": "Primes Rénovation 2025-2026 — Bruxelles, Wallonie, Flandre",
+   "desc": "Guide complet des primes de rénovation en Belgique. Wallonie: Prime Habitation. Bruxelles: RENOLUTION suspendue. Flandre: MijnVerbouwPremie.",
+   "update": "✓ Mis à jour — avril 2026 · Valable jusqu'au 30 septembre 2026",
+   "ov_h": "Situation par région",
+   "bc": "Accueil",
+   "regions": [
+    {
+     "flag": "🟡",
+     "title": "Wallonie",
+     "status": "✓ Primes actives",
+     "badge": "bg-green/10 text-green border-green/20",
+     "amount": "Jusqu'à 70%",
+     "desc": "Prime Habitation depuis le 14 fév. 2025. Audit non obligatoire pour la toiture. Valable jusqu'au 30 sept. 2026."
+    },
+    {
+     "flag": "🔴",
+     "title": "Bruxelles",
+     "status": "⚠ Suspendues 2025-2026",
+     "badge": "bg-red-50 text-red-700 border-red-200",
+     "amount": "Suspendu",
+     "desc": "Primes RENOLUTION suspendues pour factures 2025-2026. Dossiers 2024 approuvés : paiement en cours (56M€ débloqués). Transition vers prêts à taux zéro dès 2027."
+    },
+    {
+     "flag": "🟢",
+     "title": "Flandre",
+     "status": "✓ Primes actives",
+     "badge": "bg-green/10 text-green border-green/20",
+     "amount": "Jusqu'à 35%",
+     "desc": "MijnVerbouwPremie actif. Max 4.025€ pour la toiture. Prime PEB jusqu'au 30 juin 2026."
+    }
+   ],
+   "wal": {
+    "h": "Wallonie — Prime Habitation",
+    "p1": "Depuis le 14 février 2025, la Wallonie a simplifié son système avec la Prime Habitation unique.",
+    "p2": "Pour les travaux de toiture : l'audit énergétique n'est plus obligatoire.",
+    "alert": "⚠ Montants réduits d'environ 60% vs l'ancien système. R5 (revenus très élevés) : non éligible.",
+    "ok": "✓ Deadline : 30 septembre 2026",
+    "th": [
+     "Catégorie",
+     "Plafond"
+    ],
+    "rows": [
+     [
+      "R1 — Revenus très modestes",
+      "70% TVAC"
+     ],
+     [
+      "R2 — Revenus modestes",
+      "70% TVAC"
+     ],
+     [
+      "R3 — Revenus moyens",
+      "50% TVAC"
+     ],
+     [
+      "R4 — Revenus élevés",
+      "50% TVAC"
+     ],
+     [
+      "R5 — Revenus très élevés",
+      "Non éligible"
+     ]
+    ],
+    "link": "🔗 Site officiel : wallonie.be — Prime Habitation 2025"
+   },
+   "bru": {
+    "h": "Bruxelles — RENOLUTION",
+    "alert": "🔴 Primes RENOLUTION suspendues pour les factures 2025. Attendez la décision du nouveau gouvernement.",
+    "p2": "Pour les factures datées de 2024 dont le dossier a été approuvé, les paiements sont en cours. Aucune nouvelle demande n'est possible pour les factures 2025 ou 2026.",
+    "th": [
+     "Travaux",
+     "Cat. I",
+     "Cat. II",
+     "Cat. III"
+    ],
+    "rows": [
+     [
+      "Isolation toiture",
+      "75 €/m²",
+      "55 €/m²",
+      "35 €/m²"
+     ],
+     [
+      "Isolation façade (ITE)",
+      "30 €/m²",
+      "25 €/m²",
+      "20 €/m²"
+     ],
+     [
+      "Bonus biosourcé",
+      "+10 €/m²",
+      "+10 €/m²",
+      "+10 €/m²"
+     ]
+    ],
+    "note": "Montants valables uniquement pour factures datées de 2024.",
+    "link": "🔗 Suivez l'évolution : renolution.brussels · homegrade.brussels"
+   },
+   "fla": {
+    "h": "Flandre — MijnVerbouwPremie",
+    "p1": "Toutes les demandes via Mijn Verbouwloket. Depuis le 1er janvier 2025, les montants ont été réduits.",
+    "p2": "Maximum 35% des coûts, plafond 4.025 € pour la toiture.",
+    "alert": "⚠ À partir du 1er juillet 2026, les primes pour revenus élevés sont supprimées.",
+    "steps": [
+     [
+      "Connectez-vous sur Mijn Verbouwloket",
+      "Toutes les démarches en ligne."
+     ],
+     [
+      "Faites réaliser les travaux par un entrepreneur agréé",
+      "Apollon Construction est enregistré."
+     ],
+     [
+      "Introduisez la demande dans les 2 ans",
+      "Cat. 1 et 2 : avant le 28 février 2026."
+     ]
+    ],
+    "link": "🔗 Site officiel : mijnverbouwloket.be"
+   },
+   "cta": {
+    "h": "On vous aide à obtenir vos primes",
+    "p": "Apollon Construction vous accompagne dans les démarches et s'assure que vos travaux répondent aux critères d'éligibilité."
+   }
+  },
+  "nl": {
+   "title": "Renovatiepremies 2025-2026 — Brussel, Wallonië, Vlaanderen",
+   "desc": "Complete gids van de renovatiepremies in België. Wallonië: Prime Habitation. Brussel: RENOLUTION opgeschort. Vlaanderen: MijnVerbouwPremie.",
+   "update": "✓ Bijgewerkt — april 2026 · Geldig tot 30 september 2026",
+   "ov_h": "Situatie per gewest",
+   "bc": "Startpagina",
+   "regions": [
+    {
+     "flag": "🟡",
+     "title": "Wallonië",
+     "status": "✓ Premies actief",
+     "badge": "bg-green/10 text-green border-green/20",
+     "amount": "Tot 70%",
+     "desc": "Prime Habitation depuis le 14 fév. 2025. Geen audit vereist voor dakwerken. Geldig tot 30 sept. 2026."
+    },
+    {
+     "flag": "🔴",
+     "title": "Brussel",
+     "status": "⚠ Opgeschort 2025-2026",
+     "badge": "bg-red-50 text-red-700 border-red-200",
+     "amount": "Opgeschort",
+     "desc": "RENOLUTION premies opgeschort voor facturen 2025-2026. Goedgekeurde dossiers 2024: betalingen in uitvoering (56M€ vrijgemaakt). Overgang naar renteloze leningen vanaf 2027."
+    },
+    {
+     "flag": "🟢",
+     "title": "Vlaanderen",
+     "status": "✓ Premies actief",
+     "badge": "bg-green/10 text-green border-green/20",
+     "amount": "Tot 35%",
+     "desc": "MijnVerbouwPremie actief. Max 4.025€ voor het dak. EPC-premie tot 30 juni 2026."
+    }
+   ],
+   "wal": {
+    "h": "Wallonië — Prime Habitation",
+    "p1": "Depuis le 14 februari 2025 heeft Wallonië zijn systeem vereenvoudigd met de unieke Prime Habitation.",
+    "p2": "Voor dakwerken: de energieaudit is niet meer verplicht.",
+    "alert": "⚠ Basisbedragen gemiddeld 60% verlaagd. R5 (zeer hoge inkomens): niet in aanmerking.",
+    "ok": "✓ Deadline: 30 september 2026",
+    "th": [
+     "Categorie",
+     "Plafond"
+    ],
+    "rows": [
+     [
+      "R1 — Zeer bescheiden inkomens",
+      "70% TVAC"
+     ],
+     [
+      "R2 — Bescheiden inkomens",
+      "70% TVAC"
+     ],
+     [
+      "R3 — Gemiddelde inkomens",
+      "50% TVAC"
+     ],
+     [
+      "R4 — Hoge inkomens",
+      "50% TVAC"
+     ],
+     [
+      "R5 — Zeer hoge inkomens",
+      "Niet in aanmerking"
+     ]
+    ],
+    "link": "🔗 Officiële site: wallonie.be — Prime Habitation 2025"
+   },
+   "bru": {
+    "h": "Brussel — RENOLUTION",
+    "alert": "🔴 RENOLUTION premies opgeschort voor facturen van 2025. Wacht op de beslissing van de nieuwe Brusselse regering.",
+    "p2": "Voor facturen van 2024 waarvan het dossier is goedgekeurd, zijn de betalingen in uitvoering. Geen nieuwe aanvraag mogelijk voor facturen 2025 of 2026.",
+    "th": [
+     "Type werken",
+     "Cat. I",
+     "Cat. II",
+     "Cat. III"
+    ],
+    "rows": [
+     [
+      "Dakisolatie",
+      "75 €/m²",
+      "55 €/m²",
+      "35 €/m²"
+     ],
+     [
+      "Gevelisolatie (BUI)",
+      "30 €/m²",
+      "25 €/m²",
+      "20 €/m²"
+     ],
+     [
+      "Biobased bonus",
+      "+10 €/m²",
+      "+10 €/m²",
+      "+10 €/m²"
+     ]
+    ],
+    "note": "Bedragen alleen geldig voor facturen gedateerd in 2024.",
+    "link": "🔗 Volg de evolutie: renolution.brussels · homegrade.brussels"
+   },
+   "fla": {
+    "h": "Vlaanderen — MijnVerbouwPremie",
+    "p1": "Alle aanvragen verlopen via Mijn Verbouwloket. Depuis le 1 januari 2025 zijn de bedragen verlaagd.",
+    "p2": "Maximaal 35% van de kosten, plafond 4.025 € voor het dak.",
+    "alert": "⚠ Vanaf 1 juli 2026 worden de premies voor hoge inkomens geschrapt.",
+    "steps": [
+     [
+      "Log in op Mijn Verbouwloket",
+      "Alle procedures online."
+     ],
+     [
+      "Laat de werken uitvoeren door een erkende aannemer",
+      "Apollon Construction is geregistreerd."
+     ],
+     [
+      "Dien de aanvraag in binnen 2 jaar",
+      "Cat. 1 en 2: vóór 28 februari 2026."
+     ]
+    ],
+    "link": "🔗 Officiële site: mijnverbouwloket.be"
+   },
+   "cta": {
+    "h": "Wij helpen u uw premies te verkrijgen",
+    "p": "Apollon Construction begeleidt u bij de administratieve procedures en zorgt dat uw werken voldoen aan de premievoorwaarden."
+   }
+  },
+  "en": {
+   "title": "Renovation Grants 2025-2026 — Brussels, Wallonia, Flanders",
+   "desc": "Complete guide to renovation grants in Belgium. Wallonia: Prime Habitation. Brussels: RENOLUTION suspended. Flanders: MijnVerbouwPremie.",
+   "update": "✓ Updated — April 2026 · Valid until 30 September 2026",
+   "ov_h": "Situation by region",
+   "bc": "Home",
+   "regions": [
+    {
+     "flag": "🟡",
+     "title": "Wallonia",
+     "status": "✓ Grants active",
+     "badge": "bg-green/10 text-green border-green/20",
+     "amount": "Up to 70%",
+     "desc": "Prime Habitation since 14 Feb. 2025. No audit required for roofing. Valid until 30 Sept. 2026."
+    },
+    {
+     "flag": "🔴",
+     "title": "Brussels",
+     "status": "⚠ Suspended 2025-2026",
+     "badge": "bg-red-50 text-red-700 border-red-200",
+     "amount": "Suspended",
+     "desc": "RENOLUTION grants suspended for 2025-2026 invoices. Approved 2024 files: payments in progress (€56M released). Transition to interest-free loans from 2027."
+    },
+    {
+     "flag": "🟢",
+     "title": "Flanders",
+     "status": "✓ Grants active",
+     "badge": "bg-green/10 text-green border-green/20",
+     "amount": "Up to 35%",
+     "desc": "MijnVerbouwPremie active. Max €4,025 for roofing. EPC grant until 30 June 2026."
+    }
+   ],
+   "wal": {
+    "h": "Wallonia — Prime Habitation",
+    "p1": "Since 14 February 2025, Wallonia simplified its system with a single grant: the Prime Habitation.",
+    "p2": "For roofing works: no energy audit required.",
+    "alert": "⚠ Base amounts reduced by about 60% vs. the old system. R5 (very high incomes): not eligible.",
+    "ok": "✓ Deadline: 30 September 2026",
+    "th": [
+     "Category",
+     "Cap"
+    ],
+    "rows": [
+     [
+      "R1 — Very modest income",
+      "70% incl. VAT"
+     ],
+     [
+      "R2 — Modest income",
+      "70% incl. VAT"
+     ],
+     [
+      "R3 — Average income",
+      "50% incl. VAT"
+     ],
+     [
+      "R4 — High income",
+      "50% incl. VAT"
+     ],
+     [
+      "R5 — Very high income",
+      "Not eligible"
+     ]
+    ],
+    "link": "🔗 Official site: wallonie.be — Prime Habitation 2025"
+   },
+   "bru": {
+    "h": "Brussels — RENOLUTION",
+    "alert": "🔴 RENOLUTION grants suspended for 2025 invoices. Wait for the new Brussels government's decision.",
+    "p2": "For invoices dated 2024 with an approved file, payments are in progress. No new applications are possible for 2025 or 2026 invoices.",
+    "th": [
+     "Works",
+     "Cat. I",
+     "Cat. II",
+     "Cat. III"
+    ],
+    "rows": [
+     [
+      "Roof insulation",
+      "€75/m²",
+      "€55/m²",
+      "€35/m²"
+     ],
+     [
+      "Facade insulation (EWI)",
+      "€30/m²",
+      "€25/m²",
+      "€20/m²"
+     ],
+     [
+      "Bio-based bonus",
+      "+€10/m²",
+      "+€10/m²",
+      "+€10/m²"
+     ]
+    ],
+    "note": "Amounts valid only for invoices dated 2024.",
+    "link": "🔗 Follow updates: renolution.brussels · homegrade.brussels"
+   },
+   "fla": {
+    "h": "Flanders — MijnVerbouwPremie",
+    "p1": "All applications go through Mijn Verbouwloket. Since 1 January 2025, amounts have been reduced.",
+    "p2": "Maximum 35% of costs, cap €4,025 for roofing.",
+    "alert": "⚠ From 1 July 2026, grants for high-income households are removed.",
+    "steps": [
+     [
+      "Log in to Mijn Verbouwloket",
+      "All procedures online."
+     ],
+     [
+      "Have works done by a registered contractor",
+      "Apollon Construction is registered."
+     ],
+     [
+      "Submit application within 2 years",
+      "Cat. 1 and 2: before 28 February 2026."
+     ]
+    ],
+    "link": "🔗 Official site: mijnverbouwloket.be"
+   },
+   "cta": {
+    "h": "We help you obtain your grants",
+    "p": "Apollon Construction guides you through the administrative process and ensures your works meet grant eligibility criteria."
+   }
+  }
+ },
+ "isolation-facade": {
+  "fr": {
+   "title": "Isolation Façade Bruxelles — ITE & Ravalement | Apollon Construction",
+   "desc": "Isolation thermique extérieure (ITE) et ravalement de façade à Bruxelles. Panneaux EPS/laine de roche, enduit de finition. Devis gratuit sous 48h. Primes jusqu'à 75€/m².",
+   "h1": "Isolation de façade & ravalement à Bruxelles",
+   "intro": "L'isolation thermique par l'extérieur (ITE) est la solution la plus efficace pour rénover votre bâtiment sans perdre de surface habitable. Apollon Construction intervient sur tous types de façades à Bruxelles et en Brabant.",
+   "p2": "Nos équipes posent des panneaux isolants (EPS, laine de roche ou liège) directement sur votre façade existante, puis appliquent un enduit de finition ou un bardage. Résultat : zéro pont thermique, aucune perte de surface intérieure.",
+   "p3": "Vous bénéficiez de primes régionales : jusqu'à 75€/m² en Wallonie et en Flandre. Apollon Construction vous aide dans les démarches administratives.",
+   "points": [
+    "Diagnostic gratuit sur site",
+    "Panneaux EPS, laine de roche ou liège certifiés",
+    "Enduit de finition ou bardage bois/composite",
+    "Suppression totale des ponts thermiques",
+    "Primes jusqu'à 75€/m²",
+    "Garantie décennale"
+   ],
+   "prime_h": "💰 Primes disponibles",
+   "prime_wal": "Wallonie : jusqu'à 75€/m² (Prime Habitation 2025)",
+   "prime_fla": "Flandre : MijnVerbouwPremie jusqu'à 35%",
+   "prime_bru": "Bruxelles : RENOLUTION (factures 2024)",
+   "bc": "Accueil"
+  },
+  "nl": {
+   "title": "Gevelisolatie Brussel — BUI & Bepleistering | Apollon Construction",
+   "desc": "Buitenmuurisolatie (BUI) en gevelbepleistering in Brussel. EPS/steenwol panelen, afwerkingsbepleistering. Gratis offerte binnen 48u. Premies tot 75€/m².",
+   "h1": "Gevelisolatie & bepleistering in Brussel",
+   "intro": "Buitenmuurisolatie (BUI) is de meest efficiënte oplossing om uw gebouw te renoveren zonder binnenoppervlak te verliezen. Apollon Construction werkt op alle types gevels in Brussel en Brabant.",
+   "p2": "Onze teams plaatsen isolatiepanelen (EPS, steenwol of kurk) op uw bestaande gevel, daarna een afwerkingsbepleistering of gevelbekleding. Resultaat: geen koudebruggen, geen verlies van binnenruimte.",
+   "p3": "U profiteert van regionale premies: tot 75€/m² in Wallonië en Vlaanderen. Apollon Construction helpt u bij de administratieve procedures.",
+   "points": [
+    "Gratis diagnose ter plaatse",
+    "Gecertificeerde EPS, steenwol of kurk panelen",
+    "Afwerkingsbepleistering of hout/composiet bekleding",
+    "Volledige eliminatie van koudebruggen",
+    "Premies tot 75€/m²",
+    "Tienjarige garantie"
+   ],
+   "prime_h": "💰 Beschikbare premies",
+   "prime_wal": "Wallonië: tot 75€/m² (Prime Habitation 2025)",
+   "prime_fla": "Vlaanderen: MijnVerbouwPremie tot 35%",
+   "prime_bru": "Brussel: RENOLUTION (facturen 2024)",
+   "bc": "Startpagina"
+  },
+  "en": {
+   "title": "Facade Insulation Brussels — EWI & Rendering | Apollon Construction",
+   "desc": "External wall insulation (EWI) and facade rendering in Brussels. EPS/rock wool panels, finish render. Free quote within 48h. Grants up to €75/m².",
+   "h1": "Facade insulation & rendering in Brussels",
+   "intro": "External wall insulation (EWI) is the most effective solution to renovate your building without losing interior floor space. Apollon Construction works on all types of facades in Brussels and Brabant.",
+   "p2": "Our teams fix insulation panels (EPS, rock wool or cork) directly to your existing facade, then apply a finish render or cladding. Result: zero thermal bridges, no loss of interior space.",
+   "p3": "You benefit from regional grants: up to €75/m² in Wallonia and Flanders. Apollon Construction helps you with the administrative procedures.",
+   "points": [
+    "Free on-site diagnosis",
+    "Certified EPS, rock wool or cork panels",
+    "Finish render or timber/composite cladding",
+    "Complete elimination of thermal bridges",
+    "Grants up to €75/m²",
+    "Decennial guarantee"
+   ],
+   "prime_h": "💰 Available grants",
+   "prime_wal": "Wallonia: up to €75/m² (Prime Habitation 2025)",
+   "prime_fla": "Flanders: MijnVerbouwPremie up to 35%",
+   "prime_bru": "Brussels: RENOLUTION (2024 invoices)",
+   "bc": "Home"
+  }
+ },
+ "toiture": {
+  "fr": {
+   "title": "Toiture Bruxelles — Réfection, Réparation & Étanchéité | Apollon Construction",
+   "desc": "Réfection et réparation de toiture à Bruxelles. Tuiles, ardoises, zinc, toiture plate, étanchéité EPDM. Diagnostic gratuit. Prime toiture sans audit en Wallonie.",
+   "h1": "Toiture à Bruxelles : réfection, réparation & étanchéité",
+   "intro": "Apollon Construction prend en charge tous vos travaux de toiture à Bruxelles et en Brabant. De la réparation ponctuelle à la réfection complète, nos couvreurs interviennent sur tuiles, ardoises, zinc et toitures plates.",
+   "p2": "Chaque chantier commence par un diagnostic complet de votre toiture. On vous remet un rapport détaillé et un devis transparent avant de commencer les travaux.",
+   "p3": "En Wallonie, la prime toiture est accessible sans audit énergétique obligatoire — Apollon Construction vous accompagne dans les démarches pour maximiser votre remboursement.",
+   "points_h": "Toiture inclinée",
+   "points_flat": "Toiture plate",
+   "points": [
+    "Inspection et diagnostic complet",
+    "Remplacement de tuiles ou ardoises",
+    "Réfection complète avec sous-toiture",
+    "Isolation des combles (perdus ou aménagés)",
+    "Zinguerie : gouttières, chéneaux, solins",
+    "Traitement anti-mousse et hydrofuge"
+   ],
+   "points2": [
+    "Membranes EPDM, bitumineuses ou TPO",
+    "Isolation en panneaux PUR ou PIR",
+    "Relevés, évacuations et trop-pleins",
+    "Toiture verte extensive",
+    "Garantie étanchéité 10–20 ans",
+    "Intervention urgence 24–48h"
+   ],
+   "prime_h": "💰 Prime toiture Wallonie",
+   "prime_text": "Pas d'audit obligatoire pour les travaux de toiture. Prime jusqu'à 70% TVAC selon revenus.",
+   "bc": "Accueil"
+  },
+  "nl": {
+   "title": "Dak Brussel — Renovatie, Herstel & Waterdichting | Apollon Construction",
+   "desc": "Dakrenovatie en herstel in Brussel. Dakpannen, leien, zink, plat dak, EPDM waterdichting. Gratis diagnose. Dakpremie zonder audit in Wallonië.",
+   "h1": "Dak in Brussel: renovatie, herstel & waterdichting",
+   "intro": "Apollon Construction verzorgt al uw dakwerken in Brussel en Brabant. Van gedeeltelijk herstel tot volledige dakrenovatie, onze dakdekkers werken op dakpannen, leien, zink en platte daken.",
+   "p2": "Elk project begint met een volledige diagnose van uw dak. We bezorgen u een gedetailleerd rapport en een transparante offerte voor de start van de werken.",
+   "p3": "In Wallonië is de dakpremie toegankelijk zonder verplichte energieaudit — Apollon Construction begeleidt u bij de procedures om uw terugbetaling te maximaliseren.",
+   "points_h": "Hellend dak",
+   "points_flat": "Plat dak",
+   "points": [
+    "Volledige inspectie en diagnose",
+    "Vervanging van dakpannen of leien",
+    "Volledige renovatie met onderdak",
+    "Isolatie van de vliering",
+    "Loodgieterswerk: goten, dakgoten, windveren",
+    "Schimmelbehandeling en waterafstoting"
+   ],
+   "points2": [
+    "EPDM, bitumineuze of TPO membranen",
+    "PUR of PIR isolatiepanelen",
+    "Opstaande randen, afvoeren en overloopen",
+    "Extensief groen dak",
+    "Waterdichtheidsgarantie 10–20 jaar",
+    "Spoedinterventie 24–48u"
+   ],
+   "prime_h": "💰 Dakpremie Wallonië",
+   "prime_text": "Geen verplichte audit voor dakwerken. Premie tot 70% TVAC naargelang het inkomen.",
+   "bc": "Startpagina"
+  },
+  "en": {
+   "title": "Roofing Brussels — Renovation, Repair & Waterproofing | Apollon Construction",
+   "desc": "Roof renovation and repair in Brussels. Tiles, slates, zinc, flat roof, EPDM waterproofing. Free diagnosis. Roofing grant without audit in Wallonia.",
+   "h1": "Roofing in Brussels: renovation, repair & waterproofing",
+   "intro": "Apollon Construction handles all your roofing works in Brussels and Brabant. From partial repair to complete renovation, our roofers work on tiles, slates, zinc and flat roofs.",
+   "p2": "Every project starts with a full diagnosis of your roof. We provide a detailed report and a transparent quote before starting the works.",
+   "p3": "In Wallonia, the roofing grant is accessible without a mandatory energy audit — Apollon Construction guides you through the procedures to maximise your reimbursement.",
+   "points_h": "Pitched roof",
+   "points_flat": "Flat roof",
+   "points": [
+    "Full inspection and diagnosis",
+    "Tile or slate replacement",
+    "Complete renovation with underlay",
+    "Loft insulation (lost or converted)",
+    "Zinc work: gutters, flashings",
+    "Moss treatment and waterproofing"
+   ],
+   "points2": [
+    "EPDM, bituminous or TPO membranes",
+    "PUR or PIR insulation panels",
+    "Edge details, drainage and overflows",
+    "Extensive green roof",
+    "Waterproofing guarantee 10–20 years",
+    "Emergency intervention 24–48h"
+   ],
+   "prime_h": "💰 Roofing grant — Wallonia",
+   "prime_text": "No mandatory audit for roofing works. Grant up to 70% incl. VAT depending on income.",
+   "bc": "Home"
+  }
+ },
+ "solutions": {
+  "fr": {
+   "title": "Pompe à chaleur, panneaux solaires & électricité à Bruxelles | Apollon Solutions",
+   "desc": "Pompe à chaleur, panneaux solaires, climatisation, électricité et ventilation à Bruxelles & Brabant. Installations conformes RGIE, techniciens certifiés fluides frigorigènes. Devis sous 48h, primes gérées.",
+   "bc": "Accueil",
+   "crumb": "Solutions",
+   "h1": "Énergie & technique : pompe à chaleur, solaire, électricité",
+   "intro": "Apollon Solutions est le pôle technique d’Apollon Group. Une équipe certifiée pour vos installations énergétiques à Bruxelles et en Brabant — du dimensionnement à la mise en service, primes comprises.",
+   "badges": [
+    "Conforme RGIE ✓",
+    "Frigoristes agréés ✓",
+    "Devis 48h ✓"
+   ],
+   "svc_eyebrow": "Nos solutions",
+   "svc_h": "Tout le technique, sous un seul toit",
+   "svc_p": "Particuliers, syndics et architectes — du conseil à l’installation, avec attestations et suivi des primes.",
+   "services": [
+    {
+     "t": "Pompe à chaleur",
+     "d": "Air/eau, air/air et hybride. Dimensionnement, remplacement de chaudière mazout ou gaz, raccordement et mise en service par des frigoristes agréés."
+    },
+    {
+     "t": "Panneaux solaires",
+     "d": "Étude de production, pose en toiture, onduleur et raccordement conforme RGIE. Autoconsommation, suivi et batterie en option."
+    },
+    {
+     "t": "Climatisation",
+     "d": "Split, multi-split et gainable. Installation discrète, entretien et recharge par techniciens certifiés en fluides frigorigènes."
+    },
+    {
+     "t": "Électricité (RGIE)",
+     "d": "Installation neuve, mise en conformité, tableaux et rénovation. Rapport de conformité RGIE inclus, domotique et éclairage LED."
+    },
+    {
+     "t": "Ventilation (VMC)",
+     "d": "Simple et double flux. Air sain, récupération de chaleur et conformité PEB sur le neuf et la rénovation lourde."
+    },
+    {
+     "t": "Bornes de recharge",
+     "d": "Installation de bornes pour véhicules électriques, dimensionnement de la puissance et protection du tableau."
+    }
+   ],
+   "one_eyebrow": "Un seul interlocuteur",
+   "one_h": "Plus besoin de jongler entre trois corps de métier",
+   "one_p": "Un chauffagiste, un électricien, un installateur solaire qui se renvoient la balle : c’est là que les chantiers techniques dérapent. Apollon Solutions coordonne l’ensemble, avec une seule équipe et une seule garantie.",
+   "one_points": [
+    {
+     "t": "Étude intégrée",
+     "d": "PAC, solaire et électricité dimensionnés ensemble."
+    },
+    {
+     "t": "Équipe propre",
+     "d": "Nos techniciens, pas de sous-traitance cachée."
+    },
+    {
+     "t": "Attestations",
+     "d": "RGIE, conformité, fluides frigorigènes — tout fourni."
+    },
+    {
+     "t": "Suivi primes",
+     "d": "On monte vos dossiers d’aides de A à Z."
+    }
+   ],
+   "prime_eyebrow": "Primes & rentabilité",
+   "prime_h": "Les primes, on s’en occupe",
+   "prime_p": "Pompe à chaleur, photovoltaïque, isolation : les aides régionales évoluent vite et dépendent de votre situation. On vérifie votre éligibilité, on monte le dossier, et on vous remet une estimation nette avant que vous signiez.",
+   "prime_cta": "Voir toutes les primes →",
+   "prime_points": [
+    {
+     "t": "On vérifie l’éligibilité",
+     "d": "Selon votre région, vos revenus et le type d’installation."
+    },
+    {
+     "t": "On monte le dossier",
+     "d": "Devis conforme, attestations, formulaires — on prépare tout."
+    },
+    {
+     "t": "Estimation transparente",
+     "d": "Le montant final dépend de l’administration, mais vous savez à quoi vous attendre."
+    }
+   ],
+   "proc_h": "Du premier audit à la mise en service",
+   "step_word": "Étape",
+   "steps": [
+    {
+     "t": "Audit sur place",
+     "d": "On évalue votre installation, vos consommations et vos besoins. Gratuit."
+    },
+    {
+     "t": "Étude & devis 48h",
+     "d": "Dimensionnement, matériel, estimation des primes. Devis clair, poste par poste."
+    },
+    {
+     "t": "Installation",
+     "d": "Notre équipe technique réalise les travaux. Un interlocuteur unique, délais tenus."
+    },
+    {
+     "t": "Mise en service & primes",
+     "d": "Contrôle, attestations RGIE, et accompagnement de vos dossiers de primes."
+    }
+   ],
+   "faq_h": "Questions fréquentes",
+   "faq": [
+    {
+     "q": "Puis-je remplacer ma chaudière mazout par une pompe à chaleur ?",
+     "a": "Oui, c’est l’une des demandes les plus fréquentes depuis la fin des nouvelles installations mazout. Lors de l’audit, on vérifie que votre logement s’y prête (isolation, émetteurs) et on propose la solution adaptée, hybride si nécessaire."
+    },
+    {
+     "q": "Vous gérez les dossiers de primes ?",
+     "a": "On vérifie votre éligibilité et on monte le dossier complet. Les montants dépendent de votre région et de vos revenus, et la décision revient à l’administration — mais on vous remet une estimation avant signature."
+    },
+    {
+     "q": "Travaillez-vous avec les syndics et les architectes ?",
+     "a": "Oui, pour les immeubles, les parties communes (chaufferie, électricité, ventilation) et les projets de rénovation énergétique."
+    }
+   ],
+   "svc": "Énergie & technique",
+   "formOpts": [
+    "Pompe à chaleur",
+    "Panneaux solaires",
+    "Climatisation",
+    "Électricité (RGIE)",
+    "Ventilation (VMC)",
+    "Borne de recharge",
+    "Autre"
+   ]
+  },
+  "nl": {
+   "title": "Warmtepomp, zonnepanelen & elektriciteit in Brussel | Apollon Solutions",
+   "desc": "Warmtepomp, zonnepanelen, airco, elektriciteit en ventilatie in Brussel & Brabant. Team gecertificeerd RGIE en koelmiddelen. Offerte binnen 48u, premies geregeld.",
+   "bc": "Startpagina",
+   "crumb": "Solutions",
+   "h1": "Energie & techniek: warmtepomp, zonnepanelen, elektriciteit",
+   "intro": "Apollon Solutions is de technische pool van Apollon Group. Eén gecertificeerd team voor uw energie-installaties in Brussel en Brabant — van dimensionering tot indienststelling, premies inbegrepen.",
+   "badges": [
+    "Conform AREI ✓",
+    "Erkende koeltechnici ✓",
+    "Offerte 48u ✓"
+   ],
+   "svc_eyebrow": "Onze oplossingen",
+   "svc_h": "Alle techniek, onder één dak",
+   "svc_p": "Particulieren, syndici en architecten — van advies tot installatie, met attesten en premiebegeleiding.",
+   "services": [
+    {
+     "t": "Warmtepomp",
+     "d": "Lucht/water, lucht/lucht en hybride. Dimensionering, vervanging van mazout- of gasketel, aansluiting en indienststelling door erkende koeltechnici."
+    },
+    {
+     "t": "Zonnepanelen",
+     "d": "Productiestudie, plaatsing op dak, omvormer en aansluiting conform RGIE. Zelfverbruik, opvolging en batterij als optie."
+    },
+    {
+     "t": "Airconditioning",
+     "d": "Split, multi-split en kanaaltoestel. Discrete installatie, onderhoud en herlading door gecertificeerde koeltechnici."
+    },
+    {
+     "t": "Elektriciteit (RGIE)",
+     "d": "Nieuwe installatie, conformstelling, borden en renovatie. RGIE-conformiteitsverslag inbegrepen, domotica en LED."
+    },
+    {
+     "t": "Ventilatie (VMC)",
+     "d": "Enkele en dubbele flux. Gezonde lucht, warmterecuperatie en EPB-conformiteit bij nieuwbouw en zware renovatie."
+    },
+    {
+     "t": "Laadpalen",
+     "d": "Installatie van laadpalen voor elektrische voertuigen, vermogensdimensionering en bescherming van het bord."
+    }
+   ],
+   "one_eyebrow": "Eén aanspreekpunt",
+   "one_h": "Geen gejongleer meer tussen drie vakmensen",
+   "one_p": "Een verwarmingsinstallateur, een elektricien, een zonne-installateur die naar elkaar verwijzen: daar lopen technische werven mis. Apollon Solutions coördineert het geheel, met één team en één garantie.",
+   "one_points": [
+    {
+     "t": "Geïntegreerde studie",
+     "d": "Warmtepomp, zon en elektriciteit samen gedimensioneerd."
+    },
+    {
+     "t": "Eigen team",
+     "d": "Onze techniekers, geen verdoken onderaanneming."
+    },
+    {
+     "t": "Attesten",
+     "d": "RGIE, conformiteit, koelmiddelen — alles geleverd."
+    },
+    {
+     "t": "Premieopvolging",
+     "d": "Wij stellen uw premiedossiers van A tot Z samen."
+    }
+   ],
+   "prime_eyebrow": "Premies & rendement",
+   "prime_h": "De premies, wij regelen ze",
+   "prime_p": "Warmtepomp, zonnepanelen, isolatie: de regionale premies evolueren snel en hangen af van uw situatie. Wij checken uw recht, stellen het dossier samen en geven u een netto-raming vóór u tekent.",
+   "prime_cta": "Alle premies bekijken →",
+   "prime_points": [
+    {
+     "t": "Wij checken het recht",
+     "d": "Volgens uw regio, inkomen en type installatie."
+    },
+    {
+     "t": "Wij stellen het dossier samen",
+     "d": "Conforme offerte, attesten, formulieren."
+    },
+    {
+     "t": "Transparante raming",
+     "d": "Het eindbedrag hangt af van de administratie, maar u weet waaraan u toe bent."
+    }
+   ],
+   "proc_h": "Van eerste audit tot indienststelling",
+   "step_word": "Stap",
+   "steps": [
+    {
+     "t": "Audit ter plaatse",
+     "d": "We evalueren uw installatie, verbruik en behoeften. Gratis."
+    },
+    {
+     "t": "Studie & offerte 48u",
+     "d": "Dimensionering, materiaal, premieraming. Heldere offerte, post per post."
+    },
+    {
+     "t": "Installatie",
+     "d": "Ons technisch team voert de werken uit. Eén aanspreekpunt, termijnen gerespecteerd."
+    },
+    {
+     "t": "Indienststelling & premies",
+     "d": "Controle, RGIE-attesten en begeleiding van uw premiedossiers."
+    }
+   ],
+   "faq_h": "Veelgestelde vragen",
+   "faq": [
+    {
+     "q": "Kan ik mijn mazoutketel vervangen door een warmtepomp?",
+     "a": "Ja, dat is een van de meest gevraagde sinds het einde van nieuwe mazoutinstallaties. Bij de audit kijken we of uw woning geschikt is (isolatie, afgifte) en stellen we de juiste oplossing voor, hybride indien nodig."
+    },
+    {
+     "q": "Regelen jullie de premiedossiers?",
+     "a": "We checken uw recht en stellen het volledige dossier samen. De bedragen hangen af van uw regio en inkomen, en de beslissing ligt bij de administratie — maar u krijgt een raming vóór ondertekening."
+    },
+    {
+     "q": "Werken jullie met syndici en architecten?",
+     "a": "Ja, voor gebouwen, gemeenschappelijke delen (stookplaats, elektriciteit, ventilatie) en energierenovatieprojecten."
+    }
+   ],
+   "svc": "Energie & techniek",
+   "formOpts": [
+    "Warmtepomp",
+    "Zonnepanelen",
+    "Airconditioning",
+    "Elektriciteit (AREI)",
+    "Ventilatie (VMC)",
+    "Laadpaal",
+    "Andere"
+   ]
+  },
+  "en": {
+   "title": "Heat pump, solar panels & electricity in Brussels | Apollon Solutions",
+   "desc": "Heat pump, solar panels, air conditioning, electricity and ventilation in Brussels & Brabant. RGIE and F-gas certified team. Quote within 48h, grants handled.",
+   "bc": "Home",
+   "crumb": "Solutions",
+   "h1": "Energy & technical: heat pump, solar, electricity",
+   "intro": "Apollon Solutions is the technical arm of Apollon Group. One certified team for your energy installations in Brussels and Brabant — from sizing to commissioning, grants included.",
+   "badges": [
+    "RGIE compliant ✓",
+    "F-gas certified ✓",
+    "Quote 48h ✓"
+   ],
+   "svc_eyebrow": "Our solutions",
+   "svc_h": "All the technical work, under one roof",
+   "svc_p": "Homeowners, building managers and architects — from advice to installation, with certificates and grant follow-up.",
+   "services": [
+    {
+     "t": "Heat pump",
+     "d": "Air/water, air/air and hybrid. Sizing, replacement of oil or gas boiler, connection and commissioning by certified F-gas technicians."
+    },
+    {
+     "t": "Solar panels",
+     "d": "Production study, roof installation, inverter and RGIE-compliant connection. Self-consumption, monitoring and optional battery."
+    },
+    {
+     "t": "Air conditioning",
+     "d": "Split, multi-split and ducted. Discreet installation, maintenance and recharge by certified F-gas technicians."
+    },
+    {
+     "t": "Electricity (RGIE)",
+     "d": "New installation, compliance, panels and renovation. RGIE conformity report included, home automation and LED."
+    },
+    {
+     "t": "Ventilation (MVHR)",
+     "d": "Single and double flow. Clean air, heat recovery and EPB compliance on new builds and heavy renovation."
+    },
+    {
+     "t": "EV chargers",
+     "d": "Installation of charging points for electric vehicles, power sizing and panel protection."
+    }
+   ],
+   "one_eyebrow": "One single contact",
+   "one_h": "No more juggling three different trades",
+   "one_p": "A heating engineer, an electrician, a solar installer passing the buck: that is where technical projects go wrong. Apollon Solutions coordinates the whole thing, with one team and one warranty.",
+   "one_points": [
+    {
+     "t": "Integrated study",
+     "d": "Heat pump, solar and electricity sized together."
+    },
+    {
+     "t": "In-house team",
+     "d": "Our technicians, no hidden subcontracting."
+    },
+    {
+     "t": "Certificates",
+     "d": "RGIE, conformity, F-gas — all provided."
+    },
+    {
+     "t": "Grant follow-up",
+     "d": "We handle your grant files from A to Z."
+    }
+   ],
+   "prime_eyebrow": "Grants & returns",
+   "prime_h": "Grants? We handle them",
+   "prime_p": "Heat pump, solar, insulation: regional grants change fast and depend on your situation. We check your eligibility, build the file, and give you a net estimate before you sign.",
+   "prime_cta": "See all grants →",
+   "prime_points": [
+    {
+     "t": "We check eligibility",
+     "d": "Based on your region, income and type of installation."
+    },
+    {
+     "t": "We build the file",
+     "d": "Compliant quote, certificates, forms — we prepare everything."
+    },
+    {
+     "t": "Transparent estimate",
+     "d": "The final amount depends on the authorities, but you know what to expect."
+    }
+   ],
+   "proc_h": "From first audit to commissioning",
+   "step_word": "Step",
+   "steps": [
+    {
+     "t": "On-site audit",
+     "d": "We assess your installation, consumption and needs. Free of charge."
+    },
+    {
+     "t": "Study & quote 48h",
+     "d": "Sizing, equipment, grant estimate. A clear quote, line by line."
+    },
+    {
+     "t": "Installation",
+     "d": "Our technical team carries out the work. One single contact, deadlines met."
+    },
+    {
+     "t": "Commissioning & grants",
+     "d": "Inspection, RGIE certificates, and support with your grant files."
+    }
+   ],
+   "faq_h": "Frequently asked questions",
+   "faq": [
+    {
+     "q": "Can I replace my oil boiler with a heat pump?",
+     "a": "Yes, it is one of the most common requests since the end of new oil installations. During the audit we check that your home is suitable (insulation, emitters) and propose the right solution, hybrid if needed."
+    },
+    {
+     "q": "Do you handle the grant files?",
+     "a": "We check your eligibility and build the full file. Amounts depend on your region and income, and the decision rests with the authorities — but you get an estimate before signing."
+    },
+    {
+     "q": "Do you work with building managers and architects?",
+     "a": "Yes, for buildings, common areas (boiler room, electricity, ventilation) and energy renovation projects."
+    }
+   ],
+   "svc": "Energy & technical",
+   "formOpts": [
+    "Heat pump",
+    "Solar panels",
+    "Air conditioning",
+    "Electrical (RGIE)",
+    "Ventilation (MVHR)",
+    "EV charger",
+    "Other"
+   ]
+  }
+ },
+ "common_fr": {
+  "meta": {
+   "home_title": "Apollon Construction — Rénovation à Bruxelles : salle de bain, électricité RGIE, façade",
+   "home_desc": "Entreprise de rénovation à Bruxelles et en Brabant : salle de bain, mise en conformité électrique RGIE, plafonnage, peinture, façade et toiture. Équipe propre, réponse sous 24h, devis gratuit sous 48h. Note 5★ Google.",
+   "facade_title": "Façade & Toiture Bruxelles — Apollon Construction",
+   "facade_desc": "Tout comprendre sur la façade, la toiture et l'isolation à Bruxelles. Matériaux, techniques, normes PEB. Devis gratuit sous 48h.",
+   "primes_title": "Primes Rénovation 2025-2026 — Bruxelles, Wallonie, Flandre",
+   "primes_desc": "Guide complet des primes de rénovation en Belgique. Wallonie: Prime Habitation. Bruxelles: RENOLUTION suspendue. Flandre: MijnVerbouwPremie.",
+   "contact_title": "Contact — Apollon Construction Bruxelles",
+   "contact_desc": "Contactez Apollon Construction pour votre devis gratuit : salle de bain, électricité RGIE, rénovation intérieure, façade et toiture à Bruxelles. Réponse sous 24h."
+  },
+  "nav": {
+   "services": "Services",
+   "facade": "Façade & Toiture",
+   "primes": "Primes",
+   "contact": "Contact",
+   "cta": "Devis gratuit",
+   "skip": "Aller au contenu principal"
+  },
+  "topbar": {
+   "email": "info@apollonconstruction.be",
+   "phone": "0499 89 60 86"
+  },
+  "lang": {
+   "switcher_label": "Choisir la langue",
+   "fr": "Français",
+   "nl": "Nederlands",
+   "en": "English"
+  },
+  "hero": {
+   "tag": "Bruxelles & Brabant — Depuis 2020",
+   "h1_line1": "Rénovation",
+   "h1_line2": "intérieure, façade & toiture",
+   "h1_line3": "qui durent",
+   "desc": "Salle de bain, électricité, plafonnage, façade, toiture : une seule équipe, un devis clair poste par poste, un chantier propre. Pour les particuliers, les architectes et les gestionnaires de biens.",
+   "btn_primary": "Demander un devis gratuit",
+   "btn_secondary": "Nos prestations",
+   "badge_rgie": "Installations conformes RGIE",
+   "badge_rc": "RC Professionnelle",
+   "badge_48h": "Devis sous 48h",
+   "badge_24h": "Réponse sous 24h"
+  },
+  "stats": {
+   "projects": "Projets livrés",
+   "experience": "Ans d'expérience",
+   "quote": "Délai de devis",
+   "rating": "Note Google"
+  },
+  "services": {
+   "tag": "Nos expertises",
+   "h2": "Tout ce dont votre logement a besoin",
+   "intro": "De la salle de bain à la toiture, un seul interlocuteur. Particuliers, architectes, agents immobiliers — nous adaptons notre approche.",
+   "facade_title": "Façade & Ravalement",
+   "facade_desc": "Nettoyage, isolation thermique par l'extérieur (ITE), enduits, peinture façade, bardage. Intervention sur tous types de supports.",
+   "roof_title": "Toiture & Étanchéité",
+   "roof_desc": "Réfection complète, isolation, zinguerie, réparation de tuiles, membranes d'étanchéité. Diagnostic et devis rapides sur site.",
+   "reno_title": "Rénovation intérieure",
+   "reno_desc": "Plafonnage, traitement des murs humides, peinture, pose de sols, faux plafonds, cloisons. Remise à neuf complète avant vente ou location.",
+   "elec_title": "Électricité & conformité RGIE",
+   "elec_desc": "Mise en conformité après rapport de contrôle, nouveau tableau, circuits dédiés, schémas fournis. Préparation du contrôle par organisme agréé.",
+   "finish_title": "Finitions & Second Œuvre",
+   "finish_desc": "Des finitions soignées pour valoriser chaque bien.",
+   "coord_title": "Coordination de Chantier",
+   "coord_desc": "Un seul interlocuteur pour piloter l'ensemble du projet. Reporting, planning, respect du budget.",
+   "sdb_title": "Salle de bain",
+   "sdb_desc": "Rénovation complète : douche à l'italienne, carrelage, plomberie, électricité, meuble-vasque. Une seule équipe, TVA 6 %."
+  },
+  "pages_nav": {
+   "facade_title": "Façade & Toiture",
+   "facade_desc": "Tout comprendre sur la façade, la toiture et l'isolation — matériaux, techniques, normes PEB.",
+   "primes_title": "Primes 2025–2026",
+   "primes_desc": "Guide complet des primes de rénovation en Belgique : Bruxelles, Wallonie et Flandre.",
+   "sdb_title": "Rénovation salle de bain",
+   "sdb_desc": "Douche à l'italienne, carrelage, plomberie, électricité : tout compris, une seule équipe.",
+   "elec_title": "Électricité & RGIE",
+   "elec_desc": "Mise en conformité, tableau électrique, circuits dédiés, contrôle par organisme agréé.",
+   "reno_title": "Rénovation intérieure",
+   "reno_desc": "Plafonnage, humidité, peinture, sols et finitions."
+  },
+  "why": {
+   "tag": "Pourquoi nous choisir",
+   "h2_1": "Une équipe sérieuse,",
+   "h2_2": "un résultat soigné",
+   "lead": "Apollon Construction, c'est une équipe d'artisans passionnés qui traite chaque chantier comme si c'était le leur.",
+   "badge": "5 ans à Bruxelles",
+   "r1_title": "Réactivité garantie",
+   "r1_desc": "Devis sous 48h, mobilisation rapide, interlocuteur unique sur toute la durée du chantier",
+   "r2_title": "Couverture complète",
+   "r2_desc": "RC professionnelle, assurance décennale, conformité totale à la législation belge",
+   "r3_title": "Suivi transparent",
+   "r3_desc": "Photos de chantier régulières, rapport d'avancement, zéro mauvaise surprise",
+   "r4_title": "Délais respectés",
+   "r4_desc": "Planning détaillé remis avant démarrage, engagement contractuel sur les échéances",
+   "cta": "Parler de votre projet"
+  },
+  "b2b": {
+   "tag": "Partenariats professionnels",
+   "h2_1": "Votre sous-traitant",
+   "h2_2": "de confiance à Bruxelles",
+   "lead": "Apollon Construction est le partenaire terrain des professionnels de l'immobilier et de la construction.",
+   "arch_title": "Architectes",
+   "arch_desc": "Respect scrupuleux des plans, comptes rendus réguliers, adaptation aux modifications en cours de chantier.",
+   "eng_title": "Ingénieurs & BET",
+   "eng_desc": "Maîtrise des contraintes techniques, lecture de plans d'études, conformité aux spécifications.",
+   "agent_title": "Agents & Promoteurs",
+   "agent_desc": "Remise en état rapide avant vente ou location, gestion multi-lots, tarifs partenaires sur volume.",
+   "f1_title": "Devis 48h",
+   "f1_desc": "Réponse rapide garantie",
+   "f2_title": "Interlocuteur dédié",
+   "f2_desc": "Un seul contact, toujours",
+   "f3_title": "Reporting complet",
+   "f3_desc": "Photos et rapports réguliers",
+   "f4_title": "Tarifs partenaires",
+   "f4_desc": "Pour collaborations régulières",
+   "f5_title": "Qualité constante",
+   "f5_desc": "Artisans qualifiés, garantie décennale",
+   "f6_title": "Délais contractuels",
+   "f6_desc": "Plannings tenus, toujours"
+  },
+  "portfolio": {
+   "tag": "Portfolio",
+   "h2": "Nos dernières réalisations",
+   "p1_tag": "Façade — Ixelles, 2024",
+   "p1_title": "Ravalement et isolation thermique immeuble de rapport",
+   "p2_tag": "Toiture — Uccle, 2024",
+   "p2_title": "Réfection complète toiture ardoises",
+   "p3_tag": "Rénovation — Etterbeek, 2025",
+   "p3_title": "Appartement 120m² clé en main",
+   "p4_tag": "Électricité — Saint-Gilles, 2025",
+   "p4_title": "Mise en conformité RGIE 8 unités",
+   "p5_tag": "Bureaux — Bruxelles-Ville, 2025",
+   "p5_title": "Rénovation complète 600m² livré en 6 semaines",
+   "note": "Photos illustratives. Contactez-nous pour voir nos vraies réalisations."
+  },
+  "zones": {
+   "label": "Zones d'intervention :"
+  },
+  "contact": {
+   "tag": "Contact",
+   "h2": "Parlons de votre projet",
+   "desc": "Devis, question technique ou collaboration régulière : nous vous répondons sous 24 heures.",
+   "zone_label": "Zone d'intervention",
+   "zone_value": "Bruxelles 19 communes, Brabant wallon & flamand",
+   "phone_label": "Téléphone",
+   "hours_label": "Heures d'ouverture",
+   "hours_value": "Lun–Ven 8h–18h · Sam 9h–13h",
+   "email_btn": "Écrire directement →",
+   "form_h3": "Demande de devis gratuit",
+   "form_sub": "Réponse sous 24h — sans engagement",
+   "field_name": "Nom complet",
+   "field_company": "Société",
+   "field_email": "Email (facultatif)",
+   "field_phone": "Téléphone",
+   "field_profile": "Vous êtes",
+   "field_works": "Type de travaux",
+   "field_message": "Description du projet",
+   "ph_name": "Jean Dupont",
+   "ph_company": "Cabinet d'architecture...",
+   "ph_email": "j.dupont@societe.be",
+   "ph_phone": "+32 ...",
+   "ph_profile": "Sélectionnez votre profil",
+   "ph_works": "Quel type de travaux ?",
+   "ph_message": "Décrivez vos travaux : type de bien, pièce(s), superficie, commune, délai souhaité...",
+   "opt_arch": "Architecte",
+   "opt_eng": "Ingénieur / Bureau d'études",
+   "opt_agent": "Agent immobilier",
+   "opt_dev": "Promoteur immobilier",
+   "opt_priv": "Particulier",
+   "opt_other": "Autre",
+   "w_fac": "Façade & ravalement",
+   "w_roof": "Toiture & étanchéité",
+   "w_reno": "Rénovation intérieure",
+   "w_elec": "Électricité / mise en conformité RGIE",
+   "w_multi": "Plusieurs prestations",
+   "btn_send": "Envoyer ma demande →",
+   "rgpd": "Vos données sont protégées et ne seront jamais revendues (RGPD)",
+   "success": "Demande envoyée ! Nous vous rappelons sous 24h.",
+   "error": "Erreur lors de l'envoi. Réessayez ou écrivez-nous directement.",
+   "w_sdb": "Salle de bain",
+   "photos_hint": "Des photos ? Envoyez-les à info@apollonconstruction.be après votre demande : le devis n'en sera que plus précis."
+  },
+  "footer": {
+   "legal": "Mentions légales",
+   "rgpd": "Politique RGPD",
+   "copy": "© 2026 Apollon Group SRL (Apollon Construction) — 1700 Dilbeek",
+   "vat": "TVA BE 1025.392.245"
+  }
+ },
+ "common_nl": {
+  "meta": {
+   "home_title": "Apollon Construction — Renovatie in Brussel: badkamer, elektriciteit AREI, gevel",
+   "home_desc": "Renovatiebedrijf in Brussel en Brabant: badkamer, AREI-conformering elektriciteit, pleisterwerk, schilderwerk, gevel en dak. Eigen team, antwoord binnen 24u, gratis offerte binnen 48u. 5★ op Google.",
+   "facade_title": "Gevel & Dak Brussel — Apollon Construction",
+   "facade_desc": "Alles begrijpen over gevel, dak en isolatie in Brussel. Materialen, technieken, EPB-normen. Gratis offerte binnen 48u.",
+   "primes_title": "Renovatiepremies 2025-2026 — Brussel, Wallonië, Vlaanderen",
+   "primes_desc": "Complete gids van de renovatiepremies in België. Wallonië: Prime Habitation. Brussel: RENOLUTION opgeschort. Vlaanderen: MijnVerbouwPremie.",
+   "contact_title": "Contact — Apollon Construction Brussel",
+   "contact_desc": "Contacteer Apollon Construction voor uw gratis offerte: badkamer, elektriciteit AREI, binnenrenovatie, gevel en dak in Brussel. Antwoord binnen 24u."
+  },
+  "nav": {
+   "services": "Diensten",
+   "facade": "Gevel & Dak",
+   "primes": "Premies",
+   "contact": "Contact",
+   "cta": "Gratis offerte",
+   "skip": "Ga naar de hoofdinhoud"
+  },
+  "topbar": {
+   "email": "info@apollonconstruction.be",
+   "phone": "0499 89 60 86"
+  },
+  "lang": {
+   "switcher_label": "Kies taal",
+   "fr": "Français",
+   "nl": "Nederlands",
+   "en": "English"
+  },
+  "hero": {
+   "tag": "Brussel & Brabant — Sinds 2020",
+   "h1_line1": "Renovatie",
+   "h1_line2": "binnen, gevel & dak",
+   "h1_line3": "die blijven",
+   "desc": "Badkamer, elektriciteit, pleisterwerk, gevel, dak: één team, een duidelijke offerte post per post, een propere werf. Voor particulieren, architecten en vastgoedbeheerders.",
+   "btn_primary": "Gratis offerte aanvragen",
+   "btn_secondary": "Onze diensten",
+   "badge_rgie": "Installaties conform AREI",
+   "badge_rc": "BA Verzekering",
+   "badge_48h": "Offerte binnen 48u",
+   "badge_24h": "Antwoord binnen 24u"
+  },
+  "stats": {
+   "projects": "Afgeronde projecten",
+   "experience": "Jaar ervaring",
+   "quote": "Offertetermijn",
+   "rating": "Google beoordeling"
+  },
+  "services": {
+   "tag": "Onze expertises",
+   "h2": "Alles wat uw woning nodig heeft",
+   "intro": "Van de badkamer tot het dak, één aanspreekpunt. Particulieren, architecten, vastgoedmakelaars — wij passen onze aanpak aan.",
+   "facade_title": "Gevel & Bepleistering",
+   "facade_desc": "Reiniging, buitenmuurisolatie (BUI), bepleistering, gevelschilderwerk, gevelbekleding. Interventie op alle types dragers.",
+   "roof_title": "Dak & Waterdichting",
+   "roof_desc": "Volledige dakrenovatie, isolatie, loodgieterswerk, herstelling van dakpannen, waterdichtingsmembranen. Snelle diagnose ter plaatse.",
+   "reno_title": "Binnenrenovatie",
+   "reno_desc": "Pleisterwerk, behandeling van vochtige muren, schilderwerk, vloeren, verlaagde plafonds, wanden. Volledig opknappen vóór verkoop of verhuur.",
+   "elec_title": "Elektriciteit & AREI-conformering",
+   "elec_desc": "Conformering na keuringsverslag, nieuwe zekeringkast, aparte kringen, schema's inbegrepen. Voorbereiding van de keuring door een erkend organisme.",
+   "finish_title": "Afwerking & Tweede Werk",
+   "finish_desc": "Verzorgde afwerking om elk pand te valoriseren.",
+   "coord_title": "Werfcoördinatie",
+   "coord_desc": "Eén aanspreekpunt voor de volledige projectopvolging. Rapportering, planning, budgetbeheer.",
+   "sdb_title": "Badkamer",
+   "sdb_desc": "Volledige renovatie: inloopdouche, tegels, sanitair, elektriciteit, badkamermeubel. Eén team, 6 % btw."
+  },
+  "pages_nav": {
+   "facade_title": "Gevel & Dak",
+   "facade_desc": "Alles begrijpen over gevel, dak en isolatie — materialen, technieken, EPB-normen.",
+   "primes_title": "Premies 2025–2026",
+   "primes_desc": "Complete gids van de renovatiepremies in België: Brussel, Wallonië en Vlaanderen.",
+   "sdb_title": "Badkamerrenovatie",
+   "sdb_desc": "Inloopdouche, tegels, sanitair, elektriciteit: alles inbegrepen, één team.",
+   "elec_title": "Elektriciteit & AREI",
+   "elec_desc": "Conformering, zekeringkast, aparte kringen, keuring door erkend organisme.",
+   "reno_title": "Binnenrenovatie",
+   "reno_desc": "Pleisterwerk, vocht, schilderwerk, vloeren en afwerking."
+  },
+  "why": {
+   "tag": "Waarom ons kiezen",
+   "h2_1": "Een serieus team,",
+   "h2_2": "een verzorgd resultaat",
+   "lead": "Apollon Construction is een team van gepassioneerde vakmannen die elke werf behandelen alsof het hun eigen is.",
+   "badge": "5 jaar in Brussel",
+   "r1_title": "Gegarandeerde reactiviteit",
+   "r1_desc": "Offerte binnen 48u, snelle mobilisatie, één aanspreekpunt gedurende de volledige werf",
+   "r2_title": "Volledige dekking",
+   "r2_desc": "BA-verzekering, tienjarige aansprakelijkheid, volledige conformiteit met de Belgische wetgeving",
+   "r3_title": "Transparante opvolging",
+   "r3_desc": "Regelmatige werffotos, voortgangsrapport, nul onaangename verrassingen",
+   "r4_title": "Termijnen nageleefd",
+   "r4_desc": "Gedetailleerde planning voor de start, contractueel engagement op de termijnen",
+   "cta": "Praat over uw project"
+  },
+  "b2b": {
+   "tag": "Professionele partnerschappen",
+   "h2_1": "Uw betrouwbare",
+   "h2_2": "onderaannemer in Brussel",
+   "lead": "Apollon Construction is de terreinpartner van vastgoed- en bouwprofessionals.",
+   "arch_title": "Architecten",
+   "arch_desc": "Nauwgezette naleving van plannen, regelmatige verslagen, aanpassing aan wijzigingen tijdens de werf.",
+   "eng_title": "Ingenieurs & Studiebureau's",
+   "eng_desc": "Beheersing van technische beperkingen, lezen van studieplannen, conformiteit aan de bureauspecificaties.",
+   "agent_title": "Makelaars & Promotors",
+   "agent_desc": "Snelle opknapbeurt vóór verkoop of verhuur, multi-lot beheer, partnertarieven op volume.",
+   "f1_title": "Offerte 48u",
+   "f1_desc": "Snelle reactie gegarandeerd",
+   "f2_title": "Vast aanspreekpunt",
+   "f2_desc": "Altijd één contact",
+   "f3_title": "Volledige rapportering",
+   "f3_desc": "Regelmatige foto's en rapporten",
+   "f4_title": "Partnertarieven",
+   "f4_desc": "Voor regelmatige samenwerking",
+   "f5_title": "Constante kwaliteit",
+   "f5_desc": "Gekwalificeerde vakmannen, tienjarige garantie",
+   "f6_title": "Contractuele termijnen",
+   "f6_desc": "Planningen nageleefd, altijd"
+  },
+  "portfolio": {
+   "tag": "Portfolio",
+   "h2": "Onze laatste realisaties",
+   "p1_tag": "Gevel — Elsene, 2024",
+   "p1_title": "Bepleistering en thermische isolatie huurgebouw",
+   "p2_tag": "Dak — Ukkel, 2024",
+   "p2_title": "Volledige renovatie leien dak",
+   "p3_tag": "Renovatie — Etterbeek, 2025",
+   "p3_title": "Appartement 120m² sleutel op de deur",
+   "p4_tag": "Elektriciteit — Sint-Gillis, 2025",
+   "p4_title": "AREI conformering 8 eenheden",
+   "p5_tag": "Kantoren — Brussel-Stad, 2025",
+   "p5_title": "Volledige renovatie 600m² opgeleverd in 6 weken",
+   "note": "Illustratieve beelden. Contacteer ons voor onze echte realisaties."
+  },
+  "zones": {
+   "label": "Werkgebieden :"
+  },
+  "contact": {
+   "tag": "Contact",
+   "h2": "Laten we praten over uw project",
+   "desc": "Offerte, technische vraag of vaste samenwerking: we antwoorden u binnen 24 uur.",
+   "zone_label": "Werkgebied",
+   "zone_value": "Brussel 19 gemeenten, Waals- & Vlaams-Brabant",
+   "phone_label": "Telefoon",
+   "hours_label": "Openingsuren",
+   "hours_value": "Ma–Vr 8u–18u · Za 9u–13u",
+   "email_btn": "Direct schrijven →",
+   "form_h3": "Aanvraag gratis offerte",
+   "form_sub": "Antwoord binnen 24u — vrijblijvend",
+   "field_name": "Volledige naam",
+   "field_company": "Bedrijf",
+   "field_email": "E-mail (optioneel)",
+   "field_phone": "Telefoon",
+   "field_profile": "U bent",
+   "field_works": "Type werken",
+   "field_message": "Projectbeschrijving",
+   "ph_name": "Jan De Smet",
+   "ph_company": "Architectenbureau...",
+   "ph_email": "j.desmet@bedrijf.be",
+   "ph_phone": "+32 ...",
+   "ph_profile": "Selecteer uw profiel",
+   "ph_works": "Welk type werken?",
+   "ph_message": "Beschrijf uw werken: type woning, ruimte(s), oppervlakte, gemeente, gewenste termijn...",
+   "opt_arch": "Architect",
+   "opt_eng": "Ingenieur / Studiebureau",
+   "opt_agent": "Vastgoedmakelaar",
+   "opt_dev": "Vastgoedpromotor",
+   "opt_priv": "Particulier",
+   "opt_other": "Andere",
+   "w_fac": "Gevel & bepleistering",
+   "w_roof": "Dak & waterdichting",
+   "w_reno": "Binnenrenovatie",
+   "w_elec": "Elektriciteit / AREI-conformering",
+   "w_multi": "Meerdere diensten",
+   "btn_send": "Mijn aanvraag versturen →",
+   "rgpd": "Uw gegevens zijn beschermd en worden nooit doorverkocht (AVG)",
+   "success": "Aanvraag verzonden! We bellen u binnen 24u terug.",
+   "error": "Fout bij het verzenden. Probeer opnieuw of schrijf ons direct.",
+   "w_sdb": "Badkamer",
+   "photos_hint": "Foto's? Stuur ze na uw aanvraag naar info@apollonconstruction.be: zo wordt de offerte nauwkeuriger."
+  },
+  "footer": {
+   "legal": "Juridische vermeldingen",
+   "rgpd": "AVG-beleid",
+   "copy": "© 2026 Apollon Group BV (Apollon Construction) — 1700 Dilbeek",
+   "vat": "BTW BE 1025.392.245"
+  }
+ },
+ "common_en": {
+  "meta": {
+   "home_title": "Apollon Construction — Renovation in Brussels: bathroom, RGIE electrics, facade",
+   "home_desc": "Renovation company in Brussels and Brabant: bathrooms, RGIE electrical compliance, plastering, painting, facade and roofing. Own team, reply within 24h, free quote within 48h. 5★ on Google.",
+   "facade_title": "Facade & Roofing Brussels — Apollon Construction",
+   "facade_desc": "Everything about facade, roofing and insulation in Brussels. Materials, techniques, energy standards. Free quote within 48h.",
+   "primes_title": "Renovation Grants 2025-2026 — Brussels, Wallonia, Flanders",
+   "primes_desc": "Complete guide to renovation grants in Belgium. Wallonia: Prime Habitation. Brussels: RENOLUTION suspended. Flanders: MijnVerbouwPremie.",
+   "contact_title": "Contact — Apollon Construction Brussels",
+   "contact_desc": "Contact Apollon Construction for your free quote: bathroom, RGIE electrics, interior renovation, facade and roofing in Brussels. Reply within 24h."
+  },
+  "nav": {
+   "services": "Services",
+   "facade": "Facade & Roofing",
+   "primes": "Grants",
+   "contact": "Contact",
+   "cta": "Free quote",
+   "skip": "Skip to main content"
+  },
+  "topbar": {
+   "email": "info@apollonconstruction.be",
+   "phone": "0499 89 60 86"
+  },
+  "lang": {
+   "switcher_label": "Choose language",
+   "fr": "Français",
+   "nl": "Nederlands",
+   "en": "English"
+  },
+  "hero": {
+   "tag": "Brussels & Brabant — Since 2020",
+   "h1_line1": "Renovation",
+   "h1_line2": "interior, facade & roofing",
+   "h1_line3": "built to last",
+   "desc": "Bathroom, electrics, plastering, facade, roofing: one team, a clear itemised quote, a clean site. For homeowners, architects and property managers.",
+   "btn_primary": "Request a free quote",
+   "btn_secondary": "Our services",
+   "badge_rgie": "RGIE-compliant installations",
+   "badge_rc": "Professional liability",
+   "badge_48h": "Quote within 48h",
+   "badge_24h": "Reply within 24h"
+  },
+  "stats": {
+   "projects": "Completed projects",
+   "experience": "Years of experience",
+   "quote": "Quote turnaround",
+   "rating": "Google rating"
+  },
+  "services": {
+   "tag": "Our expertise",
+   "h2": "Everything your home needs",
+   "intro": "From the bathroom to the roof, one single contact. Homeowners, architects, real estate agents — we adapt our approach.",
+   "facade_title": "Facade & Rendering",
+   "facade_desc": "Cleaning, external thermal insulation (EWI), rendering, facade paint, cladding. Works on all types of surfaces.",
+   "roof_title": "Roofing & Waterproofing",
+   "roof_desc": "Full renovation, insulation, zinc work, tile repair, waterproofing membranes. Fast on-site diagnosis and quote.",
+   "reno_title": "Interior renovation",
+   "reno_desc": "Plastering, damp wall treatment, painting, flooring, false ceilings, partitions. Full refurbishment before sale or letting.",
+   "elec_title": "Electrics & RGIE compliance",
+   "elec_desc": "Compliance work after an inspection report, new panel, dedicated circuits, diagrams included. Preparation of the inspection by an approved body.",
+   "finish_title": "Finishing & Second Fix",
+   "finish_desc": "Careful finishing to add value to every property.",
+   "coord_title": "Site Management",
+   "coord_desc": "One contact person to manage the entire project. Reporting, planning, budget control.",
+   "sdb_title": "Bathroom",
+   "sdb_desc": "Complete renovation: walk-in shower, tiling, plumbing, electrics, vanity unit. One team, 6% VAT."
+  },
+  "pages_nav": {
+   "facade_title": "Facade & Roofing",
+   "facade_desc": "Everything about facade, roofing and insulation — materials, techniques, energy standards.",
+   "primes_title": "Grants 2025–2026",
+   "primes_desc": "Complete guide to renovation grants in Belgium: Brussels, Wallonia and Flanders.",
+   "sdb_title": "Bathroom renovation",
+   "sdb_desc": "Walk-in shower, tiling, plumbing, electrics: all included, one team.",
+   "elec_title": "Electrics & RGIE",
+   "elec_desc": "Compliance work, electrical panel, dedicated circuits, inspection by an approved body.",
+   "reno_title": "Interior renovation",
+   "reno_desc": "Plastering, damp, painting, flooring and finishing."
+  },
+  "why": {
+   "tag": "Why choose us",
+   "h2_1": "A serious team,",
+   "h2_2": "impeccable results",
+   "lead": "Apollon Construction is a team of passionate craftsmen who treat every project as if it were their own.",
+   "badge": "5 years in Brussels",
+   "r1_title": "Guaranteed responsiveness",
+   "r1_desc": "Quote within 48h, rapid mobilisation, single point of contact throughout the project",
+   "r2_title": "Full coverage",
+   "r2_desc": "Professional liability, decennial insurance, full compliance with Belgian legislation",
+   "r3_title": "Transparent follow-up",
+   "r3_desc": "Regular site photos, progress report, zero unpleasant surprises",
+   "r4_title": "Deadlines respected",
+   "r4_desc": "Detailed schedule provided before start, contractual commitment to deadlines",
+   "cta": "Talk about your project"
+  },
+  "b2b": {
+   "tag": "Professional partnerships",
+   "h2_1": "Your trusted",
+   "h2_2": "subcontractor in Brussels",
+   "lead": "Apollon Construction is the on-site partner for real estate and construction professionals.",
+   "arch_title": "Architects",
+   "arch_desc": "Meticulous adherence to plans, regular reports, adaptation to changes during construction.",
+   "eng_title": "Engineers & Consultants",
+   "eng_desc": "Mastery of technical constraints, reading study plans, compliance with office specifications.",
+   "agent_title": "Agents & Developers",
+   "agent_desc": "Quick renovation before sale or rental, multi-unit management, partner rates on volume.",
+   "f1_title": "48h Quote",
+   "f1_desc": "Fast response guaranteed",
+   "f2_title": "Dedicated contact",
+   "f2_desc": "One contact, always",
+   "f3_title": "Full reporting",
+   "f3_desc": "Regular photos and reports",
+   "f4_title": "Partner rates",
+   "f4_desc": "For ongoing collaborations",
+   "f5_title": "Consistent quality",
+   "f5_desc": "Qualified craftsmen, decennial guarantee",
+   "f6_title": "Contractual deadlines",
+   "f6_desc": "Schedules respected, always"
+  },
+  "portfolio": {
+   "tag": "Portfolio",
+   "h2": "Our latest projects",
+   "p1_tag": "Facade — Ixelles, 2024",
+   "p1_title": "Rendering and thermal insulation apartment building",
+   "p2_tag": "Roofing — Uccle, 2024",
+   "p2_title": "Complete slate roof renovation",
+   "p3_tag": "Renovation — Etterbeek, 2025",
+   "p3_title": "120m² apartment turnkey",
+   "p4_tag": "Electrical — Saint-Gilles, 2025",
+   "p4_title": "RGIE compliance 8 units",
+   "p5_tag": "Offices — Brussels-City, 2025",
+   "p5_title": "Full renovation 600m² delivered in 6 weeks",
+   "note": "Illustrative visuals. Contact us to see our real projects."
+  },
+  "zones": {
+   "label": "Areas covered:"
+  },
+  "contact": {
+   "tag": "Contact",
+   "h2": "Let's talk about your project",
+   "desc": "Quote, technical question or ongoing collaboration: we reply within 24 hours.",
+   "zone_label": "Area covered",
+   "zone_value": "Brussels 19 municipalities, Walloon & Flemish Brabant",
+   "phone_label": "Phone",
+   "hours_label": "Opening hours",
+   "hours_value": "Mon–Fri 8am–6pm · Sat 9am–1pm",
+   "email_btn": "Write directly →",
+   "form_h3": "Free quote request",
+   "form_sub": "Reply within 24h — no commitment",
+   "field_name": "Full name",
+   "field_company": "Company",
+   "field_email": "Email (optional)",
+   "field_phone": "Phone",
+   "field_profile": "You are",
+   "field_works": "Type of works",
+   "field_message": "Project description",
+   "ph_name": "John Smith",
+   "ph_company": "Architecture firm...",
+   "ph_email": "j.smith@company.be",
+   "ph_phone": "+32 ...",
+   "ph_profile": "Select your profile",
+   "ph_works": "What type of works?",
+   "ph_message": "Describe your works: property type, room(s), surface, municipality, desired timing...",
+   "opt_arch": "Architect",
+   "opt_eng": "Engineer / Consultancy",
+   "opt_agent": "Real estate agent",
+   "opt_dev": "Property developer",
+   "opt_priv": "Private individual",
+   "opt_other": "Other",
+   "w_fac": "Facade & rendering",
+   "w_roof": "Roofing & waterproofing",
+   "w_reno": "Interior renovation",
+   "w_elec": "Electrics / RGIE compliance",
+   "w_multi": "Multiple services",
+   "btn_send": "Send my request →",
+   "rgpd": "Your data is protected and will never be sold (GDPR)",
+   "success": "Request sent! We'll call you back within 24h.",
+   "error": "Error sending. Please retry or write to us directly.",
+   "w_sdb": "Bathroom",
+   "photos_hint": "Photos? Send them to info@apollonconstruction.be after your request for a more accurate quote."
+  },
+  "footer": {
+   "legal": "Legal notices",
+   "rgpd": "GDPR Policy",
+   "copy": "© 2026 Apollon Group SRL (Apollon Construction) — 1700 Dilbeek",
+   "vat": "VAT BE 1025.392.245"
+  }
+ }
+}

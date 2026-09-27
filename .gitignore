@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.env*
+!.env.example
+*.log
+.light-assets
+.api-off
+out

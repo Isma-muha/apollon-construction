@@ -1,0 +1,1283 @@
+{
+ "renovation-interieure": {
+  "fr": {
+   "title": "Rénovation intérieure Bruxelles — Plafonnage, peinture, sols, humidité | Apollon Construction",
+   "desc": "Rénovation intérieure à Bruxelles et en Brabant : plafonnage, traitement des murs humides, peinture, pose de sols, faux plafonds, cloisons. Une seule équipe, devis gratuit sous 48h, TVA 6 %.",
+   "bc": "Accueil",
+   "kicker": "Rénovation intérieure",
+   "h1": "Rénovation intérieure & finitions à Bruxelles",
+   "intro": "Appartement à rafraîchir avant une location, maison à remettre à neuf, mur qui s'effrite à cause de l'humidité : Apollon Construction s'occupe du plafonnage, de la peinture, des sols et des finitions, avec une seule équipe du début à la fin.",
+   "badges": [
+    "Devis gratuit sous 48h",
+    "Chantier propre, gravats évacués",
+    "TVA 6 % si logement de plus de 10 ans",
+    "Équipe bilingue FR/NL"
+   ],
+   "heroImage": "/images/chantier-renovation.jpg",
+   "heroAlt": "Rénovation intérieure et peinture à Bruxelles — Apollon Construction",
+   "serviceName": "Rénovation intérieure",
+   "formService": "Rénovation intérieure",
+   "formOptions": [
+    "Rénovation intérieure",
+    "Plafonnage / enduits",
+    "Mur humide à traiter",
+    "Peinture",
+    "Pose de sol (vinyle, stratifié, parquet, carrelage)",
+    "Remise en état avant location / vente",
+    "Autre"
+   ],
+   "body": [
+    {
+     "h2": "Humidité : on traite la cause, pas seulement la tache",
+     "p": [
+      "Un enduit gorgé d'humidité qui cloque ou s'effrite ne se répare pas avec une couche de peinture. Nous retirons l'enduit abîmé jusqu'à la brique, laissons le mur sécher le temps nécessaire, traitons la source (ventilation, infiltration, remontée capillaire) puis réenduisons et repeignons.",
+      "Cela prend parfois plus de temps qu'un simple coup de rouleau. Mais c'est la seule façon d'obtenir un résultat qui tient."
+     ]
+    },
+    {
+     "h2": "Du petit chantier à la remise à neuf complète",
+     "p": [
+      "Une chambre à replâtrer, un salon à repeindre, un sol à poser avant l'arrivée d'un locataire ou un appartement entier à remettre en état : nous adaptons l'équipe à la taille du chantier. Dans les 19 communes de Bruxelles, en Brabant flamand et en Brabant wallon."
+     ]
+    }
+   ],
+   "pointsH2": "Nos prestations de rénovation intérieure",
+   "points": [
+    "Plafonnage et enduits murs et plafonds, rebouchage, lissage",
+    "Traitement des murs humides : retrait de l'enduit, séchage, réenduisage",
+    "Peinture intérieure murs, plafonds, boiseries",
+    "Pose de sols : vinyle, stratifié, parquet, carrelage",
+    "Faux plafonds et cloisons en plaques de plâtre, isolation acoustique",
+    "Portes intérieures, plinthes, menuiseries",
+    "Remise en état complète avant vente ou mise en location",
+    "Coordination avec nos équipes salle de bain et électricité"
+   ],
+   "caseStudy": {
+    "kicker": "Chantier récent",
+    "h2": "Humidité : on a pris le temps",
+    "p": "Sur ce chantier, l'enduit était gorgé d'humidité. Nous avons tout retiré jusqu'à la brique, laissé le mur sécher à nu tout l'été, puis réenduit. Prochaine étape : la peinture.",
+    "images": [
+     {
+      "src": "/images/humidite-01-avant-apres.jpg",
+      "alt": "Mur humide avant et après réenduisage — chantier Apollon Construction",
+      "caption": "Avant / après enduit"
+     },
+     {
+      "src": "/images/humidite-02-diagnostic.jpg",
+      "alt": "Diagnostic : enduit gorgé d'humidité retiré jusqu'à la brique",
+      "caption": "01 · Diagnostic — enduit retiré"
+     },
+     {
+      "src": "/images/humidite-03-sechage.jpg",
+      "alt": "Séchage du mur à nu pendant tout l'été avant réenduisage",
+      "caption": "02 · Séchage — tout l'été"
+     },
+     {
+      "src": "/images/humidite-04-enduit.jpg",
+      "alt": "Murs réenduits, prêts pour la peinture",
+      "caption": "03 · Enduit — murs réenduits"
+     }
+    ]
+   },
+   "processH2": "Comment ça se passe",
+   "process": [
+    {
+     "title": "Visite gratuite",
+     "desc": "On regarde l'état des supports, l'humidité, la ventilation, et on écoute ce que vous voulez."
+    },
+    {
+     "title": "Devis sous 48h",
+     "desc": "Poste par poste : préparation, enduit, peinture, sols. Vous savez ce que vous payez."
+    },
+    {
+     "title": "Travaux",
+     "desc": "Sols et meubles protégés, pièce par pièce, gravats évacués chaque jour."
+    },
+    {
+     "title": "Réception",
+     "desc": "Contrôle ensemble, nettoyage de fin de chantier, garantie sur les travaux."
+    }
+   ],
+   "galleryH2": "Quelques réalisations",
+   "gallery": [
+    {
+     "src": "/images/chantier-renovation.jpg",
+     "alt": "Rénovation intérieure et peinture d'un appartement à Bruxelles"
+    },
+    {
+     "src": "/images/chantier-cuisine.jpg",
+     "alt": "Cuisine équipée sur mesure posée par Apollon Construction"
+    },
+    {
+     "src": "/images/chantier-sdb-1.jpg",
+     "alt": "Salle de bain rénovée dans le cadre d'une rénovation complète"
+    }
+   ],
+   "faqH2": "Questions fréquentes",
+   "faq": [
+    {
+     "q": "Combien coûte un plafonnage ou une peinture à Bruxelles ?",
+     "a": "Le prix dépend de la surface, de l'état des supports (fissures, humidité, ancien papier peint) et du niveau de finition. Nous venons voir gratuitement et remettons un devis poste par poste sous 48h."
+    },
+    {
+     "q": "Faites-vous les petits chantiers, une seule pièce ?",
+     "a": "Oui. Une chambre à replâtrer ou un salon à repeindre est un chantier comme un autre, avec le même soin."
+    },
+    {
+     "q": "Comment savez-vous d'où vient l'humidité ?",
+     "a": "Lors de la visite, nous regardons l'emplacement des traces, la ventilation, l'état des façades et des joints. Si un diagnostic plus poussé est nécessaire, nous vous le disons avant de commencer, pas après."
+    },
+    {
+     "q": "Combien de temps faut-il laisser sécher un mur ?",
+     "a": "Cela dépend de l'épaisseur du mur, de la saison et de la ventilation : de quelques semaines à plusieurs mois. Nous mesurons l'humidité avant de réenduire plutôt que de fixer une date à l'avance."
+    },
+    {
+     "q": "Puis-je rester dans le logement pendant les travaux ?",
+     "a": "Dans la plupart des cas, oui. Nous travaillons pièce par pièce, protégeons les sols et les meubles et évacuons les gravats chaque jour."
+    },
+    {
+     "q": "Puis-je bénéficier de la TVA à 6 % ?",
+     "a": "Oui si le logement a plus de 10 ans et est utilisé principalement comme habitation privée. Le taux réduit est appliqué sur la facture."
+    }
+   ],
+   "zonesLabel": "Rénovation intérieure à :",
+   "relatedH2": "Nos autres prestations",
+   "related": [
+    {
+     "href": "/renovation-salle-de-bain",
+     "label": "Rénovation de salle de bain",
+     "desc": "Douche à l'italienne, carrelage, plomberie, électricité."
+    },
+    {
+     "href": "/electricite-rgie",
+     "label": "Électricité & mise en conformité RGIE",
+     "desc": "Tableau, différentiels, circuits dédiés, contrôle."
+    },
+    {
+     "href": "/isolation-facade",
+     "label": "Isolation de façade",
+     "desc": "ITE, ravalement, enduit de finition."
+    }
+   ],
+   "ctaH2": "Parlons de votre intérieur",
+   "ctaP": "Réponse sous 24h, devis gratuit sous 48h. Quelques photos des pièces suffisent pour commencer.",
+   "ctaBtn": "Devis gratuit",
+   "callLabel": "Appeler"
+  },
+  "nl": {
+   "title": "Binnenrenovatie Brussel — Pleisterwerk, schilderwerk, vloeren, vocht | Apollon Construction",
+   "desc": "Binnenrenovatie in Brussel en Brabant: pleisterwerk, behandeling van vochtige muren, schilderwerk, vloeren, verlaagde plafonds, scheidingswanden. Eén team, gratis offerte binnen 48u, 6 % btw.",
+   "bc": "Startpagina",
+   "kicker": "Binnenrenovatie",
+   "h1": "Binnenrenovatie & afwerking in Brussel",
+   "intro": "Een appartement opfrissen vóór verhuur, een woning volledig vernieuwen, een muur die afbrokkelt door vocht: Apollon Construction verzorgt het pleisterwerk, het schilderwerk, de vloeren en de afwerking, met één team van begin tot einde.",
+   "badges": [
+    "Gratis offerte binnen 48u",
+    "Propere werf, puin afgevoerd",
+    "6 % btw voor woningen ouder dan 10 jaar",
+    "Tweetalig team FR/NL"
+   ],
+   "heroImage": "/images/chantier-renovation.jpg",
+   "heroAlt": "Binnenrenovatie en schilderwerk in Brussel — Apollon Construction",
+   "serviceName": "Binnenrenovatie",
+   "formService": "Binnenrenovatie",
+   "formOptions": [
+    "Binnenrenovatie",
+    "Pleisterwerk",
+    "Vochtige muur te behandelen",
+    "Schilderwerk",
+    "Vloer plaatsen (vinyl, laminaat, parket, tegels)",
+    "Opknappen vóór verhuur / verkoop",
+    "Andere"
+   ],
+   "body": [
+    {
+     "h2": "Vocht: we pakken de oorzaak aan, niet alleen de vlek",
+     "p": [
+      "Een met vocht doordrongen pleisterlaag die blaast of afbrokkelt, herstel je niet met een laag verf. We verwijderen de beschadigde pleister tot op de baksteen, laten de muur de nodige tijd drogen, behandelen de bron (ventilatie, insijpeling, opstijgend vocht) en pleisteren en schilderen daarna opnieuw.",
+      "Dat duurt soms langer dan een snelle rolbeurt. Maar het is de enige manier om een resultaat te krijgen dat blijft."
+     ]
+    },
+    {
+     "h2": "Van kleine werf tot volledige vernieuwing",
+     "p": [
+      "Een slaapkamer opnieuw bepleisteren, een woonkamer schilderen, een vloer leggen vóór een huurder intrekt of een volledig appartement opknappen: we passen het team aan de omvang van de werf aan. In de 19 Brusselse gemeenten, in Vlaams-Brabant en in Waals-Brabant."
+     ]
+    }
+   ],
+   "pointsH2": "Onze diensten binnenrenovatie",
+   "points": [
+    "Pleisterwerk muren en plafonds, opvullen, uitvlakken",
+    "Behandeling van vochtige muren: pleister verwijderen, drogen, opnieuw pleisteren",
+    "Binnenschilderwerk muren, plafonds, houtwerk",
+    "Vloeren plaatsen: vinyl, laminaat, parket, tegels",
+    "Verlaagde plafonds en gipskartonwanden, akoestische isolatie",
+    "Binnendeuren, plinten, schrijnwerk",
+    "Volledig opknappen vóór verkoop of verhuur",
+    "Coördinatie met onze badkamer- en elektriciteitsteams"
+   ],
+   "caseStudy": {
+    "kicker": "Recente werf",
+    "h2": "Vochtprobleem — zonder haast opgelost",
+    "p": "Op deze werf was de pleisterlaag doordrongen van vocht. We hebben alles verwijderd tot op de baksteen, de muur de hele zomer laten drogen en daarna opnieuw gepleisterd. Volgende stap: schilderen.",
+    "images": [
+     {
+      "src": "/images/humidite-01-avant-apres.jpg",
+      "alt": "Vochtige muur vóór en na het pleisteren — werf Apollon Construction",
+      "caption": "Vóór / na pleisterwerk"
+     },
+     {
+      "src": "/images/humidite-02-diagnostic.jpg",
+      "alt": "Diagnose: vochtige bepleistering volledig verwijderd tot op de baksteen",
+      "caption": "01 · Diagnose — pleister verwijderd"
+     },
+     {
+      "src": "/images/humidite-03-sechage.jpg",
+      "alt": "De muur droogde de hele zomer vóór het plamuren",
+      "caption": "02 · Drogen — de hele zomer"
+     },
+     {
+      "src": "/images/humidite-04-enduit.jpg",
+      "alt": "Opnieuw gepleisterde muren, klaar om te schilderen",
+      "caption": "03 · Pleister — opnieuw gepleisterd"
+     }
+    ]
+   },
+   "processH2": "Hoe verloopt het",
+   "process": [
+    {
+     "title": "Gratis bezoek",
+     "desc": "We bekijken de staat van de ondergrond, het vocht, de ventilatie, en luisteren naar wat u wilt."
+    },
+    {
+     "title": "Offerte binnen 48u",
+     "desc": "Post per post: voorbereiding, pleister, verf, vloeren. U weet wat u betaalt."
+    },
+    {
+     "title": "Werken",
+     "desc": "Vloeren en meubels beschermd, kamer per kamer, puin dagelijks afgevoerd."
+    },
+    {
+     "title": "Oplevering",
+     "desc": "Samen controleren, eindschoonmaak, garantie op de werken."
+    }
+   ],
+   "galleryH2": "Enkele realisaties",
+   "gallery": [
+    {
+     "src": "/images/chantier-renovation.jpg",
+     "alt": "Binnenrenovatie en schilderwerk van een appartement in Brussel"
+    },
+    {
+     "src": "/images/chantier-cuisine.jpg",
+     "alt": "Maatwerk keuken geplaatst door Apollon Construction"
+    },
+    {
+     "src": "/images/chantier-sdb-1.jpg",
+     "alt": "Gerenoveerde badkamer als onderdeel van een volledige renovatie"
+    }
+   ],
+   "faqH2": "Veelgestelde vragen",
+   "faq": [
+    {
+     "q": "Wat kost pleisterwerk of schilderwerk in Brussel?",
+     "a": "De prijs hangt af van de oppervlakte, de staat van de ondergrond (scheuren, vocht, oud behang) en het afwerkingsniveau. We komen gratis kijken en bezorgen binnen 48u een offerte post per post."
+    },
+    {
+     "q": "Doen jullie ook kleine werven, één kamer?",
+     "a": "Ja. Een slaapkamer opnieuw bepleisteren of een woonkamer schilderen is een werf zoals een andere, met dezelfde zorg."
+    },
+    {
+     "q": "Hoe weten jullie waar het vocht vandaan komt?",
+     "a": "Tijdens het bezoek bekijken we de plaats van de sporen, de ventilatie, de staat van de gevels en de voegen. Als een grondigere diagnose nodig is, zeggen we het u vóór we beginnen, niet erna."
+    },
+    {
+     "q": "Hoe lang moet een muur drogen?",
+     "a": "Dat hangt af van de dikte van de muur, het seizoen en de ventilatie: van enkele weken tot meerdere maanden. We meten het vochtgehalte vóór we opnieuw pleisteren in plaats van op voorhand een datum vast te leggen."
+    },
+    {
+     "q": "Kan ik tijdens de werken in de woning blijven?",
+     "a": "In de meeste gevallen wel. We werken kamer per kamer, beschermen vloeren en meubels en voeren het puin dagelijks af."
+    },
+    {
+     "q": "Kom ik in aanmerking voor 6 % btw?",
+     "a": "Ja, als de woning ouder is dan 10 jaar en hoofdzakelijk als privéwoning wordt gebruikt. Het verlaagde tarief wordt op de factuur toegepast."
+    }
+   ],
+   "zonesLabel": "Binnenrenovatie in:",
+   "relatedH2": "Onze andere diensten",
+   "related": [
+    {
+     "href": "/renovation-salle-de-bain",
+     "label": "Badkamerrenovatie",
+     "desc": "Inloopdouche, tegels, sanitair, elektriciteit."
+    },
+    {
+     "href": "/electricite-rgie",
+     "label": "Elektriciteit & AREI-conformering",
+     "desc": "Zekeringkast, differentieelschakelaars, aparte kringen, keuring."
+    },
+    {
+     "href": "/isolation-facade",
+     "label": "Gevelisolatie",
+     "desc": "BUI, bepleistering, afwerkingslaag."
+    }
+   ],
+   "ctaH2": "Laten we het over uw interieur hebben",
+   "ctaP": "Antwoord binnen 24u, gratis offerte binnen 48u. Enkele foto's van de ruimtes volstaan om te beginnen.",
+   "ctaBtn": "Gratis offerte",
+   "callLabel": "Bellen"
+  },
+  "en": {
+   "title": "Interior Renovation Brussels — Plastering, painting, flooring, damp | Apollon Construction",
+   "desc": "Interior renovation in Brussels and Brabant: plastering, damp wall treatment, painting, flooring, false ceilings, partitions. One team, free quote within 48h, 6% VAT.",
+   "bc": "Home",
+   "kicker": "Interior renovation",
+   "h1": "Interior renovation & finishing in Brussels",
+   "intro": "A flat to refresh before renting it out, a house to bring back to new, a wall crumbling because of damp: Apollon Construction takes care of plastering, painting, flooring and finishing, with one team from start to finish.",
+   "badges": [
+    "Free quote within 48h",
+    "Clean site, rubble removed",
+    "6% VAT on homes older than 10 years",
+    "Bilingual team FR/NL"
+   ],
+   "heroImage": "/images/chantier-renovation.jpg",
+   "heroAlt": "Interior renovation and painting in Brussels — Apollon Construction",
+   "serviceName": "Interior renovation",
+   "formService": "Interior renovation",
+   "formOptions": [
+    "Interior renovation",
+    "Plastering",
+    "Damp wall to treat",
+    "Painting",
+    "Flooring (vinyl, laminate, parquet, tiles)",
+    "Refurbishment before letting / sale",
+    "Other"
+   ],
+   "body": [
+    {
+     "h2": "Damp: we treat the cause, not just the stain",
+     "p": [
+      "Plaster soaked with moisture that blisters or crumbles cannot be fixed with a coat of paint. We strip the damaged plaster back to the brick, let the wall dry for as long as it needs, treat the source (ventilation, infiltration, rising damp), then re-plaster and repaint.",
+      "It sometimes takes longer than a quick roller job. But it is the only way to get a result that lasts."
+     ]
+    },
+    {
+     "h2": "From a single room to a complete refurbishment",
+     "p": [
+      "A bedroom to re-plaster, a living room to repaint, a floor to lay before a tenant moves in or a whole flat to refurbish: we size the team to the job. Across the 19 municipalities of Brussels, Flemish Brabant and Walloon Brabant."
+     ]
+    }
+   ],
+   "pointsH2": "Our interior renovation services",
+   "points": [
+    "Plastering of walls and ceilings, filling, skimming",
+    "Damp wall treatment: stripping, drying, re-plastering",
+    "Interior painting of walls, ceilings, woodwork",
+    "Flooring: vinyl, laminate, parquet, tiles",
+    "Plasterboard false ceilings and partitions, acoustic insulation",
+    "Interior doors, skirting boards, joinery",
+    "Full refurbishment before sale or letting",
+    "Coordination with our bathroom and electrical teams"
+   ],
+   "caseStudy": {
+    "kicker": "Recent project",
+    "h2": "Damp: we took the time",
+    "p": "On this project the plaster was soaked with moisture. We stripped everything back to the brick, let the bare wall dry all summer, then re-plastered. Next step: painting.",
+    "images": [
+     {
+      "src": "/images/humidite-01-avant-apres.jpg",
+      "alt": "Damp wall before and after re-plastering — Apollon Construction project",
+      "caption": "Before / after plaster"
+     },
+     {
+      "src": "/images/humidite-02-diagnostic.jpg",
+      "alt": "Diagnosis: damp plaster stripped back to the brick",
+      "caption": "01 · Diagnosis — plaster removed"
+     },
+     {
+      "src": "/images/humidite-03-sechage.jpg",
+      "alt": "Bare wall drying all summer before re-plastering",
+      "caption": "02 · Drying — all summer"
+     },
+     {
+      "src": "/images/humidite-04-enduit.jpg",
+      "alt": "Re-plastered walls, ready for painting",
+      "caption": "03 · Plaster — walls re-plastered"
+     }
+    ]
+   },
+   "processH2": "How it works",
+   "process": [
+    {
+     "title": "Free site visit",
+     "desc": "We look at the surfaces, the damp, the ventilation, and listen to what you want."
+    },
+    {
+     "title": "Quote within 48h",
+     "desc": "Itemised: preparation, plaster, paint, flooring. You know what you pay for."
+    },
+    {
+     "title": "Works",
+     "desc": "Floors and furniture protected, room by room, rubble removed daily."
+    },
+    {
+     "title": "Handover",
+     "desc": "Checked together, end-of-site cleaning, guarantee on the works."
+    }
+   ],
+   "galleryH2": "A few projects",
+   "gallery": [
+    {
+     "src": "/images/chantier-renovation.jpg",
+     "alt": "Interior renovation and painting of a flat in Brussels"
+    },
+    {
+     "src": "/images/chantier-cuisine.jpg",
+     "alt": "Custom fitted kitchen installed by Apollon Construction"
+    },
+    {
+     "src": "/images/chantier-sdb-1.jpg",
+     "alt": "Bathroom renovated as part of a full refurbishment"
+    }
+   ],
+   "faqH2": "Frequently asked questions",
+   "faq": [
+    {
+     "q": "How much does plastering or painting cost in Brussels?",
+     "a": "The price depends on the surface, the condition of the substrate (cracks, damp, old wallpaper) and the level of finish. We visit for free and send an itemised quote within 48h."
+    },
+    {
+     "q": "Do you take on small jobs, a single room?",
+     "a": "Yes. A bedroom to re-plaster or a living room to repaint is a job like any other, done with the same care."
+    },
+    {
+     "q": "How do you know where the damp comes from?",
+     "a": "During the visit we look at where the marks are, the ventilation, the condition of the facades and joints. If a more thorough diagnosis is needed, we tell you before starting, not after."
+    },
+    {
+     "q": "How long does a wall need to dry?",
+     "a": "It depends on the wall thickness, the season and the ventilation: from a few weeks to several months. We measure the moisture before re-plastering rather than fixing a date in advance."
+    },
+    {
+     "q": "Can I stay in the home during the works?",
+     "a": "In most cases, yes. We work room by room, protect floors and furniture and remove rubble every day."
+    },
+    {
+     "q": "Can I get the 6% VAT rate?",
+     "a": "Yes, if the home is more than 10 years old and mainly used as a private residence. The reduced rate is applied on the invoice."
+    }
+   ],
+   "zonesLabel": "Interior renovation in:",
+   "relatedH2": "Our other services",
+   "related": [
+    {
+     "href": "/renovation-salle-de-bain",
+     "label": "Bathroom renovation",
+     "desc": "Walk-in shower, tiling, plumbing, electrics."
+    },
+    {
+     "href": "/electricite-rgie",
+     "label": "Electrics & RGIE compliance",
+     "desc": "Panel, RCDs, dedicated circuits, inspection."
+    },
+    {
+     "href": "/isolation-facade",
+     "label": "Facade insulation",
+     "desc": "EWI, rendering, finish coat."
+    }
+   ],
+   "ctaH2": "Let's talk about your interior",
+   "ctaP": "Reply within 24h, free quote within 48h. A few photos of the rooms are enough to get started.",
+   "ctaBtn": "Free quote",
+   "callLabel": "Call"
+  }
+ },
+ "renovation-salle-de-bain": {
+  "fr": {
+   "title": "Rénovation salle de bain Bruxelles — Devis gratuit sous 48h | Apollon Construction",
+   "desc": "Rénovation complète de salle de bain à Bruxelles et en Brabant : douche à l'italienne, carrelage, plomberie, électricité, meuble-vasque, faux plafond. Une seule équipe, devis poste par poste, TVA 6 %. Réponse sous 24h.",
+   "bc": "Accueil",
+   "kicker": "Salle de bain",
+   "h1": "Rénovation de salle de bain à Bruxelles",
+   "intro": "De la démolition au dernier joint de silicone, Apollon Construction rénove votre salle de bain de A à Z : douche à l'italienne, carrelage, plomberie, électricité, faux plafond et meuble-vasque. Un seul interlocuteur, un devis clair poste par poste, un chantier propre.",
+   "badges": [
+    "Devis gratuit sous 48h",
+    "TVA 6 % si logement de plus de 10 ans",
+    "Équipe propre, pas de sous-traitance",
+    "RC Pro & garantie décennale"
+   ],
+   "heroImage": "/images/chantier-sdb-1.jpg",
+   "heroAlt": "Salle de bain rénovée avec douche à l'italienne à Bruxelles — Apollon Construction",
+   "serviceName": "Rénovation de salle de bain",
+   "formService": "Salle de bain complète",
+   "formOptions": [
+    "Salle de bain complète",
+    "Douche à l'italienne",
+    "Carrelage sol et murs",
+    "Plomberie & sanitaires",
+    "Salle de douche / WC",
+    "Autre"
+   ],
+   "body": [
+    {
+     "h2": "Une salle de bain clé en main, sans intermédiaire",
+     "p": [
+      "Beaucoup de rénovations de salle de bain traînent parce qu'il faut coordonner un plombier, un carreleur, un électricien et un plafonneur qui ne se parlent pas. Chez Apollon Construction, ces métiers font partie de la même équipe. Vous avez un seul contact, un seul planning, une seule facture.",
+      "Nous intervenons dans les 19 communes de Bruxelles, en Brabant flamand et en Brabant wallon, pour les particuliers, les propriétaires bailleurs et les syndics."
+     ]
+    },
+    {
+     "h2": "Des choix qui tiennent dans le temps",
+     "p": [
+      "Une salle de bain se refait tous les quinze ou vingt ans. Ce qui compte, ce n'est pas seulement le carrelage que l'on voit, mais l'étanchéité sous la douche, la pente d'évacuation, la ventilation et les circuits électriques conformes au RGIE. C'est là que nous passons le plus de temps, parce que c'est là que les problèmes arrivent quand c'est mal fait."
+     ]
+    }
+   ],
+   "pointsH2": "Ce que comprend notre rénovation de salle de bain",
+   "points": [
+    "Démolition et évacuation des gravats",
+    "Plomberie : alimentation, évacuation, raccordements",
+    "Douche à l'italienne ou receveur extra-plat, paroi vitrée",
+    "Carrelage sol et murs, faïence, joints époxy sur demande",
+    "Électricité conforme RGIE : prises, éclairage LED, sèche-serviettes",
+    "Faux plafond avec spots encastrés, ventilation",
+    "Meuble-vasque, miroir, robinetterie, WC suspendu",
+    "Peinture, finitions et nettoyage de fin de chantier"
+   ],
+   "processH2": "Comment ça se passe",
+   "process": [
+    {
+     "title": "Visite gratuite",
+     "desc": "Nous venons mesurer la pièce, vérifier la plomberie existante et écouter ce que vous voulez."
+    },
+    {
+     "title": "Devis sous 48h",
+     "desc": "Un devis poste par poste : démolition, plomberie, carrelage, électricité, finitions. Rien de caché."
+    },
+    {
+     "title": "Chantier",
+     "desc": "Une seule équipe du début à la fin. Sols et parties communes protégés, gravats évacués."
+    },
+    {
+     "title": "Réception & garantie",
+     "desc": "On vérifie tout ensemble : étanchéité, évacuations, électricité. Garantie décennale."
+    }
+   ],
+   "galleryH2": "Quelques salles de bain livrées",
+   "gallery": [
+    {
+     "src": "/images/chantier-sdb-1.jpg",
+     "alt": "Rénovation salle de bain Bruxelles — douche à l'italienne et carrelage grand format"
+    },
+    {
+     "src": "/images/chantier-sdb-2.jpg",
+     "alt": "Salle de bain rénovée à Bruxelles avec finitions dorées — Apollon Construction"
+    },
+    {
+     "src": "/images/chantier-renovation.jpg",
+     "alt": "Rénovation intérieure et peinture après travaux de salle de bain"
+    }
+   ],
+   "faqH2": "Questions fréquentes sur la rénovation de salle de bain",
+   "faq": [
+    {
+     "q": "Combien coûte une rénovation de salle de bain à Bruxelles ?",
+     "a": "Cela dépend de la surface, de l'état de la plomberie existante et des matériaux que vous choisissez (carrelage, meuble, robinetterie). C'est pourquoi nous ne donnons pas de prix au m² : nous venons sur place gratuitement et vous remettons un devis détaillé poste par poste sous 48h, sans engagement."
+    },
+    {
+     "q": "Puis-je bénéficier de la TVA à 6 % ?",
+     "a": "Oui, si votre logement a plus de 10 ans et est utilisé principalement comme habitation privée. Le taux réduit est appliqué directement sur la facture."
+    },
+    {
+     "q": "Combien de temps dure le chantier ?",
+     "a": "Une salle de bain standard prend généralement deux à trois semaines, selon l'ampleur des travaux et les délais de livraison des matériaux. Le planning est fixé avant le début du chantier."
+    },
+    {
+     "q": "Dois-je acheter les matériaux moi-même ?",
+     "a": "Comme vous préférez. Vous pouvez choisir vos carrelages, meubles et robinetterie vous-même ou nous les faire fournir. Dans les deux cas, nous vous conseillons sur ce qui est adapté : format du carrelage, pente de la douche, étanchéité."
+    },
+    {
+     "q": "Intervenez-vous dans les appartements en copropriété ?",
+     "a": "Oui. Nous protégeons les parties communes, évacuons les gravats et respectons le règlement de copropriété (horaires, usage de l'ascenseur)."
+    },
+    {
+     "q": "Ma salle de bain a des traces d'humidité, que faire ?",
+     "a": "Nous traitons la cause avant de refaire les finitions : ventilation, étanchéité, enduit. Voir notre page rénovation intérieure et traitement de l'humidité."
+    }
+   ],
+   "zonesLabel": "Salle de bain à :",
+   "relatedH2": "Nos autres prestations",
+   "related": [
+    {
+     "href": "/electricite-rgie",
+     "label": "Électricité & mise en conformité RGIE",
+     "desc": "Tableau, différentiels, circuits dédiés, contrôle."
+    },
+    {
+     "href": "/renovation-interieure",
+     "label": "Rénovation intérieure & humidité",
+     "desc": "Plafonnage, peinture, sols, murs humides."
+    },
+    {
+     "href": "/primes",
+     "label": "Primes rénovation",
+     "desc": "Les aides disponibles à Bruxelles, en Wallonie et en Flandre."
+    }
+   ],
+   "ctaH2": "Parlons de votre salle de bain",
+   "ctaP": "Réponse sous 24h, devis gratuit sous 48h. Envoyez-nous quelques photos et les dimensions de la pièce, on s'occupe du reste.",
+   "ctaBtn": "Devis gratuit",
+   "callLabel": "Appeler"
+  },
+  "nl": {
+   "title": "Badkamerrenovatie Brussel — Gratis offerte binnen 48u | Apollon Construction",
+   "desc": "Volledige badkamerrenovatie in Brussel en Brabant: inloopdouche, tegelwerk, sanitair, elektriciteit, badkamermeubel, verlaagd plafond. Eén team, offerte post per post, 6 % btw. Antwoord binnen 24u.",
+   "bc": "Startpagina",
+   "kicker": "Badkamer",
+   "h1": "Badkamerrenovatie in Brussel",
+   "intro": "Van de afbraak tot de laatste siliconenvoeg: Apollon Construction renoveert uw badkamer van A tot Z — inloopdouche, tegels, sanitair, elektriciteit, verlaagd plafond en badkamermeubel. Eén aanspreekpunt, een duidelijke offerte post per post, een propere werf.",
+   "badges": [
+    "Gratis offerte binnen 48u",
+    "6 % btw voor woningen ouder dan 10 jaar",
+    "Eigen team, geen onderaanneming",
+    "BA verzekerd & tienjarige garantie"
+   ],
+   "heroImage": "/images/chantier-sdb-1.jpg",
+   "heroAlt": "Gerenoveerde badkamer met inloopdouche in Brussel — Apollon Construction",
+   "serviceName": "Badkamerrenovatie",
+   "formService": "Volledige badkamer",
+   "formOptions": [
+    "Volledige badkamer",
+    "Inloopdouche",
+    "Vloer- en wandtegels",
+    "Sanitair & loodgieterij",
+    "Doucheruimte / WC",
+    "Andere"
+   ],
+   "body": [
+    {
+     "h2": "Een sleutel-op-de-deur badkamer, zonder tussenpersoon",
+     "p": [
+      "Veel badkamerrenovaties slepen aan omdat een loodgieter, een tegelzetter, een elektricien en een stukadoor op elkaar moeten wachten. Bij Apollon Construction zitten die vakmensen in hetzelfde team. U hebt één contactpersoon, één planning, één factuur.",
+      "We werken in de 19 Brusselse gemeenten, in Vlaams-Brabant en in Waals-Brabant, voor particulieren, verhuurders en syndici."
+     ]
+    },
+    {
+     "h2": "Keuzes die blijven duren",
+     "p": [
+      "Een badkamer wordt om de vijftien à twintig jaar vernieuwd. Wat telt is niet alleen de tegel die u ziet, maar de waterdichting onder de douche, de afvoerhelling, de ventilatie en de elektrische kringen conform het AREI. Daar besteden we de meeste tijd aan, want daar ontstaan de problemen als het slecht gedaan is."
+     ]
+    }
+   ],
+   "pointsH2": "Wat onze badkamerrenovatie omvat",
+   "points": [
+    "Afbraak en afvoer van puin",
+    "Sanitair: toevoer, afvoer, aansluitingen",
+    "Inloopdouche of extra platte douchebak, glazen wand",
+    "Vloer- en wandtegels, faience, epoxyvoegen op aanvraag",
+    "Elektriciteit conform AREI: stopcontacten, LED-verlichting, handdoekradiator",
+    "Verlaagd plafond met inbouwspots, ventilatie",
+    "Badkamermeubel, spiegel, kraanwerk, hangtoilet",
+    "Schilderwerk, afwerking en eindschoonmaak"
+   ],
+   "processH2": "Hoe verloopt het",
+   "process": [
+    {
+     "title": "Gratis bezoek",
+     "desc": "We meten de ruimte op, controleren het bestaande sanitair en luisteren naar wat u wilt."
+    },
+    {
+     "title": "Offerte binnen 48u",
+     "desc": "Een offerte post per post: afbraak, sanitair, tegels, elektriciteit, afwerking. Niets verborgen."
+    },
+    {
+     "title": "Werf",
+     "desc": "Eén team van begin tot einde. Vloeren en gemene delen beschermd, puin afgevoerd."
+    },
+    {
+     "title": "Oplevering & garantie",
+     "desc": "We controleren alles samen: waterdichting, afvoeren, elektriciteit. Tienjarige garantie."
+    }
+   ],
+   "galleryH2": "Enkele opgeleverde badkamers",
+   "gallery": [
+    {
+     "src": "/images/chantier-sdb-1.jpg",
+     "alt": "Badkamerrenovatie Brussel — inloopdouche en grootformaat tegels"
+    },
+    {
+     "src": "/images/chantier-sdb-2.jpg",
+     "alt": "Gerenoveerde badkamer in Brussel met gouden afwerking — Apollon Construction"
+    },
+    {
+     "src": "/images/chantier-renovation.jpg",
+     "alt": "Binnenrenovatie en schilderwerk na badkamerwerken"
+    }
+   ],
+   "faqH2": "Veelgestelde vragen over badkamerrenovatie",
+   "faq": [
+    {
+     "q": "Wat kost een badkamerrenovatie in Brussel?",
+     "a": "Dat hangt af van de oppervlakte, de staat van het bestaande sanitair en de materialen die u kiest (tegels, meubel, kraanwerk). Daarom geven we geen prijs per m²: we komen gratis ter plaatse en bezorgen u binnen 48u een gedetailleerde offerte post per post, vrijblijvend."
+    },
+    {
+     "q": "Kom ik in aanmerking voor 6 % btw?",
+     "a": "Ja, als uw woning ouder is dan 10 jaar en hoofdzakelijk als privéwoning wordt gebruikt. Het verlaagde tarief wordt rechtstreeks op de factuur toegepast."
+    },
+    {
+     "q": "Hoe lang duren de werken?",
+     "a": "Een standaard badkamer neemt doorgaans twee tot drie weken in beslag, afhankelijk van de omvang van de werken en de levertermijnen van de materialen. De planning wordt vóór de start vastgelegd."
+    },
+    {
+     "q": "Moet ik de materialen zelf kopen?",
+     "a": "Zoals u wilt. U kunt uw tegels, meubels en kraanwerk zelf kiezen of ze door ons laten leveren. In beide gevallen adviseren we u over wat geschikt is: tegelformaat, douchehelling, waterdichting."
+    },
+    {
+     "q": "Werken jullie in appartementen in mede-eigendom?",
+     "a": "Ja. We beschermen de gemene delen, voeren het puin af en respecteren het reglement van mede-eigendom (uren, gebruik van de lift)."
+    },
+    {
+     "q": "Mijn badkamer vertoont vochtsporen, wat nu?",
+     "a": "We pakken eerst de oorzaak aan voor we de afwerking vernieuwen: ventilatie, waterdichting, pleisterwerk. Zie onze pagina binnenrenovatie en vochtbehandeling."
+    }
+   ],
+   "zonesLabel": "Badkamer in:",
+   "relatedH2": "Onze andere diensten",
+   "related": [
+    {
+     "href": "/electricite-rgie",
+     "label": "Elektriciteit & AREI-conformering",
+     "desc": "Zekeringkast, differentieelschakelaars, aparte kringen, keuring."
+    },
+    {
+     "href": "/renovation-interieure",
+     "label": "Binnenrenovatie & vocht",
+     "desc": "Pleisterwerk, schilderwerk, vloeren, vochtige muren."
+    },
+    {
+     "href": "/primes",
+     "label": "Renovatiepremies",
+     "desc": "De beschikbare steun in Brussel, Wallonië en Vlaanderen."
+    }
+   ],
+   "ctaH2": "Laten we het over uw badkamer hebben",
+   "ctaP": "Antwoord binnen 24u, gratis offerte binnen 48u. Stuur ons enkele foto's en de afmetingen van de ruimte, wij doen de rest.",
+   "ctaBtn": "Gratis offerte",
+   "callLabel": "Bellen"
+  },
+  "en": {
+   "title": "Bathroom Renovation Brussels — Free quote within 48h | Apollon Construction",
+   "desc": "Complete bathroom renovation in Brussels and Brabant: walk-in shower, tiling, plumbing, electrics, vanity unit, false ceiling. One team, itemised quote, 6% VAT. Reply within 24h.",
+   "bc": "Home",
+   "kicker": "Bathroom",
+   "h1": "Bathroom renovation in Brussels",
+   "intro": "From demolition to the last bead of silicone, Apollon Construction renovates your bathroom from A to Z: walk-in shower, tiling, plumbing, electrics, false ceiling and vanity unit. One contact person, a clear itemised quote, a clean site.",
+   "badges": [
+    "Free quote within 48h",
+    "6% VAT on homes older than 10 years",
+    "Own team, no subcontracting",
+    "Liability insured & 10-year guarantee"
+   ],
+   "heroImage": "/images/chantier-sdb-1.jpg",
+   "heroAlt": "Renovated bathroom with walk-in shower in Brussels — Apollon Construction",
+   "serviceName": "Bathroom renovation",
+   "formService": "Complete bathroom",
+   "formOptions": [
+    "Complete bathroom",
+    "Walk-in shower",
+    "Floor and wall tiling",
+    "Plumbing & sanitary",
+    "Shower room / WC",
+    "Other"
+   ],
+   "body": [
+    {
+     "h2": "A turnkey bathroom, no middlemen",
+     "p": [
+      "Many bathroom renovations drag on because a plumber, a tiler, an electrician and a plasterer have to wait for each other. At Apollon Construction these trades are part of the same team. You get one contact, one schedule, one invoice.",
+      "We work across the 19 municipalities of Brussels, Flemish Brabant and Walloon Brabant, for homeowners, landlords and building managers."
+     ]
+    },
+    {
+     "h2": "Choices that last",
+     "p": [
+      "A bathroom gets redone every fifteen or twenty years. What matters is not just the tiles you see, but the waterproofing under the shower, the drainage slope, the ventilation and RGIE-compliant electrical circuits. That is where we spend the most time, because that is where problems appear when it is done badly."
+     ]
+    }
+   ],
+   "pointsH2": "What our bathroom renovation includes",
+   "points": [
+    "Demolition and rubble removal",
+    "Plumbing: supply, drainage, connections",
+    "Walk-in shower or ultra-flat tray, glass screen",
+    "Floor and wall tiling, epoxy grout on request",
+    "RGIE-compliant electrics: sockets, LED lighting, towel radiator",
+    "False ceiling with recessed spots, ventilation",
+    "Vanity unit, mirror, taps, wall-hung WC",
+    "Painting, finishing and end-of-site cleaning"
+   ],
+   "processH2": "How it works",
+   "process": [
+    {
+     "title": "Free site visit",
+     "desc": "We measure the room, check the existing plumbing and listen to what you want."
+    },
+    {
+     "title": "Quote within 48h",
+     "desc": "An itemised quote: demolition, plumbing, tiling, electrics, finishing. Nothing hidden."
+    },
+    {
+     "title": "Works",
+     "desc": "One team from start to finish. Floors and common areas protected, rubble removed."
+    },
+    {
+     "title": "Handover & guarantee",
+     "desc": "We check everything together: waterproofing, drains, electrics. 10-year guarantee."
+    }
+   ],
+   "galleryH2": "A few bathrooms we delivered",
+   "gallery": [
+    {
+     "src": "/images/chantier-sdb-1.jpg",
+     "alt": "Bathroom renovation Brussels — walk-in shower and large-format tiles"
+    },
+    {
+     "src": "/images/chantier-sdb-2.jpg",
+     "alt": "Renovated bathroom in Brussels with gold finishes — Apollon Construction"
+    },
+    {
+     "src": "/images/chantier-renovation.jpg",
+     "alt": "Interior renovation and painting after bathroom works"
+    }
+   ],
+   "faqH2": "Bathroom renovation FAQ",
+   "faq": [
+    {
+     "q": "How much does a bathroom renovation cost in Brussels?",
+     "a": "It depends on the surface, the condition of the existing plumbing and the materials you choose (tiles, unit, taps). That is why we do not quote a price per m²: we visit for free and send you a detailed itemised quote within 48h, with no commitment."
+    },
+    {
+     "q": "Can I get the 6% VAT rate?",
+     "a": "Yes, if your home is more than 10 years old and mainly used as a private residence. The reduced rate is applied directly on the invoice."
+    },
+    {
+     "q": "How long do the works take?",
+     "a": "A standard bathroom usually takes two to three weeks, depending on the scope and material delivery times. The schedule is fixed before the works start."
+    },
+    {
+     "q": "Do I have to buy the materials myself?",
+     "a": "As you prefer. You can choose your tiles, furniture and taps yourself or have us supply them. Either way we advise you on what works: tile format, shower slope, waterproofing."
+    },
+    {
+     "q": "Do you work in apartment buildings?",
+     "a": "Yes. We protect the common areas, remove the rubble and respect the building rules (hours, use of the lift)."
+    },
+    {
+     "q": "My bathroom shows signs of damp, what should I do?",
+     "a": "We treat the cause before redoing the finishes: ventilation, waterproofing, plaster. See our interior renovation and damp treatment page."
+    }
+   ],
+   "zonesLabel": "Bathrooms in:",
+   "relatedH2": "Our other services",
+   "related": [
+    {
+     "href": "/electricite-rgie",
+     "label": "Electrics & RGIE compliance",
+     "desc": "Panel, RCDs, dedicated circuits, inspection."
+    },
+    {
+     "href": "/renovation-interieure",
+     "label": "Interior renovation & damp",
+     "desc": "Plastering, painting, flooring, damp walls."
+    },
+    {
+     "href": "/primes",
+     "label": "Renovation grants",
+     "desc": "Available support in Brussels, Wallonia and Flanders."
+    }
+   ],
+   "ctaH2": "Let's talk about your bathroom",
+   "ctaP": "Reply within 24h, free quote within 48h. Send us a few photos and the room dimensions, we take care of the rest.",
+   "ctaBtn": "Free quote",
+   "callLabel": "Call"
+  }
+ },
+ "electricite-rgie": {
+  "fr": {
+   "title": "Mise en conformité électrique RGIE Bruxelles — Électricien, devis gratuit | Apollon Construction",
+   "desc": "Électricien à Bruxelles et en Brabant : mise en conformité RGIE, nouveau tableau électrique, rénovation complète d'installation, schémas et préparation du contrôle par organisme agréé. Réponse sous 24h, TVA 6 %.",
+   "bc": "Accueil",
+   "kicker": "Électricité RGIE",
+   "h1": "Mise en conformité électrique RGIE à Bruxelles",
+   "intro": "Rapport de contrôle non conforme ? Vente ou achat d'une maison ? Installation vétuste ? Apollon Construction remet votre installation électrique aux normes du RGIE : tableau, différentiels, mise à la terre, circuits, schémas. Nous préparons le contrôle par l'organisme agréé et vous accompagnons jusqu'au rapport conforme.",
+   "badges": [
+    "Réponse sous 24h",
+    "Devis gratuit poste par poste",
+    "Schémas unifilaire et de position fournis",
+    "TVA 6 % si logement de plus de 10 ans"
+   ],
+   "heroImage": "/images/chantier-renovation.jpg",
+   "heroAlt": "Mise en conformité électrique RGIE à Bruxelles — Apollon Construction",
+   "serviceName": "Mise en conformité électrique RGIE",
+   "formService": "Mise en conformité RGIE",
+   "formOptions": [
+    "Mise en conformité RGIE",
+    "Nouveau tableau électrique",
+    "Rénovation complète de l'installation",
+    "Circuit dédié (four, machine à laver, borne, PAC)",
+    "Dépannage électrique",
+    "Autre"
+   ],
+   "body": [
+    {
+     "h2": "Quand faut-il une mise en conformité RGIE ?",
+     "p": [
+      "À la vente d'une habitation dont l'installation électrique date d'avant le 1er octobre 1981, un contrôle par un organisme agréé est obligatoire. Si le rapport est non conforme, l'acheteur dispose de 18 mois à partir de l'acte pour faire réaliser les travaux et un nouveau contrôle.",
+      "En dehors d'une vente, une mise en conformité s'impose après une rénovation lourde, lors d'une augmentation de puissance, si votre installation présente des infractions (absence de différentiel 30 mA pour la salle de bain, mise à la terre insuffisante, tableau sans schémas) ou simplement parce que le contrôle périodique de 25 ans arrive à échéance."
+     ]
+    },
+    {
+     "h2": "Ce qu'on vous dit clairement",
+     "p": [
+      "Un rapport non conforme ne veut pas dire tout refaire. Nous lisons le rapport point par point, séparons ce qui est obligatoire de ce qui est conseillé et chiffrons chaque poste. Vous décidez en connaissance de cause."
+     ]
+    }
+   ],
+   "pointsH2": "Notre intervention",
+   "points": [
+    "Lecture du rapport de contrôle et chiffrage précis des infractions à corriger",
+    "Remplacement ou mise à niveau du tableau électrique : différentiels 300 mA et 30 mA, disjoncteurs",
+    "Mise à la terre, liaison équipotentielle, piquet de terre",
+    "Circuits dédiés : machine à laver, four, plaques, pompe à chaleur, borne de recharge",
+    "Rénovation complète d'installation, en monophasé ou en triphasé",
+    "Schémas unifilaire et de position, dossier prêt pour l'organisme agréé",
+    "Prise de rendez-vous et présence lors du contrôle (Vinçotte, ACEG, BTV…)",
+    "Dépannage et diagnostic de panne"
+   ],
+   "processH2": "Comment ça se passe",
+   "process": [
+    {
+     "title": "Envoyez le rapport",
+     "desc": "Votre rapport de contrôle ou quelques photos du tableau suffisent pour une première estimation."
+    },
+    {
+     "title": "Visite & devis sous 48h",
+     "desc": "On vérifie sur place, on chiffre chaque infraction. Obligatoire et conseillé sont séparés."
+    },
+    {
+     "title": "Travaux",
+     "desc": "Planifiés avec vous, coupures réduites au minimum, chantier propre."
+    },
+    {
+     "title": "Contrôle & rapport conforme",
+     "desc": "Dossier et schémas prêts, rendez-vous avec l'organisme agréé, présence le jour J."
+    }
+   ],
+   "faqH2": "Questions fréquentes sur le RGIE",
+   "faq": [
+    {
+     "q": "Qu'est-ce que le RGIE ?",
+     "a": "Le Règlement Général sur les Installations Électriques est la réglementation belge qui fixe les règles de sécurité des installations électriques. Depuis le 1er juin 2020, il est organisé en trois Livres ; le Livre 1 concerne les installations domestiques."
+    },
+    {
+     "q": "Le contrôle électrique est-il obligatoire ?",
+     "a": "Oui dans plusieurs cas : vente d'un logement dont l'installation date d'avant 1981, nouvelle installation ou modification importante, augmentation de puissance, et contrôle périodique tous les 25 ans pour les installations domestiques."
+    },
+    {
+     "q": "Combien de temps ai-je après l'achat pour me mettre en conformité ?",
+     "a": "18 mois à partir de l'acte de vente pour faire réaliser les travaux et faire recontrôler l'installation par un organisme agréé."
+    },
+    {
+     "q": "Faut-il refaire toute l'installation ?",
+     "a": "Rarement. Souvent, corriger les infractions listées dans le rapport suffit : tableau, différentiels, mise à la terre, quelques circuits. Nous vous disons clairement ce qui est obligatoire et ce qui est simplement conseillé."
+    },
+    {
+     "q": "Combien coûte une mise en conformité ?",
+     "a": "Tout dépend du nombre d'infractions et de l'état de l'installation. Envoyez-nous le rapport de contrôle : nous chiffrons précisément chaque point, gratuitement et sans engagement."
+    },
+    {
+     "q": "Faites-vous aussi le contrôle ?",
+     "a": "Non : le contrôle doit être réalisé par un organisme agréé indépendant. Nous préparons le dossier et les schémas, prenons le rendez-vous si vous le souhaitez et sommes présents le jour du contrôle."
+    },
+    {
+     "q": "Mon ancien tableau contient-il de l'amiante ?",
+     "a": "Les anciens tableaux à plaque et certains appareillages en bakélite peuvent en contenir. Nous le signalons lors de la visite et organisons le retrait dans les règles avant les travaux."
+    }
+   ],
+   "zonesLabel": "Électricien à :",
+   "relatedH2": "Nos autres prestations",
+   "related": [
+    {
+     "href": "/renovation-salle-de-bain",
+     "label": "Rénovation de salle de bain",
+     "desc": "Douche à l'italienne, carrelage, plomberie, électricité."
+    },
+    {
+     "href": "/renovation-interieure",
+     "label": "Rénovation intérieure",
+     "desc": "Plafonnage, peinture, sols, traitement de l'humidité."
+    },
+    {
+     "href": "/solutions",
+     "label": "Apollon Solutions",
+     "desc": "Pompe à chaleur, panneaux solaires, borne de recharge."
+    }
+   ],
+   "ctaH2": "Envoyez-nous votre rapport de contrôle",
+   "ctaP": "Réponse sous 24h. Chaque infraction est chiffrée séparément, vous savez exactement ce qui est obligatoire.",
+   "ctaBtn": "Devis gratuit",
+   "callLabel": "Appeler"
+  },
+  "nl": {
+   "title": "AREI-conformering elektriciteit Brussel — Elektricien, gratis offerte | Apollon Construction",
+   "desc": "Elektricien in Brussel en Brabant: AREI-conformering, nieuwe zekeringkast, volledige renovatie van de installatie, schema's en voorbereiding van de keuring door een erkend organisme. Antwoord binnen 24u, 6 % btw.",
+   "bc": "Startpagina",
+   "kicker": "Elektriciteit AREI",
+   "h1": "Elektrische installatie conform AREI in Brussel",
+   "intro": "Niet-conform keuringsverslag? Verkoop of aankoop van een woning? Verouderde installatie? Apollon Construction brengt uw elektrische installatie in orde volgens het AREI: zekeringkast, differentieelschakelaars, aarding, kringen, schema's. We bereiden de keuring door het erkend organisme voor en begeleiden u tot het conforme verslag.",
+   "badges": [
+    "Antwoord binnen 24u",
+    "Gratis offerte post per post",
+    "Eendraads- en situatieschema's inbegrepen",
+    "6 % btw voor woningen ouder dan 10 jaar"
+   ],
+   "heroImage": "/images/chantier-renovation.jpg",
+   "heroAlt": "AREI-conformering elektriciteit in Brussel — Apollon Construction",
+   "serviceName": "AREI-conformering elektrische installatie",
+   "formService": "AREI-conformering",
+   "formOptions": [
+    "AREI-conformering",
+    "Nieuwe zekeringkast",
+    "Volledige renovatie van de installatie",
+    "Aparte kring (oven, wasmachine, laadpaal, warmtepomp)",
+    "Elektrische depannage",
+    "Andere"
+   ],
+   "body": [
+    {
+     "h2": "Wanneer is een AREI-conformering nodig?",
+     "p": [
+      "Bij de verkoop van een woning waarvan de elektrische installatie dateert van vóór 1 oktober 1981 is een keuring door een erkend organisme verplicht. Is het verslag niet conform, dan heeft de koper 18 maanden vanaf de akte om de werken te laten uitvoeren en een nieuwe keuring te laten doen.",
+      "Buiten een verkoop is een conformering nodig na een zware renovatie, bij een vermogensverhoging, als uw installatie inbreuken vertoont (geen differentieel van 30 mA voor de badkamer, onvoldoende aarding, zekeringkast zonder schema's) of gewoon omdat de periodieke keuring van 25 jaar vervalt."
+     ]
+    },
+    {
+     "h2": "Wat we u duidelijk zeggen",
+     "p": [
+      "Een niet-conform verslag betekent niet dat alles opnieuw moet. We lezen het verslag punt per punt, scheiden wat verplicht is van wat aangeraden is en begroten elke post. U beslist met kennis van zaken."
+     ]
+    }
+   ],
+   "pointsH2": "Onze tussenkomst",
+   "points": [
+    "Lezen van het keuringsverslag en nauwkeurige begroting van de inbreuken",
+    "Vervanging of upgrade van de zekeringkast: differentieelschakelaars 300 mA en 30 mA, automaten",
+    "Aarding, equipotentiaalverbinding, aardingspin",
+    "Aparte kringen: wasmachine, oven, kookplaat, warmtepomp, laadpaal",
+    "Volledige renovatie van de installatie, monofasig of driefasig",
+    "Eendraads- en situatieschema's, dossier klaar voor het erkend organisme",
+    "Afspraak en aanwezigheid bij de keuring (Vinçotte, ACEG, BTV…)",
+    "Depannage en diagnose van storingen"
+   ],
+   "processH2": "Hoe verloopt het",
+   "process": [
+    {
+     "title": "Stuur het verslag",
+     "desc": "Uw keuringsverslag of enkele foto's van de kast volstaan voor een eerste inschatting."
+    },
+    {
+     "title": "Bezoek & offerte binnen 48u",
+     "desc": "We controleren ter plaatse en begroten elke inbreuk. Verplicht en aangeraden worden gescheiden."
+    },
+    {
+     "title": "Werken",
+     "desc": "Samen met u gepland, onderbrekingen tot een minimum beperkt, propere werf."
+    },
+    {
+     "title": "Keuring & conform verslag",
+     "desc": "Dossier en schema's klaar, afspraak met het erkend organisme, aanwezig op de dag zelf."
+    }
+   ],
+   "faqH2": "Veelgestelde vragen over het AREI",
+   "faq": [
+    {
+     "q": "Wat is het AREI?",
+     "a": "Het Algemeen Reglement op de Elektrische Installaties is de Belgische reglementering die de veiligheidsregels voor elektrische installaties vastlegt. Sinds 1 juni 2020 bestaat het uit drie Boeken; Boek 1 betreft de huishoudelijke installaties."
+    },
+    {
+     "q": "Is de elektrische keuring verplicht?",
+     "a": "Ja, in meerdere gevallen: verkoop van een woning met een installatie van vóór 1981, nieuwe installatie of belangrijke wijziging, vermogensverhoging, en periodieke keuring om de 25 jaar voor huishoudelijke installaties."
+    },
+    {
+     "q": "Hoeveel tijd heb ik na de aankoop om in orde te zijn?",
+     "a": "18 maanden vanaf de verkoopakte om de werken te laten uitvoeren en de installatie opnieuw te laten keuren door een erkend organisme."
+    },
+    {
+     "q": "Moet de hele installatie vernieuwd worden?",
+     "a": "Zelden. Vaak volstaat het om de inbreuken uit het verslag weg te werken: kast, differentieelschakelaars, aarding, enkele kringen. We zeggen u duidelijk wat verplicht is en wat enkel aangeraden."
+    },
+    {
+     "q": "Wat kost een conformering?",
+     "a": "Dat hangt af van het aantal inbreuken en de staat van de installatie. Stuur ons het keuringsverslag: we begroten elk punt nauwkeurig, gratis en vrijblijvend."
+    },
+    {
+     "q": "Doen jullie ook de keuring?",
+     "a": "Nee: de keuring moet door een onafhankelijk erkend organisme gebeuren. Wij bereiden het dossier en de schema's voor, maken de afspraak als u dat wenst en zijn aanwezig op de dag van de keuring."
+    },
+    {
+     "q": "Bevat mijn oude zekeringkast asbest?",
+     "a": "Oude kasten met plaat en sommige bakelieten apparatuur kunnen asbest bevatten. We melden het tijdens het bezoek en organiseren de verwijdering volgens de regels vóór de werken."
+    }
+   ],
+   "zonesLabel": "Elektricien in:",
+   "relatedH2": "Onze andere diensten",
+   "related": [
+    {
+     "href": "/renovation-salle-de-bain",
+     "label": "Badkamerrenovatie",
+     "desc": "Inloopdouche, tegels, sanitair, elektriciteit."
+    },
+    {
+     "href": "/renovation-interieure",
+     "label": "Binnenrenovatie",
+     "desc": "Pleisterwerk, schilderwerk, vloeren, vochtbehandeling."
+    },
+    {
+     "href": "/solutions",
+     "label": "Apollon Solutions",
+     "desc": "Warmtepomp, zonnepanelen, laadpaal."
+    }
+   ],
+   "ctaH2": "Stuur ons uw keuringsverslag",
+   "ctaP": "Antwoord binnen 24u. Elke inbreuk wordt apart begroot, u weet precies wat verplicht is.",
+   "ctaBtn": "Gratis offerte",
+   "callLabel": "Bellen"
+  },
+  "en": {
+   "title": "RGIE Electrical Compliance Brussels — Electrician, free quote | Apollon Construction",
+   "desc": "Electrician in Brussels and Brabant: RGIE compliance upgrades, new electrical panel, full rewiring, diagrams and preparation of the inspection by an approved body. Reply within 24h, 6% VAT.",
+   "bc": "Home",
+   "kicker": "RGIE electrics",
+   "h1": "RGIE electrical compliance in Brussels",
+   "intro": "Non-compliant inspection report? Buying or selling a house? Outdated installation? Apollon Construction brings your electrical installation up to the Belgian RGIE standard: panel, RCDs, earthing, circuits, diagrams. We prepare the inspection by the approved body and support you until the report is compliant.",
+   "badges": [
+    "Reply within 24h",
+    "Free itemised quote",
+    "Single-line and location diagrams included",
+    "6% VAT on homes older than 10 years"
+   ],
+   "heroImage": "/images/chantier-renovation.jpg",
+   "heroAlt": "RGIE electrical compliance in Brussels — Apollon Construction",
+   "serviceName": "RGIE electrical compliance",
+   "formService": "RGIE compliance",
+   "formOptions": [
+    "RGIE compliance",
+    "New electrical panel",
+    "Full rewiring",
+    "Dedicated circuit (oven, washing machine, EV charger, heat pump)",
+    "Electrical repair",
+    "Other"
+   ],
+   "body": [
+    {
+     "h2": "When do you need RGIE compliance work?",
+     "p": [
+      "When selling a home whose electrical installation dates from before 1 October 1981, an inspection by an approved body is mandatory. If the report is non-compliant, the buyer has 18 months from the deed to have the works done and a new inspection carried out.",
+      "Outside a sale, compliance work is needed after a major renovation, when increasing the power supply, if your installation shows violations (no 30 mA RCD for the bathroom, insufficient earthing, panel without diagrams) or simply because the 25-year periodic inspection is due."
+     ]
+    },
+    {
+     "h2": "What we tell you plainly",
+     "p": [
+      "A non-compliant report does not mean redoing everything. We read the report point by point, separate what is mandatory from what is advisable and price each item. You decide with full knowledge."
+     ]
+    }
+   ],
+   "pointsH2": "What we do",
+   "points": [
+    "Reading the inspection report and precise pricing of the violations to fix",
+    "Replacing or upgrading the electrical panel: 300 mA and 30 mA RCDs, circuit breakers",
+    "Earthing, equipotential bonding, earth rod",
+    "Dedicated circuits: washing machine, oven, hob, heat pump, EV charger",
+    "Full rewiring, single-phase or three-phase",
+    "Single-line and location diagrams, file ready for the approved body",
+    "Booking and attending the inspection (Vinçotte, ACEG, BTV…)",
+    "Troubleshooting and fault diagnosis"
+   ],
+   "processH2": "How it works",
+   "process": [
+    {
+     "title": "Send the report",
+     "desc": "Your inspection report or a few photos of the panel are enough for a first estimate."
+    },
+    {
+     "title": "Visit & quote within 48h",
+     "desc": "We check on site and price each violation. Mandatory and advisable are kept separate."
+    },
+    {
+     "title": "Works",
+     "desc": "Scheduled with you, power cuts kept to a minimum, clean site."
+    },
+    {
+     "title": "Inspection & compliant report",
+     "desc": "File and diagrams ready, appointment with the approved body, present on the day."
+    }
+   ],
+   "faqH2": "RGIE frequently asked questions",
+   "faq": [
+    {
+     "q": "What is the RGIE?",
+     "a": "The Règlement Général sur les Installations Électriques (AREI in Dutch) is the Belgian regulation setting the safety rules for electrical installations. Since 1 June 2020 it is organised in three Books; Book 1 covers domestic installations."
+    },
+    {
+     "q": "Is the electrical inspection mandatory?",
+     "a": "Yes, in several cases: sale of a home with an installation dating from before 1981, new installation or major modification, power increase, and periodic inspection every 25 years for domestic installations."
+    },
+    {
+     "q": "How long do I have after buying to become compliant?",
+     "a": "18 months from the deed of sale to have the works done and the installation re-inspected by an approved body."
+    },
+    {
+     "q": "Do I have to rewire everything?",
+     "a": "Rarely. Often fixing the violations listed in the report is enough: panel, RCDs, earthing, a few circuits. We tell you clearly what is mandatory and what is merely advisable."
+    },
+    {
+     "q": "How much does compliance work cost?",
+     "a": "It depends on the number of violations and the condition of the installation. Send us the inspection report: we price each point precisely, free of charge and without commitment."
+    },
+    {
+     "q": "Do you also carry out the inspection?",
+     "a": "No: the inspection must be carried out by an independent approved body. We prepare the file and diagrams, book the appointment if you wish and are present on inspection day."
+    },
+    {
+     "q": "Does my old panel contain asbestos?",
+     "a": "Old board-type panels and some bakelite equipment may contain asbestos. We flag it during the visit and organise proper removal before the works."
+    }
+   ],
+   "zonesLabel": "Electrician in:",
+   "relatedH2": "Our other services",
+   "related": [
+    {
+     "href": "/renovation-salle-de-bain",
+     "label": "Bathroom renovation",
+     "desc": "Walk-in shower, tiling, plumbing, electrics."
+    },
+    {
+     "href": "/renovation-interieure",
+     "label": "Interior renovation",
+     "desc": "Plastering, painting, flooring, damp treatment."
+    },
+    {
+     "href": "/solutions",
+     "label": "Apollon Solutions",
+     "desc": "Heat pump, solar panels, EV charger."
+    }
+   ],
+   "ctaH2": "Send us your inspection report",
+   "ctaP": "Reply within 24h. Each violation is priced separately, so you know exactly what is mandatory.",
+   "ctaBtn": "Free quote",
+   "callLabel": "Call"
+  }
+ }
+}
