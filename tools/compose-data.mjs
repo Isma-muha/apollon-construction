@@ -566,16 +566,37 @@ const PROJECTS = [
 ];
 
 const AA = {
-  fr: { kicker: "Avant / Après", title: "Glissez pour voir la différence.", before: "Avant", after: "Après", hint: "Glissez le curseur ↔", caseTitle: "Cuisine — plafond, éclairage et peinture", caseText: "Nouveau plafond avec caisson lumineux intégré, spots encastrés, corniches, climatisation encastrée et mise en peinture complète des murs. Mobilier et plans de travail protégés du premier au dernier jour.", videos: "Le chantier en vidéo — avant travaux", view1: "Vue vers la fenêtre", view2: "Vue vers le mur de fond", view3: "Vue depuis la porte" },
-  nl: { kicker: "Voor / Na", title: "Schuif om het verschil te zien.", before: "Voor", after: "Na", hint: "Verschuif de cursor ↔", caseTitle: "Keuken — plafond, verlichting en schilderwerk", caseText: "Nieuw plafond met geïntegreerde lichtkoof, inbouwspots, sierlijsten, ingebouwde airco en volledig schilderwerk van de muren. Meubels en werkbladen beschermd van de eerste tot de laatste dag.", videos: "De werf in beeld — vóór de werken", view1: "Zicht naar het raam", view2: "Zicht naar de achterwand", view3: "Zicht vanaf de deur" },
-  en: { kicker: "Before / After", title: "Drag to see the difference.", before: "Before", after: "After", hint: "Drag the slider ↔", caseTitle: "Kitchen — ceiling, lighting and painting", caseText: "New ceiling with integrated light box, recessed spots, cornices, built-in air conditioning and full repainting of the walls. Units and worktops protected from the first day to the last.", videos: "The site on video — before works", view1: "View towards the window", view2: "View towards the back wall", view3: "View from the door" }
+  fr: { kicker: "Avant / Après", title: "Glissez pour voir la différence.", before: "Avant", after: "Après", hint: "Glissez le curseur ↔", caseTitle: "Cuisine — plafond, éclairage et peinture", caseText: "Nouveau plafond avec caisson lumineux intégré, spots encastrés, corniches, climatisation encastrée et mise en peinture complète des murs. Mobilier et plans de travail protégés du premier au dernier jour.", videos: "Le chantier en vidéo — avant / après", videosText: "Deux chantiers filmés par notre équipe, du premier coup de burin aux finitions.", view1: "Vue vers la fenêtre", view2: "Vue vers le mur de fond", view3: "Vue depuis la porte" },
+  nl: { kicker: "Voor / Na", title: "Schuif om het verschil te zien.", before: "Voor", after: "Na", hint: "Verschuif de cursor ↔", caseTitle: "Keuken — plafond, verlichting en schilderwerk", caseText: "Nieuw plafond met geïntegreerde lichtkoof, inbouwspots, sierlijsten, ingebouwde airco en volledig schilderwerk van de muren. Meubels en werkbladen beschermd van de eerste tot de laatste dag.", videos: "De werf in beeld — voor / na", videosText: "Twee werven gefilmd door ons team, van de eerste beitelslag tot de afwerking.", view1: "Zicht naar het raam", view2: "Zicht naar de achterwand", view3: "Zicht vanaf de deur" },
+  en: { kicker: "Before / After", title: "Drag to see the difference.", before: "Before", after: "After", hint: "Drag the slider ↔", caseTitle: "Kitchen — ceiling, lighting and painting", caseText: "New ceiling with integrated light box, recessed spots, cornices, built-in air conditioning and full repainting of the walls. Units and worktops protected from the first day to the last.", videos: "The site on video — before / after", videosText: "Two projects filmed by our team, from the first chisel blow to the finishing touches.", view1: "View towards the window", view2: "View towards the back wall", view3: "View from the door" }
 };
 const CASES = [
   { before: UP("avant3"), after: UP("apres1") },
   { before: UP("avant2"), after: UP("apres2") },
   { before: UP("avant4"), after: UP("apres3") }
 ];
-const VIDEOS = ["/uploads/video-avant1.mp4", "/uploads/video-avant2.mp4"];
+const VIDEOS = [
+  {
+    src: "/uploads/video-sdb.mp4", poster: "/uploads/video-sdb-poster.jpg",
+    label: tri("Salle de bain", "Badkamer", "Bathroom"),
+    title: tri("Salle de bain — avant, pendant, après", "Badkamer — voor, tijdens, na", "Bathroom — before, during, after"),
+    text: tri(
+      "Murs mis à nu et plomberie refaite, puis douche à l'italienne avec paroi vitrée, carrelage effet marbre du sol au plafond, meuble-vasque suspendu et sèche-serviettes.",
+      "Muren tot op de steen gestript en sanitair vernieuwd, daarna een inloopdouche met glazen wand, tegels in marmerlook van vloer tot plafond, hangend wastafelmeubel en handdoekradiator.",
+      "Walls stripped back and plumbing redone, then a walk-in shower with glass screen, marble-look tiles from floor to ceiling, wall-hung basin unit and towel radiator."
+    )
+  },
+  {
+    src: "/uploads/video-sejour.mp4", poster: "/uploads/video-sejour-poster.jpg",
+    label: tri("Séjour", "Woonkamer", "Living room"),
+    title: tri("Séjour — murs remis à neuf et nouveau sol", "Woonkamer — muren vernieuwd en nieuwe vloer", "Living room — walls renewed and new floor"),
+    text: tri(
+      "Anciens revêtements arrachés, murs replâtrés et repeints, plinthes et pose d'un sol en bois neuf. Un séjour prêt à vivre, livré propre.",
+      "Oude bekleding verwijderd, muren opnieuw gepleisterd en geschilderd, plinten en een nieuwe houten vloer. Een woonkamer klaar om in te leven, proper opgeleverd.",
+      "Old coverings stripped, walls re-plastered and repainted, skirting boards and a new wooden floor. A living room ready to live in, handed over clean."
+    )
+  }
+];
 
 // ---------------------------------------------------------------- primes & TVA
 const PRIMES = per((l) => {
@@ -636,7 +657,7 @@ export const PROJECTS = ${JSON.stringify(PROJECTS, null, 1)};
 export const T = ${JSON.stringify(T, null, 1)};
 export const AA = ${JSON.stringify(AA, null, 1)};
 export const CASES = ${JSON.stringify(CASES)};
-export const VIDEOS = ${JSON.stringify(VIDEOS)};
+export const VIDEOS = ${JSON.stringify(VIDEOS, null, 1)};
 export const PRIMES = ${JSON.stringify(PRIMES, null, 1)};
 
 export function localizeService(s, lang, i) {

@@ -86,7 +86,7 @@ function transform(html) {
   body = body.replace(/<next-route-announcer[\s\S]*?<\/next-route-announcer>/g, "");
   if (LIGHT) body = body.replace(/<video\b[^>]*><\/video>/g, PH_VIDEO);
   body = body.replace(/href="\/(fr|nl|en)(\/[^"]*)?"/g, (m, l, rest) => `href="#/${l}${(rest || "").replace(/\/(\?|$)/, "$1")}"`);
-  body = body.replace(/(src|href|srcset)="(\/(?:images|uploads|logo)\/[^"]+)"/gi, (m, attr, p) => { ASSETS[p] = dataUri(p); return `${attr}="__A${p}__"`; });
+  body = body.replace(/(src|href|srcset|poster)="(\/(?:images|uploads|logo)\/[^"]+)"/gi, (m, attr, p) => { ASSETS[p] = dataUri(p); return `${attr}="__A${p}__"`; });
   return body;
 }
 const ASSETS = {};

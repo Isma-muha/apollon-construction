@@ -57,18 +57,28 @@ export default function RealisationsPage({ params }) {
             <Reveal key={i}><BeforeAfter before={c.before} after={c.after} labels={aa} view={views[i]} /></Reveal>
           ))}
         </div>
-        <Reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))", gap: 48, marginTop: 64, alignItems: "start" }}>
-          <div>
-            <h3 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: "clamp(24px,2.6vw,38px)", lineHeight: 1.15, margin: "0 0 16px" }}>{aa.caseTitle}</h3>
-            <p style={{ color: "#b8b1a3", fontSize: 16, lineHeight: 1.7, margin: 0, maxWidth: "52ch" }}>{aa.caseText}</p>
-          </div>
-          <div>
-            <div className="kicker" style={{ color: "#50b265", marginBottom: 18 }}>{aa.videos}</div>
-            <div className="vid-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-              {VIDEOS.map((v, i) => <video key={i} src={v} controls preload="metadata" style={{ width: "100%", aspectRatio: "16/9", background: "#000", display: "block", objectFit: "cover" }} />)}
-            </div>
-          </div>
+        <Reveal style={{ marginTop: 28, maxWidth: "70ch" }}>
+          <div style={{ fontSize: 13, letterSpacing: "0.08em", color: "#8f887a" }}>{aa.caseTitle}</div>
+          <p style={{ color: "#b8b1a3", fontSize: 14, lineHeight: 1.65, margin: "6px 0 0" }}>{aa.caseText}</p>
         </Reveal>
+        <div style={{ marginTop: 96, paddingTop: 56, borderTop: "1px solid #2c2e29" }}>
+          <Reveal>
+            <div className="kicker" style={{ color: "#50b265", marginBottom: 12 }}>{aa.videos}</div>
+            <p style={{ fontFamily: SERIF, fontSize: "clamp(22px,2.4vw,34px)", lineHeight: 1.2, margin: "0 0 40px", maxWidth: "36ch" }}>{aa.videosText}</p>
+          </Reveal>
+          <div className="vid-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: 40, alignItems: "start" }}>
+            {VIDEOS.map((v, i) => (
+              <Reveal key={i} className="vid-card" style={{ display: "grid", gridTemplateColumns: "minmax(200px,300px) minmax(0,1fr)", gap: 24, alignItems: "end" }}>
+                <video src={v.src} poster={v.poster} controls preload="none" playsInline muted style={{ width: "100%", aspectRatio: "9/16", background: "#000", display: "block", objectFit: "cover" }} />
+                <div>
+                  <span className="chip-dark">{v.label[lang]}</span>
+                  <h3 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: "clamp(22px,2.2vw,30px)", lineHeight: 1.15, margin: "14px 0 12px" }}>{v.title[lang]}</h3>
+                  <p style={{ color: "#b8b1a3", fontSize: 15, lineHeight: 1.7, margin: 0 }}>{v.text[lang]}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
         <div style={{ marginTop: 64, paddingTop: 32, borderTop: "1px solid #2c2e29" }}><Zones lang={lang} label={t.sp.zonesLabel} /></div>
       </section>
 
