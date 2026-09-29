@@ -247,3 +247,14 @@ button { font-family: "Archivo", sans-serif; }
   .vid-card { grid-template-columns: 1fr !important; gap: 16px !important; }
   .vid-card video { max-width: 320px; margin: 0 auto; }
 }
+
+/* ---- deux numéros avec étiquette de langues */
+.phone-btn { display: inline-flex; align-items: center; gap: 10px; }
+.phone-tag { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.7; font-family: Archivo, sans-serif; }
+.nav-phones { display: grid; gap: 2px; }
+.nav-phones .nav-phone { display: flex; align-items: baseline; gap: 8px; font-size: 13px; line-height: 1.2; }
+.lp-nav-phones { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+@media (max-width: 720px) {
+  .lp-nav-phones .phone-btn:nth-child(2) { display: none; }
+  .lp-nav-phones .phone-tag { display: none; }
+}

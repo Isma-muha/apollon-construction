@@ -3,8 +3,8 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import Reveal from "@/components/Reveal";
 import JsonLd from "@/components/JsonLd";
-import { Steps, Zones, Reviews, Partners, ServiceRows, Pic } from "@/components/Blocks";
-import { T, SERVICES, PROJECTS, PHONE, PHONE_HREF, localizeService, localizeProject, LANGS } from "@/lib/site-data";
+import { Steps, Zones, Reviews, Partners, ServiceRows, Pic, PhoneButtons } from "@/components/Blocks";
+import { T, SERVICES, PROJECTS, PHONES, localizeService, localizeProject, LANGS } from "@/lib/site-data";
 import { pageMetadata, orgSchema } from "@/lib/seo";
 
 const SERIF = "'Libre Caslon Text',serif";
@@ -48,7 +48,7 @@ export default function Accueil({ params }) {
             <p style={{ fontFamily: SERIF, fontSize: "clamp(20px,2vw,30px)", lineHeight: 1.3, margin: 0, maxWidth: "30ch" }}>{h.lead}</p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
               <Link href={`/${lang}/contact`} className="btn btn-green">{t.nav.cta}</Link>
-              <a href={PHONE_HREF} className="btn" style={{ border: "1px solid rgba(243,238,228,.5)", background: "transparent", color: "#f3eee4" }}>{PHONE}</a>
+              <PhoneButtons className="btn" style={{ border: "1px solid rgba(243,238,228,.5)", background: "transparent", color: "#f3eee4" }} />
             </div>
           </div>
           <div className="nav-desktop-only hero-trust" style={{ textAlign: "right", fontSize: 13, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", lineHeight: 2.2, color: "#fff", flexShrink: 0 }}>
@@ -180,7 +180,9 @@ export default function Accueil({ params }) {
         <Reveal style={{ display: "grid", gap: 48 }}>
           <h2 style={{ fontFamily: SERIF, fontWeight: 400, fontSize: "clamp(80px,15vw,260px)", lineHeight: 0.85, margin: 0, letterSpacing: "-0.03em" }}>{t.cta.title}</h2>
           <div style={{ display: "grid", maxWidth: 860, marginLeft: "auto", width: "100%" }}>
-            <a href={PHONE_HREF} style={{ fontFamily: SERIF, fontSize: "clamp(28px,3.4vw,52px)", borderBottom: "1px solid #0e0f0d", padding: "22px 0", display: "flex", justifyContent: "space-between", gap: 16, color: "#0e0f0d" }}><span>{PHONE}</span><span>→</span></a>
+            {PHONES.map((p) => (
+              <a key={p.href} href={p.href} style={{ fontFamily: SERIF, fontSize: "clamp(28px,3.4vw,52px)", borderBottom: "1px solid #0e0f0d", padding: "22px 0", display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 16, color: "#0e0f0d" }}><span>{p.num} <span style={{ fontFamily: "Archivo, sans-serif", fontSize: 12, letterSpacing: "0.18em", color: "#8f887a", marginLeft: 12 }}>{p.tag}</span></span><span>→</span></a>
+            ))}
             <a href="mailto:info@apollonconstruction.be" style={{ fontFamily: SERIF, fontSize: "clamp(20px,2.2vw,34px)", borderBottom: "1px solid #0e0f0d", padding: "22px 0", display: "flex", justifyContent: "space-between", gap: 16, color: "#0e0f0d" }}><span>info@apollonconstruction.be</span><span>→</span></a>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 24, flexWrap: "wrap", marginTop: 28 }}>
               <p style={{ margin: 0, color: "#5a5449", fontSize: 15, lineHeight: 1.7, maxWidth: "46ch" }}>{t.cta.sub}</p>

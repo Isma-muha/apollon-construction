@@ -76,7 +76,7 @@ const T = per((l) => {
       seoTitle: SEO_OVERRIDE.home[l][0],
       seoDesc: SEO_OVERRIDE.home[l][1],
       kicker: F ? "Rénovation intérieure — Bruxelles & Brabant" : N ? "Binnenrenovatie — Brussel & Brabant" : "Interior renovation — Brussels & Brabant",
-      lead: F ? "Salle de bain, électricité, plafonnage, peinture, sols : une seule équipe, un devis clair poste par poste, un chantier propre." : N ? "Badkamer, elektriciteit, pleisterwerk, schilderwerk, vloeren: één team, een duidelijke offerte post per post, een propere werf." : "Bathroom, electrics, plastering, painting, flooring: one team, a clear itemised quote, a clean site.",
+      lead: F ? "Salle de bain, électricité, plafonnage, peinture, sols, façade, toiture : une seule équipe, un devis clair poste par poste, un chantier propre." : N ? "Badkamer, elektriciteit, pleisterwerk, schilderwerk, vloeren, gevel, dak: één team, een duidelijke offerte post per post, een propere werf." : "Bathroom, electrics, plastering, painting, flooring, façade, roofing: one team, a clear itemised quote, a clean site.",
       h1a: F ? "Rénover" : N ? "Renoveren" : "Renovate",
       h1b: F ? "sans compromis." : N ? "zonder compromis." : "without compromise.",
       m1: F ? "Rénovation intérieure, salle de bain, électricité, façade. Devis flous, retards, chantiers sales : on a vu ce qui ne va pas dans le secteur, et on fait " : N ? "Binnenrenovatie, badkamer, elektriciteit, gevel. Vage offertes, vertragingen, vuile werven: we zagen wat er misloopt in de sector, en wij doen " : "Interior renovation, bathrooms, electrics, façades. Vague quotes, delays, messy sites: we've seen what goes wrong in this industry, and we do ",
@@ -645,6 +645,10 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.apollon
 export const LANGS = ${JSON.stringify(LANGS)};
 export const PHONE = "0499 89 60 86";
 export const PHONE_HREF = "tel:+32499896086";
+export const PHONES = [
+ { num: "0499 89 60 86", href: "tel:+32499896086", tag: "FR · NL · EN" },
+ { num: "0471 93 29 18", href: "tel:+32471932918", tag: "FR · EN" }
+];
 export const EMAIL = "info@apollonconstruction.be";
 export const ADDRESS = { street: "Oudesmidsestraat 20", zip: "1700", city: "Dilbeek" };
 export const REVIEWS_URL = "https://share.google/aO4CXjZ8n3OlEY00c";

@@ -2,8 +2,8 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
-import { Zones } from "@/components/Blocks";
-import { T, SERVICES, PHONE, PHONE_HREF, EMAIL, localizeService, LANGS, SITE_URL } from "@/lib/site-data";
+import { Zones, PhoneList } from "@/components/Blocks";
+import { T, SERVICES, EMAIL, localizeService, LANGS, SITE_URL } from "@/lib/site-data";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 const SERIF = "'Libre Caslon Text',serif";
@@ -37,7 +37,7 @@ export default function ContactPage({ params }) {
 
       <section className="grid-2 flush" style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) minmax(0,1.4fr)" }}>
         <div className="contact-info-col" style={{ padding: "72px 4vw", borderRight: "1px solid #0e0f0d", display: "grid", alignContent: "start", gap: 36 }}>
-          <div><Lbl>{ct.labels.phone}</Lbl><a href={PHONE_HREF} style={{ fontFamily: SERIF, fontSize: "clamp(28px,3vw,44px)", lineHeight: 1 }}>{PHONE}</a></div>
+          <div><Lbl>{ct.labels.phone}</Lbl><PhoneList size="clamp(26px,2.6vw,40px)" color="#0e0f0d" tagColor="#6b6457" /></div>
           <div><Lbl>{ct.labels.email}</Lbl><a href={`mailto:${EMAIL}`} style={{ fontFamily: SERIF, fontSize: "clamp(20px,2vw,28px)", lineHeight: 1.1, wordBreak: "break-all" }}>{EMAIL}</a></div>
           <div><Lbl>{ct.labels.address}</Lbl><p style={{ margin: 0, fontSize: 15, lineHeight: 1.6, color: "#5a5449" }}>Apollon Group SRL<br />{t.footer.address}</p></div>
           <div><Lbl>{ct.labels.zone}</Lbl><p style={{ margin: 0, fontSize: 15, lineHeight: 1.6, color: "#5a5449" }}>{t.footer.zone}</p></div>

@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
 import JsonLd from "@/components/JsonLd";
-import { Faq, Pic } from "@/components/Blocks";
-import { T, SERVICES, PHONE, PHONE_HREF, REVIEWS, REVIEWS_URL, localizeService, LANGS } from "@/lib/site-data";
+import { Faq, Pic, PhoneButtons } from "@/components/Blocks";
+import { T, SERVICES, PHONES, REVIEWS, REVIEWS_URL, localizeService, LANGS } from "@/lib/site-data";
 import { serviceSchema } from "@/lib/seo";
 
 const SERIF = "'Libre Caslon Text',serif";
@@ -38,7 +38,7 @@ export default function LandingPage({ params }) {
           <img src="/logo/mark.svg" alt="" width="40" height="35" />
           <span className="wordmark"><span className="w1">Apollon</span><span className="w2">Construction</span></span>
         </Link>
-        <a href={PHONE_HREF} className="btn btn-dark" style={{ padding: "12px 20px" }}>{PHONE}</a>
+        <div className="lp-nav-phones"><PhoneButtons className="btn btn-dark" style={{ padding: "10px 16px" }} /></div>
       </header>
 
       <main>
@@ -61,7 +61,7 @@ export default function LandingPage({ params }) {
             <div style={{ fontFamily: SERIF, fontSize: 26, lineHeight: 1.1 }}>{lp.formTitle}</div>
             <div style={{ fontSize: 13, color: "#6b6457", margin: "6px 0 22px" }}>{lp.formSub}</div>
             <ContactForm lang={lang} fm={t.contact.form} services={list} defaultService={s.id} compact />
-            <div style={{ marginTop: 16, fontSize: 13, color: "#6b6457", textAlign: "center" }}>{lp.orCall} <a href={PHONE_HREF} style={{ color: "#11642e", fontWeight: 600 }}>{PHONE}</a></div>
+            <div style={{ marginTop: 16, fontSize: 13, color: "#6b6457", textAlign: "center" }}>{lp.orCall} {PHONES.map((p, i) => <span key={p.href}>{i > 0 ? " · " : ""}<a href={p.href} style={{ color: "#11642e", fontWeight: 600 }}>{p.num}</a> <small style={{ color: "#8f887a" }}>({p.tag})</small></span>)}</div>
           </div>
         </section>
 
@@ -132,7 +132,7 @@ export default function LandingPage({ params }) {
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "flex-start" }}>
             <a href="#form" className="btn" style={{ background: "#f3eee4", color: "#0e0f0d" }}>{lp.backToForm}</a>
-            <a href={PHONE_HREF} className="btn" style={{ border: "1px solid rgba(243,238,228,.6)", color: "#f3eee4", background: "transparent" }}>{PHONE}</a>
+            <PhoneButtons className="btn" style={{ border: "1px solid rgba(243,238,228,.6)", color: "#f3eee4", background: "transparent" }} />
           </div>
         </section>
       </main>
@@ -143,7 +143,7 @@ export default function LandingPage({ params }) {
       </footer>
 
       <div className="lp-sticky">
-        <a href={PHONE_HREF} className="btn btn-dark">{lp.call} · {PHONE}</a>
+        <a href={PHONES[0].href} className="btn btn-dark">{lp.call} · {PHONES[0].num}</a>
         <a href="#form" className="btn btn-green">{lp.quote}</a>
       </div>
     </div>

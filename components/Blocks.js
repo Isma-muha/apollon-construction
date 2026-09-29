@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Ph from "@/components/Ph";
-import { ZONES_L, REVIEWS, REVIEWS_URL, PHONE, PHONE_HREF } from "@/lib/site-data";
+import { ZONES_L, REVIEWS, REVIEWS_URL, PHONES } from "@/lib/site-data";
 
 const SERIF = "'Libre Caslon Text',serif";
 
@@ -136,7 +136,7 @@ export function CtaBlock({ lang, t, title, sub, extraStyle, className = "" }) {
         <p style={{ margin: 0, color: "#5a5449", fontSize: 16, lineHeight: 1.7, maxWidth: "46ch" }}>{sub || t.cta.sub}</p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <Link href={`/${lang}/contact`} className="btn btn-dark">{t.nav.cta}</Link>
-          <a href={PHONE_HREF} className="btn" style={{ border: "1px solid #0e0f0d", background: "transparent", color: "#0e0f0d" }}>{PHONE}</a>
+          <PhoneButtons className="btn" style={{ border: "1px solid #0e0f0d", background: "transparent", color: "#0e0f0d" }} />
         </div>
       </div>
     </section>
@@ -145,4 +145,26 @@ export function CtaBlock({ lang, t, title, sub, extraStyle, className = "" }) {
 
 export function Pic({ src, alt, tone, style }) {
   return src ? <img src={src} alt={alt || ""} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", ...(style || {}) }} /> : <Ph label={alt} tone={tone} />;
+}
+
+// Les deux numéros, avec leur étiquette de langues (codes FR/NL/EN, identiques dans les 3 versions du site).
+export function PhoneButtons({ className = "btn", style }) {
+  return PHONES.map((p) => (
+    <a key={p.href} href={p.href} className={`${className} phone-btn`} style={style}>
+      <span className="phone-tag">{p.tag}</span>{p.num}
+    </a>
+  ));
+}
+
+export function PhoneList({ size = "clamp(28px,3vw,44px)", color, tagColor = "#8f887a", gap = 14 }) {
+  return (
+    <div style={{ display: "grid", gap }}>
+      {PHONES.map((p) => (
+        <a key={p.href} href={p.href} style={{ display: "block", color, lineHeight: 1.05 }}>
+          <span style={{ display: "block", fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: tagColor, marginBottom: 6, fontFamily: "Archivo, sans-serif" }}>{p.tag}</span>
+          <span style={{ fontFamily: "'Libre Caslon Text',serif", fontSize: size }}>{p.num}</span>
+        </a>
+      ))}
+    </div>
+  );
 }

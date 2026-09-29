@@ -3,8 +3,8 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import Reveal from "@/components/Reveal";
 import JsonLd from "@/components/JsonLd";
-import { Steps } from "@/components/Blocks";
-import { T, PRIMES, PHONE, PHONE_HREF, LANGS, SITE_URL } from "@/lib/site-data";
+import { Steps, PhoneButtons } from "@/components/Blocks";
+import { T, PRIMES, LANGS, SITE_URL } from "@/lib/site-data";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 const SERIF = "'Libre Caslon Text',serif";
@@ -36,7 +36,7 @@ export default function PrimesPage({ params }) {
             <p style={{ maxWidth: "58ch", fontSize: 17, lineHeight: 1.7, color: "#b8b1a3", margin: "0 0 36px" }}>{p.intro}</p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <Link href={`/${lang}/contact`} className="btn btn-green">{p.button}</Link>
-              <a href={PHONE_HREF} className="btn" style={{ border: "1px solid rgba(243,238,228,.5)", background: "transparent", color: "#f3eee4" }}>{PHONE}</a>
+              <PhoneButtons className="btn" style={{ border: "1px solid rgba(243,238,228,.5)", background: "transparent", color: "#f3eee4" }} />
             </div>
           </div>
           <div style={{ fontFamily: SERIF, fontSize: "clamp(120px,18vw,300px)", lineHeight: 0.8, letterSpacing: "-0.04em", color: "transparent", WebkitTextStroke: "1px #50b265" }}>6<span style={{ fontSize: "0.45em" }}>%</span></div>
@@ -124,7 +124,7 @@ export default function PrimesPage({ params }) {
         </Reveal>
         <Reveal style={{ display: "flex", justifyContent: "flex-end", gap: 12, flexWrap: "wrap" }}>
           <Link href={`/${lang}/contact`} className="btn btn-dark">{t.nav.cta} →</Link>
-          <a href={PHONE_HREF} className="btn btn-ivoire">{PHONE}</a>
+          <PhoneButtons className="btn btn-ivoire" />
         </Reveal>
       </section>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { T, SERVICES, PHONE, PHONE_HREF, EMAIL, SOCIAL, localizeService } from "@/lib/site-data";
+import { T, SERVICES, EMAIL, SOCIAL, localizeService } from "@/lib/site-data";
+import { PhoneList } from "@/components/Blocks";
 
 export default function SiteFooter({ lang }) {
   const t = T[lang];
@@ -44,7 +45,7 @@ export default function SiteFooter({ lang }) {
         <div>
           <K>{t.nav.contact}</K>
           <div style={{ display: "grid", gap: 10 }}>
-            <a href={PHONE_HREF} style={{ fontFamily: "'Libre Caslon Text',serif", fontSize: 24, color: "#f3eee4" }}>{PHONE}</a>
+            <PhoneList size="24px" color="#f3eee4" tagColor="#8f887a" gap={10} />
             <a href={`mailto:${EMAIL}`} style={{ fontSize: 14, color: "#f3eee4" }}>{EMAIL}</a>
             <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#8f887a", marginTop: 10 }}>
               <a href={SOCIAL.instagram} style={{ color: "#8f887a" }} target="_blank" rel="noopener noreferrer">Instagram</a>

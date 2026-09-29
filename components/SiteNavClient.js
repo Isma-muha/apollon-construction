@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 const LANGS = ["fr", "nl", "en"];
 
-export default function SiteNavClient({ lang, active, onDark, t, services, PHONE, PHONE_HREF }) {
+export default function SiteNavClient({ lang, active, onDark, t, services, PHONES }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -69,9 +69,11 @@ export default function SiteNavClient({ lang, active, onDark, t, services, PHONE
           </nav>
           <div className="nav-right nav-desktop-only" data-close onMouseEnter={() => setMenuOpen(false)}>
             <div style={{ display: "flex", alignItems: "center", gap: 2 }}>{langBtns}</div>
-            <a href={PHONE_HREF} className="nav-phone">
-              {PHONE}
-            </a>
+            <div className="nav-phones">
+              {PHONES.map((p) => (
+                <a key={p.href} href={p.href} className="nav-phone"><span className="phone-tag">{p.tag}</span>{p.num}</a>
+              ))}
+            </div>
             <Link href={`/${lang}/contact`} className="btn-outline">
               {t.cta}
             </Link>
@@ -121,9 +123,9 @@ export default function SiteNavClient({ lang, active, onDark, t, services, PHONE
           </div>
           <div style={{ marginTop: 24, display: "flex", gap: 10 }}>{langBtns}</div>
           <div style={{ marginTop: 24, display: "grid", gap: 12 }}>
-            <a href={PHONE_HREF} className="btn btn-ivoire">
-              {PHONE}
-            </a>
+            {PHONES.map((p) => (
+              <a key={p.href} href={p.href} className="btn btn-ivoire phone-btn"><span className="phone-tag">{p.tag}</span>{p.num}</a>
+            ))}
             <Link href={`/${lang}/contact`} className="btn btn-green" onClick={() => setMobileOpen(false)}>
               {t.cta}
             </Link>
