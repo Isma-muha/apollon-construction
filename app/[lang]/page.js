@@ -48,7 +48,7 @@ export default function Accueil({ params }) {
             <p style={{ fontFamily: SERIF, fontSize: "clamp(20px,2vw,30px)", lineHeight: 1.3, margin: 0, maxWidth: "30ch" }}>{h.lead}</p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
               <Link href={`/${lang}/contact`} className="btn btn-green">{t.nav.cta}</Link>
-              <PhoneButtons className="btn" style={{ border: "1px solid rgba(243,238,228,.5)", background: "transparent", color: "#f3eee4" }} />
+              <PhoneButtons />
             </div>
           </div>
           <div className="nav-desktop-only hero-trust" style={{ textAlign: "right", fontSize: 13, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", lineHeight: 2.2, color: "#fff", flexShrink: 0 }}>

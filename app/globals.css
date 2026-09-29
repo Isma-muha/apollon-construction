@@ -249,12 +249,18 @@ button { font-family: "Archivo", sans-serif; }
 }
 
 /* ---- deux numéros avec étiquette de langues */
-.phone-btn { display: inline-flex; align-items: center; gap: 10px; }
-.phone-tag { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.7; font-family: Archivo, sans-serif; }
-.nav-phones { display: grid; gap: 2px; }
+.phone-block { display: grid; gap: 8px; padding-left: 16px; align-self: center; }
+.phone-line { display: flex; align-items: baseline; gap: 12px; line-height: 1.1; text-decoration: none; }
+.phone-num { font-family: Archivo, sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 0.01em; white-space: nowrap; }
+.phone-tag { font-family: Archivo, sans-serif; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; white-space: nowrap; }
+.phone-btn { display: inline-flex; align-items: baseline; justify-content: center; gap: 10px; }
+.phone-btn .phone-tag { opacity: 0.7; }
+.nav-phones { display: grid; gap: 3px; justify-items: end; }
 .nav-phones .nav-phone { display: flex; align-items: baseline; gap: 8px; font-size: 13px; line-height: 1.2; }
-.lp-nav-phones { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.nav-phones .phone-tag { opacity: 0.6; }
+.lp-nav-phones { display: flex; }
 @media (max-width: 720px) {
-  .lp-nav-phones .phone-btn:nth-child(2) { display: none; }
+  .lp-nav-phones .phone-line:nth-child(2) { display: none; }
   .lp-nav-phones .phone-tag { display: none; }
+  .phone-block { padding-left: 14px; }
 }

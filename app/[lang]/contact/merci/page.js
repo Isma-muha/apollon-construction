@@ -38,7 +38,7 @@ export default function ThanksPage({ params }) {
           </ol>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 12 }}>
             <Link href={`/${lang}`} className="btn btn-dark">{fm.thanksBack}</Link>
-            <PhoneButtons className="btn" style={{ border: "1px solid #0e0f0d", background: "transparent", color: "#0e0f0d" }} />
+            <PhoneButtons dark={false} />
             <a href={`mailto:${EMAIL}`} className="btn" style={{ border: "1px solid #0e0f0d", background: "transparent", color: "#0e0f0d" }}>{EMAIL}</a>
           </div>
         </header>

@@ -38,7 +38,7 @@ export default function LandingPage({ params }) {
           <img src="/logo/mark.svg" alt="" width="40" height="35" />
           <span className="wordmark"><span className="w1">Apollon</span><span className="w2">Construction</span></span>
         </Link>
-        <div className="lp-nav-phones"><PhoneButtons className="btn btn-dark" style={{ padding: "10px 16px" }} /></div>
+        <div className="lp-nav-phones"><PhoneButtons dark={false} /></div>
       </header>
 
       <main>
@@ -132,7 +132,7 @@ export default function LandingPage({ params }) {
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "flex-start" }}>
             <a href="#form" className="btn" style={{ background: "#f3eee4", color: "#0e0f0d" }}>{lp.backToForm}</a>
-            <PhoneButtons className="btn" style={{ border: "1px solid rgba(243,238,228,.6)", color: "#f3eee4", background: "transparent" }} />
+            <PhoneButtons style={{ color: "#f3eee4" }} />
           </div>
         </section>
       </main>

@@ -136,7 +136,7 @@ export function CtaBlock({ lang, t, title, sub, extraStyle, className = "" }) {
         <p style={{ margin: 0, color: "#5a5449", fontSize: 16, lineHeight: 1.7, maxWidth: "46ch" }}>{sub || t.cta.sub}</p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <Link href={`/${lang}/contact`} className="btn btn-dark">{t.nav.cta}</Link>
-          <PhoneButtons className="btn" style={{ border: "1px solid #0e0f0d", background: "transparent", color: "#0e0f0d" }} />
+          <PhoneButtons dark={false} />
         </div>
       </div>
     </section>
@@ -148,12 +148,21 @@ export function Pic({ src, alt, tone, style }) {
 }
 
 // Les deux numéros, avec leur étiquette de langues (codes FR/NL/EN, identiques dans les 3 versions du site).
-export function PhoneButtons({ className = "btn", style }) {
-  return PHONES.map((p) => (
-    <a key={p.href} href={p.href} className={`${className} phone-btn`} style={style}>
-      <span className="phone-tag">{p.tag}</span>{p.num}
-    </a>
-  ));
+// Bloc empilé : le numéro en avant, l'étiquette discrète à droite.
+export function PhoneButtons({ className, style, dark = true }) {
+  const color = (style && style.color) || (dark ? "#f3eee4" : "#0e0f0d");
+  const tag = dark ? "rgba(243,238,228,.55)" : "#8f887a";
+  const line = dark ? "rgba(243,238,228,.35)" : "rgba(14,15,13,.35)";
+  return (
+    <div className="phone-block" style={{ borderLeft: `1px solid ${line}` }}>
+      {PHONES.map((p) => (
+        <a key={p.href} href={p.href} className="phone-line" style={{ color }}>
+          <span className="phone-num">{p.num}</span>
+          <span className="phone-tag" style={{ color: tag }}>{p.tag}</span>
+        </a>
+      ))}
+    </div>
+  );
 }
 
 export function PhoneList({ size = "clamp(28px,3vw,44px)", color, tagColor = "#8f887a", gap = 14 }) {
@@ -161,8 +170,8 @@ export function PhoneList({ size = "clamp(28px,3vw,44px)", color, tagColor = "#8
     <div style={{ display: "grid", gap }}>
       {PHONES.map((p) => (
         <a key={p.href} href={p.href} style={{ display: "block", color, lineHeight: 1.05 }}>
-          <span style={{ display: "block", fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: tagColor, marginBottom: 6, fontFamily: "Archivo, sans-serif" }}>{p.tag}</span>
           <span style={{ fontFamily: "'Libre Caslon Text',serif", fontSize: size }}>{p.num}</span>
+          <span style={{ display: "inline-block", marginLeft: 14, fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: tagColor, fontFamily: "Archivo, sans-serif", verticalAlign: "middle" }}>{p.tag}</span>
         </a>
       ))}
     </div>

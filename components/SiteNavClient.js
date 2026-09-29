@@ -71,7 +71,7 @@ export default function SiteNavClient({ lang, active, onDark, t, services, PHONE
             <div style={{ display: "flex", alignItems: "center", gap: 2 }}>{langBtns}</div>
             <div className="nav-phones">
               {PHONES.map((p) => (
-                <a key={p.href} href={p.href} className="nav-phone"><span className="phone-tag">{p.tag}</span>{p.num}</a>
+                <a key={p.href} href={p.href} className="nav-phone">{p.num}<span className="phone-tag">{p.tag}</span></a>
               ))}
             </div>
             <Link href={`/${lang}/contact`} className="btn-outline">
@@ -124,7 +124,7 @@ export default function SiteNavClient({ lang, active, onDark, t, services, PHONE
           <div style={{ marginTop: 24, display: "flex", gap: 10 }}>{langBtns}</div>
           <div style={{ marginTop: 24, display: "grid", gap: 12 }}>
             {PHONES.map((p) => (
-              <a key={p.href} href={p.href} className="btn btn-ivoire phone-btn"><span className="phone-tag">{p.tag}</span>{p.num}</a>
+              <a key={p.href} href={p.href} className="btn btn-ivoire phone-btn">{p.num}<span className="phone-tag">{p.tag}</span></a>
             ))}
             <Link href={`/${lang}/contact`} className="btn btn-green" onClick={() => setMobileOpen(false)}>
               {t.cta}
