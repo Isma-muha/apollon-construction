@@ -28,6 +28,12 @@ const T = per((l) => {
       primes: F ? "Primes & TVA" : N ? "Premies & btw" : "Grants & VAT",
       contact: "Contact",
       cta: F ? "Devis gratuit" : N ? "Gratis offerte" : "Free quote",
+      ctaShort: F ? "Devis" : N ? "Offerte" : "Quote",
+      call: F ? "Appeler" : N ? "Bellen" : "Call",
+      orCall: F ? "Ou appelez-nous" : N ? "Of bel ons" : "Or call us",
+      speaks: F ? "Répond en" : N ? "Antwoordt in" : "Speaks",
+      hoursShort: F ? "Lun–Sam" : N ? "Ma–Za" : "Mon–Sat",
+      whatsapp: "WhatsApp",
       allServices: F ? "Tous les services →" : N ? "Alle diensten →" : "All services →",
       menuNote: F ? "Un projet qui mêle plusieurs métiers ? C'est notre spécialité." : N ? "Een project met meerdere vakgebieden? Dat is onze specialiteit." : "A project that combines several trades? That's our specialty.",
       phone: "0499 89 60 86"
@@ -646,9 +652,11 @@ export const LANGS = ${JSON.stringify(LANGS)};
 export const PHONE = "0499 89 60 86";
 export const PHONE_HREF = "tel:+32499896086";
 export const PHONES = [
- { num: "0499 89 60 86", href: "tel:+32499896086", tag: "FR · NL · EN" },
- { num: "0471 93 29 18", href: "tel:+32471932918", tag: "FR · EN" }
+ { num: "0499 89 60 86", href: "tel:+32499896086", wa: "https://wa.me/32499896086", codes: ["fr", "nl", "en"], langs: "Français · Nederlands · English", tag: "FR · NL · EN" },
+ { num: "0471 93 29 18", href: "tel:+32471932918", wa: null, codes: ["fr", "en"], langs: "Français · English", tag: "FR · EN" }
 ];
+export const WHATSAPP = "https://wa.me/32499896086";
+export const phonesFor = (lang) => PHONES.filter((p) => p.codes.includes(lang));
 export const EMAIL = "info@apollonconstruction.be";
 export const ADDRESS = { street: "Oudesmidsestraat 20", zip: "1700", city: "Dilbeek" };
 export const REVIEWS_URL = "https://share.google/aO4CXjZ8n3OlEY00c";

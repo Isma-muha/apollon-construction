@@ -5,7 +5,8 @@ import { usePathname, useRouter } from "next/navigation";
 
 const LANGS = ["fr", "nl", "en"];
 
-export default function SiteNavClient({ lang, active, onDark, t, services, PHONES }) {
+export default function SiteNavClient({ lang, active, onDark, t, services, PHONES, hours }) {
+  const [callOpen, setCallOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -69,10 +70,21 @@ export default function SiteNavClient({ lang, active, onDark, t, services, PHONE
           </nav>
           <div className="nav-right nav-desktop-only" data-close onMouseEnter={() => setMenuOpen(false)}>
             <div style={{ display: "flex", alignItems: "center", gap: 2 }}>{langBtns}</div>
-            <div className="nav-phones">
-              {PHONES.map((p) => (
-                <a key={p.href} href={p.href} className="nav-phone">{p.num}<span className="phone-tag">{p.tag}</span></a>
-              ))}
+            <div className="call-wrap" onMouseEnter={() => setCallOpen(true)} onMouseLeave={() => setCallOpen(false)}>
+              <button type="button" className="call-btn" aria-expanded={callOpen} onClick={() => setCallOpen((v) => !v)}>
+                <span className="live-dot" />{t.call} <span style={{ fontSize: 9 }}>▼</span>
+              </button>
+              <div className={`call-menu ${callOpen ? "show" : ""}`}>
+                {PHONES.map((p) => (
+                  <a key={p.href} href={p.href} className="call-line">
+                    <span className="call-num">{p.num}</span>
+                    <span className="call-arrow">→</span>
+                    <span className="call-langs">{t.speaks} {p.langs}</span>
+                  </a>
+                ))}
+                <a href={PHONES[0].wa} className="call-wa" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><span>→</span></a>
+                <div className="call-hours">{hours}</div>
+              </div>
             </div>
             <Link href={`/${lang}/contact`} className="btn-outline">
               {t.cta}
@@ -124,7 +136,7 @@ export default function SiteNavClient({ lang, active, onDark, t, services, PHONE
           <div style={{ marginTop: 24, display: "flex", gap: 10 }}>{langBtns}</div>
           <div style={{ marginTop: 24, display: "grid", gap: 12 }}>
             {PHONES.map((p) => (
-              <a key={p.href} href={p.href} className="btn btn-ivoire phone-btn">{p.num}<span className="phone-tag">{p.tag}</span></a>
+              <a key={p.href} href={p.href} className="btn btn-ivoire phone-btn">{p.num}<span className="phone-tag">{p.langs}</span></a>
             ))}
             <Link href={`/${lang}/contact`} className="btn btn-green" onClick={() => setMobileOpen(false)}>
               {t.cta}

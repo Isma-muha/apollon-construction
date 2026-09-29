@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Ph from "@/components/Ph";
-import { ZONES_L, REVIEWS, REVIEWS_URL, PHONES } from "@/lib/site-data";
+import { ZONES_L, REVIEWS, REVIEWS_URL, PHONES, phonesFor, T } from "@/lib/site-data";
 
 const SERIF = "'Libre Caslon Text',serif";
 
@@ -136,7 +136,7 @@ export function CtaBlock({ lang, t, title, sub, extraStyle, className = "" }) {
         <p style={{ margin: 0, color: "#5a5449", fontSize: 16, lineHeight: 1.7, maxWidth: "46ch" }}>{sub || t.cta.sub}</p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <Link href={`/${lang}/contact`} className="btn btn-dark">{t.nav.cta}</Link>
-          <PhoneButtons dark={false} />
+          <PhoneButtons lang={lang} dark={false} />
         </div>
       </div>
     </section>
@@ -147,33 +147,63 @@ export function Pic({ src, alt, tone, style }) {
   return src ? <img src={src} alt={alt || ""} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", ...(style || {}) }} /> : <Ph label={alt} tone={tone} />;
 }
 
-// Les deux numéros, avec leur étiquette de langues (codes FR/NL/EN, identiques dans les 3 versions du site).
-// Bloc empilé : le numéro en avant, l'étiquette discrète à droite.
-export function PhoneButtons({ className, style, dark = true }) {
-  const color = (style && style.color) || (dark ? "#f3eee4" : "#0e0f0d");
-  const tag = dark ? "rgba(243,238,228,.55)" : "#8f887a";
-  const line = dark ? "rgba(243,238,228,.35)" : "rgba(14,15,13,.35)";
+export const WA_ICON = (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z" /></svg>
+);
+
+// Bloc « Ou appelez-nous » : numéro en serif cliquable, icône WhatsApp, langues en toutes lettres + horaires.
+// Seuls les numéros qui répondent dans la langue du site sont affichés (le 0471 n'apparaît pas en NL).
+export function PhoneButtons({ lang = "fr", dark = true, label = true, compact = false }) {
+  const n = T[lang].nav;
+  const color = dark ? "#f3eee4" : "#0e0f0d";
+  const muted = dark ? "rgba(243,238,228,.65)" : "#6b6457";
+  const line = dark ? "rgba(243,238,228,.2)" : "rgba(14,15,13,.2)";
   return (
-    <div className="phone-block" style={{ borderLeft: `1px solid ${line}` }}>
-      {PHONES.map((p) => (
-        <a key={p.href} href={p.href} className="phone-line" style={{ color }}>
-          <span className="phone-num">{p.num}</span>
-          <span className="phone-tag" style={{ color: tag }}>{p.tag}</span>
-        </a>
+    <div className={`phone-block ${compact ? "phone-block--compact" : ""}`} style={{ borderLeft: compact ? "none" : `1px solid ${line}` }}>
+      {label && !compact && <div style={{ fontSize: 10, letterSpacing: "0.28em", textTransform: "uppercase", color: muted, fontWeight: 600, fontFamily: "Archivo, sans-serif" }}>{n.orCall}</div>}
+      {phonesFor(lang).map((p) => (
+        <div key={p.href} className="phone-item">
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <a href={p.href} className="phone-num-serif" style={{ color }}>{p.num}</a>
+            {p.wa && (
+              <a href={p.wa} className="wa-dot" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" style={{ color: muted, borderColor: line }}>{WA_ICON}</a>
+            )}
+          </div>
+          <div className="phone-meta" style={{ color: muted }}>
+            <span className="live-dot" />
+            <span>{p.langs}</span><span style={{ opacity: 0.4 }}>|</span><span>{n.hoursShort}</span>
+          </div>
+        </div>
       ))}
     </div>
   );
 }
 
-export function PhoneList({ size = "clamp(28px,3vw,44px)", color, tagColor = "#8f887a", gap = 14 }) {
+export function PhoneList({ lang = "fr", size = "clamp(28px,3vw,44px)", color, tagColor = "#8f887a", gap = 14 }) {
   return (
     <div style={{ display: "grid", gap }}>
-      {PHONES.map((p) => (
-        <a key={p.href} href={p.href} style={{ display: "block", color, lineHeight: 1.05 }}>
-          <span style={{ fontFamily: "'Libre Caslon Text',serif", fontSize: size }}>{p.num}</span>
-          <span style={{ display: "inline-block", marginLeft: 14, fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: tagColor, fontFamily: "Archivo, sans-serif", verticalAlign: "middle" }}>{p.tag}</span>
-        </a>
+      {phonesFor(lang).map((p) => (
+        <div key={p.href}>
+          <a href={p.href} style={{ display: "block", color, lineHeight: 1.05, fontFamily: "'Libre Caslon Text',serif", fontSize: size }}>{p.num}</a>
+          <div style={{ marginTop: 6, fontSize: 12, color: tagColor, fontFamily: "Archivo, sans-serif", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+            <span>{p.langs}</span>
+            {p.wa && <a href={p.wa} target="_blank" rel="noopener noreferrer" style={{ color: tagColor, display: "inline-flex", alignItems: "center", gap: 5 }}>{WA_ICON} WhatsApp</a>}
+          </div>
+        </div>
       ))}
+    </div>
+  );
+}
+
+// Barre fixe mobile : Appeler · WhatsApp · Devis (toutes les pages).
+export function MobileBar({ lang }) {
+  const n = T[lang].nav;
+  const first = phonesFor(lang)[0] || PHONES[0];
+  return (
+    <div className="mobile-bar">
+      <a href={first.href} className="mb-call">{n.call}</a>
+      <a href={PHONES[0].wa} className="mb-wa" target="_blank" rel="noopener noreferrer">{n.whatsapp}</a>
+      <Link href={`/${lang}/contact`} className="mb-quote">{n.ctaShort}</Link>
     </div>
   );
 }

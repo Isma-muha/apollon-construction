@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
 import JsonLd from "@/components/JsonLd";
 import { Faq, Pic, PhoneButtons } from "@/components/Blocks";
-import { T, SERVICES, PHONES, REVIEWS, REVIEWS_URL, localizeService, LANGS } from "@/lib/site-data";
+import { T, SERVICES, REVIEWS, REVIEWS_URL, localizeService, LANGS } from "@/lib/site-data";
 import { serviceSchema } from "@/lib/seo";
 
 const SERIF = "'Libre Caslon Text',serif";
@@ -38,7 +38,7 @@ export default function LandingPage({ params }) {
           <img src="/logo/mark.svg" alt="" width="40" height="35" />
           <span className="wordmark"><span className="w1">Apollon</span><span className="w2">Construction</span></span>
         </Link>
-        <div className="lp-nav-phones"><PhoneButtons dark={false} /></div>
+        <div className="lp-nav-phones"><PhoneButtons lang={lang} dark={false} compact /></div>
       </header>
 
       <main>
@@ -61,7 +61,7 @@ export default function LandingPage({ params }) {
             <div style={{ fontFamily: SERIF, fontSize: 26, lineHeight: 1.1 }}>{lp.formTitle}</div>
             <div style={{ fontSize: 13, color: "#6b6457", margin: "6px 0 22px" }}>{lp.formSub}</div>
             <ContactForm lang={lang} fm={t.contact.form} services={list} defaultService={s.id} compact />
-            <div style={{ marginTop: 16, fontSize: 13, color: "#6b6457", textAlign: "center" }}>{lp.orCall} {PHONES.map((p, i) => <span key={p.href}>{i > 0 ? " · " : ""}<a href={p.href} style={{ color: "#11642e", fontWeight: 600 }}>{p.num}</a> <small style={{ color: "#8f887a" }}>({p.tag})</small></span>)}</div>
+            <div style={{ marginTop: 18 }}><PhoneButtons lang={lang} dark={false} /></div>
           </div>
         </section>
 
@@ -132,7 +132,7 @@ export default function LandingPage({ params }) {
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "flex-start" }}>
             <a href="#form" className="btn" style={{ background: "#f3eee4", color: "#0e0f0d" }}>{lp.backToForm}</a>
-            <PhoneButtons style={{ color: "#f3eee4" }} />
+            <PhoneButtons lang={lang} />
           </div>
         </section>
       </main>
@@ -142,10 +142,6 @@ export default function LandingPage({ params }) {
         <span>{t.footer.address}</span>
       </footer>
 
-      <div className="lp-sticky">
-        <a href={PHONES[0].href} className="btn btn-dark">{lp.call} · {PHONES[0].num}</a>
-        <a href="#form" className="btn btn-green">{lp.quote}</a>
-      </div>
     </div>
   );
 }

@@ -56,7 +56,7 @@ export default function ServiceDetail({ params }) {
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 36 }}>
             <Link href={`/${lang}/contact?service=${s.id}`} className="btn btn-green">{t.sp.quoteBtn}</Link>
-            <PhoneButtons />
+            <PhoneButtons lang={lang} />
           </div>
           {s.primes && (
             <div style={{ marginTop: 40, border: "1px solid #11642e", padding: "22px 26px", display: "flex", gap: 20, alignItems: "center" }}>
@@ -129,7 +129,7 @@ export default function ServiceDetail({ params }) {
           </Reveal>
           <Reveal style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "flex-end" }}>
             <Link href={`/${lang}/contact?service=${s.id}`} className="btn btn-dark">{t.nav.cta} →</Link>
-            <PhoneButtons />
+            <PhoneButtons lang={lang} />
           </Reveal>
         </div>
       </section>

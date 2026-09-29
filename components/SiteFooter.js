@@ -45,7 +45,7 @@ export default function SiteFooter({ lang }) {
         <div>
           <K>{t.nav.contact}</K>
           <div style={{ display: "grid", gap: 10 }}>
-            <PhoneList size="24px" color="#f3eee4" tagColor="#8f887a" gap={10} />
+            <PhoneList lang={lang} size="24px" color="#f3eee4" tagColor="#8f887a" gap={10} />
             <a href={`mailto:${EMAIL}`} style={{ fontSize: 14, color: "#f3eee4" }}>{EMAIL}</a>
             <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#8f887a", marginTop: 10 }}>
               <a href={SOCIAL.instagram} style={{ color: "#8f887a" }} target="_blank" rel="noopener noreferrer">Instagram</a>
