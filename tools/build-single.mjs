@@ -113,6 +113,7 @@ function wire(app,q){
     nav.addEventListener("mouseleave",()=>{open=false;sync();});
     const mob=nav.querySelector(".nav-mobile"),burger=nav.querySelector(".nav-burger");
     if(burger)burger.addEventListener("click",()=>{const s=!mob.classList.contains("show");mob.classList.toggle("show",s);burger.textContent=s?"✕":"☰";});
+    const cw=nav.querySelector(".call-wrap"),cm=nav.querySelector(".call-menu");if(cw&&cm){cw.addEventListener("mouseenter",()=>cm.classList.add("show"));cw.addEventListener("mouseleave",()=>cm.classList.remove("show"));cw.querySelector(".call-btn").addEventListener("click",()=>cm.classList.toggle("show"));}
     nav.querySelectorAll(".lang[data-lang]").forEach(b=>b.addEventListener("click",()=>{const {route}=parse();const parts=route.split("/");parts[1]=b.dataset.lang;location.hash="#"+parts.join("/");}));
   }
   const filters=app.querySelector("#filters");if(filters)filters.querySelectorAll(".chip-f").forEach(b=>b.addEventListener("click",()=>{filters.querySelectorAll(".chip-f").forEach(x=>x.classList.toggle("on",x===b));const f=b.dataset.f;app.querySelectorAll("#works figure").forEach(fig=>{fig.hidden=!(f==="all"||fig.dataset.cat===f);});}));
