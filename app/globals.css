@@ -34,6 +34,13 @@ button { font-family: "Archivo", sans-serif; }
 
 [data-reveal] { opacity: 0; transform: translateY(32px); transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2, 0.7, 0.2, 1); }
 [data-reveal].is-visible { opacity: 1; transform: none; }
+/* L'apparition au défilement dépend de JavaScript : sans elle, le contenu resterait
+   invisible. On l'affiche donc d'office quand l'animation ne peut pas se déclencher
+   (JS coupé — voir le <noscript> de app/layout.js) ou quand l'utilisateur a demandé
+   à réduire les animations. */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
 
 /* Buttons & links */
 .btn { display: inline-block; border-radius: 999px; padding: 16px 30px; font-weight: 600; font-size: 15px; white-space: nowrap; transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; border: none; cursor: pointer; text-align: center; }

@@ -8,6 +8,10 @@ export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
 
+// Toute langue hors fr/nl/en renvoie un 404 avant que les pages ne s'exécutent.
+// Sans ça, /de entrait dans les pages et plantait sur T[lang] indéfini.
+export const dynamicParams = false;
+
 export default function LangLayout({ children, params }) {
   const { lang } = params;
   if (!LANGS.includes(lang)) notFound();

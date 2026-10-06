@@ -38,8 +38,8 @@ export default function SiteFooter({ lang }) {
             <Link href={`/${lang}/realisations`} style={{ color: "#f3eee4" }}>{t.nav.projects}</Link>
             <Link href={`/${lang}/primes`} style={{ color: "#f3eee4" }}>{t.nav.primes}</Link>
             <Link href={`/${lang}/contact`} style={{ color: "#f3eee4" }}>{t.nav.contact}</Link>
-            <a href={`mailto:${EMAIL}`} style={{ color: "#8f887a" }}>{t.footer.legal}</a>
-            <a href={`mailto:${EMAIL}`} style={{ color: "#8f887a" }}>{t.footer.rgpd}</a>
+            <Link href={`/${lang}/mentions-legales`} style={{ color: "#8f887a" }}>{t.footer.legal}</Link>
+            <Link href={`/${lang}/confidentialite`} style={{ color: "#8f887a" }}>{t.footer.rgpd}</Link>
           </div>
         </div>
         <div>

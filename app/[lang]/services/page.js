@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 export function generateMetadata({ params }) {
   const t = T[params.lang].sp;
-  return pageMetadata({ lang: params.lang, path: "/services", title: t.seoTitle, description: t.intro });
+  return pageMetadata({ lang: params.lang, path: "/services", title: t.seoTitle, description: t.seoDesc });
 }
 
 export default function ServicesPage({ params }) {

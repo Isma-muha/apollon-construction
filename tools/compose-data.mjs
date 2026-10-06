@@ -78,6 +78,21 @@ const T = per((l) => {
       legal: c.footer.legal,
       rgpd: c.footer.rgpd
     },
+    // Page 404 : jamais un cul-de-sac. On explique, puis on renvoie vers les services et le contact.
+    nf: {
+      code: "404",
+      kicker: F ? "Page introuvable" : N ? "Pagina niet gevonden" : "Page not found",
+      title: F ? "Cette page n'existe pas." : N ? "Deze pagina bestaat niet." : "This page doesn't exist.",
+      text: F
+        ? "Le lien est peut-être périmé, ou l'adresse comporte une faute. Voici par où continuer."
+        : N
+        ? "De link is misschien verouderd, of het adres bevat een fout. Hier kunt u verder."
+        : "The link may be out of date, or the address contains a typo. Here's where to go next.",
+      servicesLabel: F ? "Nos services" : N ? "Onze diensten" : "Our services",
+      pagesLabel: F ? "Pages principales" : N ? "Hoofdpagina's" : "Main pages",
+      helpLabel: F ? "Besoin d'une réponse tout de suite ?" : N ? "Meteen een antwoord nodig?" : "Need an answer right away?",
+      home: F ? "Retour à l'accueil" : N ? "Terug naar de startpagina" : "Back to home"
+    },
     home: {
       seoTitle: SEO_OVERRIDE.home[l][0],
       seoDesc: SEO_OVERRIDE.home[l][1],
@@ -116,7 +131,8 @@ const T = per((l) => {
     sp: {
       kicker: c.nav.services,
       title: F ? "Huit métiers, une seule équipe." : N ? "Acht vakgebieden, één team." : "Eight trades, one team.",
-      seoTitle: F ? "Nos services de rénovation à Bruxelles — Apollon Construction" : N ? "Onze renovatiediensten in Brussel — Apollon Construction" : "Our renovation services in Brussels — Apollon Construction",
+      seoTitle: SEO_OVERRIDE.services[l][0],
+      seoDesc: SEO_OVERRIDE.services[l][1],
       intro: F ? "De la salle de bain à la toiture, un seul interlocuteur. Particuliers, architectes, agents immobiliers — nous adaptons notre approche. Choisissez un service pour découvrir ce qu'il comprend." : N ? "Van de badkamer tot het dak, één aanspreekpunt. Particulieren, architecten, vastgoedmakelaars — wij passen onze aanpak aan. Kies een dienst om te ontdekken wat ze omvat." : "From the bathroom to the roof, one point of contact. Homeowners, architects, estate agents — we adapt our approach. Choose a service to see what it includes.",
       detailKicker: F ? "Service" : N ? "Dienst" : "Service",
       includesTitle: F ? "Ce que comprend ce service" : N ? "Wat deze dienst omvat" : "What this service includes",
@@ -133,8 +149,8 @@ const T = per((l) => {
     projects: {
       kicker: F ? "Réalisations" : N ? "Realisaties" : "Projects",
       title: F ? "Le travail parle." : N ? "Het werk spreekt." : "The work speaks.",
-      seoTitle: F ? "Réalisations — Rénovations à Bruxelles et en Brabant | Apollon Construction" : N ? "Realisaties — Renovaties in Brussel en Brabant | Apollon Construction" : "Projects — Renovations in Brussels and Brabant | Apollon Construction",
-      seoDesc: F ? "Salles de bain, cuisines, plafonnage, traitement de l'humidité, façades : nos chantiers récents à Bruxelles et en Brabant, avec photos avant/après." : N ? "Badkamers, keukens, pleisterwerk, vochtbehandeling, gevels: onze recente werven in Brussel en Brabant, met foto's vóór/na." : "Bathrooms, kitchens, plastering, damp treatment, façades: our recent projects in Brussels and Brabant, with before/after photos.",
+      seoTitle: SEO_OVERRIDE.realisations[l][0],
+      seoDesc: SEO_OVERRIDE.realisations[l][1],
       intro: F ? "Une sélection de chantiers récents à Bruxelles et dans le Brabant. Uniquement nos propres chantiers, photographiés par notre équipe. Filtrez par métier." : N ? "Een selectie van recente werven in Brussel en Brabant. Alleen onze eigen werven, gefotografeerd door ons team. Filter per vakgebied." : "A selection of recent projects in Brussels and Brabant. Only our own sites, photographed by our team. Filter by trade.",
       all: F ? "Tous" : N ? "Alle" : "All"
     },
@@ -173,8 +189,8 @@ const T = per((l) => {
     contact: {
       kicker: "Contact",
       title: F ? "Parlons." : N ? "Laten we praten." : "Let's talk.",
-      seoTitle: c.meta.contact_title,
-      seoDesc: c.meta.contact_desc,
+      seoTitle: SEO_OVERRIDE.contact[l][0],
+      seoDesc: SEO_OVERRIDE.contact[l][1],
       intro: c.contact.desc,
       form: {
         title: c.contact.form_h3,
@@ -609,7 +625,7 @@ const PRIMES = per((l) => {
   const p = O.primes[l];
   const F = l === "fr", N = l === "nl";
   return {
-    seoTitle: p.title, seoDesc: p.desc,
+    seoTitle: SEO_OVERRIDE.primes[l][0], seoDesc: SEO_OVERRIDE.primes[l][1],
     kicker: F ? "Primes & TVA 2025–2026" : N ? "Premies & btw 2025–2026" : "Grants & VAT 2025–2026",
     title: F ? "Ce que la Belgique finance. Et ce qu'on gère pour vous." : N ? "Wat België financiert. En wat wij voor u regelen." : "What Belgium funds. And what we handle for you.",
     intro: F ? "TVA réduite à 6 %, primes régionales pour l'isolation et la toiture : les aides changent chaque année et dépendent de votre Région et de vos revenus. On vérifie votre situation lors de la visite gratuite et on monte le dossier avec vous." : N ? "Btw verlaagd tot 6 %, regionale premies voor isolatie en dak: de steun verandert elk jaar en hangt af van uw Gewest en uw inkomen. We controleren uw situatie tijdens het gratis plaatsbezoek en stellen het dossier samen met u op." : "VAT reduced to 6%, regional grants for insulation and roofing: support changes every year and depends on your Region and income. We check your situation during the free site visit and build the application with you.",
@@ -638,6 +654,107 @@ const PRIMES = per((l) => {
       : [{ n: "1", t: "Eligibility analysis", d: "During the free site visit we identify the applicable VAT and the possible grants for your property and situation." }, { n: "2", t: "Compliant quote", d: "Our itemised quotes meet the requirements of the regional administrations." }, { n: "3", t: "Building the application", d: "We gather the documents, certificates and photos required for the application with you." }, { n: "4", t: "Follow-up until payment", d: "We remain your contact until the grant is paid, including any requests for additional documents." }],
     ctaTitle: p.cta.h + ".",
     ctaSub: p.cta.p
+  };
+});
+
+// ---------------------------------------------------------------- mentions légales & vie privée
+// Deux pages réelles : avant, le pied de page renvoyait « Mentions légales » et « Politique RGPD »
+// vers un mailto:, donc vers rien. Contenu aligné sur ce que le site fait vraiment
+// (formulaire → e-mail Hostinger, hébergement Vercel, Google Ads en Consent Mode v2).
+const LEGAL_UPDATED = "2026-10-06";
+
+const LEGAL = per((l) => {
+  const F = l === "fr", N = l === "nl";
+  return {
+    mentions: {
+      slug: "mentions-legales",
+      seoTitle: F ? "Mentions légales | Apollon Construction" : N ? "Juridische vermeldingen | Apollon Construction" : "Legal notice | Apollon Construction",
+      seoDesc: F
+        ? "Mentions légales d'Apollon Construction (Apollon Group SRL) : éditeur, siège social, numéro d'entreprise, hébergement et droit applicable."
+        : N
+        ? "Juridische vermeldingen van Apollon Construction (Apollon Group BV): uitgever, maatschappelijke zetel, ondernemingsnummer, hosting en toepasselijk recht."
+        : "Legal notice for Apollon Construction (Apollon Group SRL): publisher, registered office, company number, hosting, intellectual property and applicable law.",
+      kicker: F ? "Informations légales" : N ? "Juridische informatie" : "Legal information",
+      title: F ? "Mentions légales" : N ? "Juridische vermeldingen" : "Legal notice",
+      intro: F
+        ? "Qui édite ce site, qui l'héberge, et à quoi vous engagent les informations qu'il contient."
+        : N
+        ? "Wie deze website uitgeeft, wie ze host, en waartoe de informatie erop u verbindt."
+        : "Who publishes this site, who hosts it, and what the information on it commits you to.",
+      updatedLabel: F ? "Dernière mise à jour" : N ? "Laatst bijgewerkt" : "Last updated",
+      sections: F
+        ? [
+            { h2: "Éditeur du site", p: ["Apollon Group SRL, exerçant sous le nom commercial Apollon Construction.", "Siège social : Oudesmidsestraat 20, 1700 Dilbeek, Belgique.", "Numéro d'entreprise (BCE) et TVA : BE 1025.392.245.", "Téléphone : 0499 89 60 86 (FR · NL · EN) et 0471 93 29 18 (FR · EN). E-mail : info@apollonconstruction.be.", "Responsable de la publication : la direction d'Apollon Group SRL."] },
+            { h2: "Hébergement", p: ["Le site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis (vercel.com).", "La messagerie qui reçoit les demandes de devis est hébergée par Hostinger."] },
+            { h2: "Propriété intellectuelle", p: ["L'ensemble du site — textes, mise en page, logo, marque Apollon Construction — est la propriété d'Apollon Group SRL.", "Les photographies publiées sont celles de nos propres chantiers, prises par notre équipe. Elles ne sont pas issues de banques d'images.", "Toute reproduction, totale ou partielle, sans accord écrit préalable est interdite."] },
+            { h2: "Valeur des informations publiées", p: ["Les descriptions de services, délais, taux de TVA et montants de primes sont donnés à titre indicatif. Les aides régionales et les taux applicables évoluent et dépendent de votre Région, de votre situation et de l'âge du logement.", "Seul un devis daté et signé engage Apollon Group SRL sur un prix, un périmètre de travaux et un délai."] },
+            { h2: "Liens vers d'autres sites", p: ["Ce site renvoie vers des sites tiers (réseaux sociaux, portails régionaux de primes, fiche d'avis Google). Nous n'avons aucun contrôle sur leur contenu et n'en assumons pas la responsabilité."] },
+            { h2: "Droit applicable et litiges", p: ["Le présent site et nos prestations sont régis par le droit belge.", "En cas de litige, une solution amiable sera recherchée en priorité : écrivez-nous à info@apollonconstruction.be.", "À défaut d'accord, un consommateur peut saisir le Service de Médiation pour le Consommateur, boulevard du Roi Albert II 8 boîte 1, 1000 Bruxelles (consumerombudsman.be). À défaut, les tribunaux belges compétents pour le siège de la société sont seuls compétents."] }
+          ]
+        : N
+        ? [
+            { h2: "Uitgever van de website", p: ["Apollon Group BV, handelend onder de handelsnaam Apollon Construction.", "Maatschappelijke zetel: Oudesmidsestraat 20, 1700 Dilbeek, België.", "Ondernemingsnummer (KBO) en btw: BE 1025.392.245.", "Telefoon: 0499 89 60 86 (FR · NL · EN). E-mail: info@apollonconstruction.be.", "Verantwoordelijke uitgever: de directie van Apollon Group BV."] },
+            { h2: "Hosting", p: ["De website wordt gehost door Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Verenigde Staten (vercel.com).", "De mailbox die de offerteaanvragen ontvangt, wordt gehost door Hostinger."] },
+            { h2: "Intellectuele eigendom", p: ["De volledige website — teksten, vormgeving, logo, merk Apollon Construction — is eigendom van Apollon Group BV.", "De gepubliceerde foto's tonen onze eigen werven en zijn door ons team gemaakt. Ze komen niet uit beeldbanken.", "Elke gehele of gedeeltelijke reproductie zonder voorafgaand schriftelijk akkoord is verboden."] },
+            { h2: "Waarde van de gepubliceerde informatie", p: ["Beschrijvingen van diensten, termijnen, btw-tarieven en premiebedragen zijn indicatief. Regionale steun en tarieven wijzigen en hangen af van uw Gewest, uw situatie en de ouderdom van de woning.", "Alleen een gedateerde en ondertekende offerte verbindt Apollon Group BV tot een prijs, een omvang van de werken en een termijn."] },
+            { h2: "Links naar andere websites", p: ["Deze website verwijst naar websites van derden (sociale media, regionale premieportalen, Google-recensies). Wij hebben geen controle over hun inhoud en dragen daarvoor geen verantwoordelijkheid."] },
+            { h2: "Toepasselijk recht en geschillen", p: ["Deze website en onze diensten vallen onder het Belgisch recht.", "Bij een geschil zoeken we eerst een minnelijke oplossing: schrijf ons op info@apollonconstruction.be.", "Komt er geen akkoord, dan kan een consument terecht bij de Consumentenombudsdienst, Koning Albert II-laan 8 bus 1, 1000 Brussel (consumentenombudsdienst.be). Zo niet zijn uitsluitend de Belgische rechtbanken van de maatschappelijke zetel bevoegd."] }
+          ]
+        : [
+            { h2: "Site publisher", p: ["Apollon Group SRL, trading as Apollon Construction.", "Registered office: Oudesmidsestraat 20, 1700 Dilbeek, Belgium.", "Company number (CBE) and VAT: BE 1025.392.245.", "Phone: 0499 89 60 86 (FR · NL · EN) and 0471 93 29 18 (FR · EN). E-mail: info@apollonconstruction.be.", "Responsible for publication: the management of Apollon Group SRL."] },
+            { h2: "Hosting", p: ["The site is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States (vercel.com).", "The mailbox receiving quote requests is hosted by Hostinger."] },
+            { h2: "Intellectual property", p: ["The entire site — text, layout, logo, the Apollon Construction brand — is the property of Apollon Group SRL.", "The photographs published show our own projects and were taken by our team. They are not stock images.", "Any reproduction, in whole or in part, without prior written agreement is prohibited."] },
+            { h2: "Status of the information published", p: ["Service descriptions, lead times, VAT rates and grant amounts are indicative. Regional support and applicable rates change and depend on your Region, your situation and the age of the property.", "Only a dated and signed quote commits Apollon Group SRL to a price, a scope of works and a deadline."] },
+            { h2: "Links to other sites", p: ["This site links to third-party sites (social networks, regional grant portals, Google reviews). We have no control over their content and accept no responsibility for it."] },
+            { h2: "Applicable law and disputes", p: ["This site and our services are governed by Belgian law.", "In the event of a dispute, an amicable solution will be sought first: write to us at info@apollonconstruction.be.", "Failing agreement, a consumer may refer the matter to the Consumer Mediation Service, boulevard du Roi Albert II 8 box 1, 1000 Brussels (consumerombudsman.be). Otherwise, only the Belgian courts with jurisdiction over the company's registered office are competent."] }
+          ]
+    },
+    privacy: {
+      slug: "confidentialite",
+      seoTitle: F ? "Politique de confidentialité (RGPD) | Apollon Construction" : N ? "Privacybeleid (AVG) | Apollon Construction" : "Privacy policy (GDPR) | Apollon Construction",
+      seoDesc: F
+        ? "Quelles données Apollon Construction collecte via le formulaire de devis, pourquoi, combien de temps on les garde et comment exercer vos droits RGPD."
+        : N
+        ? "Welke gegevens Apollon Construction via het offerteformulier verzamelt, waarom, hoelang ze bewaard worden en hoe u uw AVG-rechten uitoefent."
+        : "What data Apollon Construction collects through the quote form, why, how long it is kept and how to exercise your GDPR rights.",
+      kicker: F ? "Vie privée & RGPD" : N ? "Privacy & AVG" : "Privacy & GDPR",
+      title: F ? "Politique de confidentialité" : N ? "Privacybeleid" : "Privacy policy",
+      intro: F
+        ? "Nous ne collectons que ce qui sert à vous répondre. Pas de revente, pas de profilage, pas de cookie publicitaire avant votre accord."
+        : N
+        ? "We verzamelen alleen wat nodig is om u te antwoorden. Geen doorverkoop, geen profilering, geen advertentiecookie zonder uw akkoord."
+        : "We collect only what is needed to reply to you. No resale, no profiling, no advertising cookie before you agree.",
+      updatedLabel: F ? "Dernière mise à jour" : N ? "Laatst bijgewerkt" : "Last updated",
+      sections: F
+        ? [
+            { h2: "Responsable du traitement", p: ["Apollon Group SRL (Apollon Construction), Oudesmidsestraat 20, 1700 Dilbeek, Belgique — BE 1025.392.245.", "Pour toute question relative à vos données : info@apollonconstruction.be."] },
+            { h2: "Données que nous collectons", p: ["Quand vous remplissez le formulaire de devis : votre nom, votre numéro de téléphone, votre adresse e-mail, votre profil (particulier, architecte, agent immobilier…), le service concerné et le message que vous rédigez.", "Automatiquement, avec l'envoi du formulaire : la page depuis laquelle vous l'avez envoyé, le site qui vous a amené ici, les identifiants de campagne publicitaire éventuels (gclid, utm) et votre adresse IP.", "Nous ne demandons jamais de données sensibles. Le formulaire ne crée aucun compte et n'exige aucun mot de passe."] },
+            { h2: "Pourquoi, et sur quelle base légale", p: ["Vous répondre, organiser la visite et établir le devis : mesures précontractuelles prises à votre demande (art. 6.1.b du RGPD).", "L'adresse IP et la limitation du nombre d'envois : protéger le formulaire contre les envois automatisés — notre intérêt légitime (art. 6.1.f).", "Les identifiants de campagne et la mesure d'audience publicitaire : uniquement avec votre consentement (art. 6.1.a), que vous pouvez retirer à tout moment."] },
+            { h2: "Qui reçoit vos données", p: ["Votre demande arrive par e-mail dans la boîte info@apollonconstruction.be, hébergée par Hostinger. Elle est lue par l'équipe d'Apollon Construction, et par personne d'autre.", "Le site est hébergé par Vercel Inc. (États-Unis), qui traite les données techniques nécessaires à l'affichage des pages dans le cadre des clauses contractuelles types de la Commission européenne.", "Si vous avez accepté la mesure d'audience, Google Ireland Limited reçoit des données de mesure publicitaire.", "Nous ne vendons, ne louons et n'échangeons aucune donnée."] },
+            { h2: "Combien de temps nous les gardons", p: ["Demande sans suite : 12 mois, puis suppression.", "Devis accepté et chantier réalisé : les pièces du dossier sont conservées 7 ans, conformément à l'obligation comptable belge."] },
+            { h2: "Cookies et mesure d'audience", p: ["Le site ne dépose aucun cookie publicitaire tant que vous n'avez pas répondu au bandeau de consentement.", "Avant votre réponse, les balises fonctionnent en mode « refusé » (Consent Mode v2 de Google) : aucune donnée identifiante n'est stockée.", "Votre choix est conservé dans la mémoire locale de votre navigateur, sur votre appareil. Pour le modifier, videz les données du site dans votre navigateur.", "Si aucun identifiant de mesure n'est configuré, aucune balise n'est chargée du tout."] },
+            { h2: "Vos droits", p: ["Vous pouvez demander l'accès à vos données, leur rectification, leur effacement, la limitation du traitement, vous opposer à celui-ci, et recevoir vos données dans un format portable.", "Écrivez à info@apollonconstruction.be : nous répondons dans un délai d'un mois.", "Si notre réponse ne vous satisfait pas, vous pouvez introduire une réclamation auprès de l'Autorité de protection des données, rue de la Presse 35, 1000 Bruxelles (autoriteprotectiondonnees.be)."] }
+          ]
+        : N
+        ? [
+            { h2: "Verwerkingsverantwoordelijke", p: ["Apollon Group BV (Apollon Construction), Oudesmidsestraat 20, 1700 Dilbeek, België — BE 1025.392.245.", "Voor elke vraag over uw gegevens: info@apollonconstruction.be."] },
+            { h2: "Welke gegevens we verzamelen", p: ["Wanneer u het offerteformulier invult: uw naam, telefoonnummer, e-mailadres, uw profiel (particulier, architect, vastgoedmakelaar…), de betrokken dienst en het bericht dat u schrijft.", "Automatisch, bij het versturen: de pagina vanwaar u verstuurde, de website die u hierheen bracht, eventuele campagne-identificatoren (gclid, utm) en uw IP-adres.", "We vragen nooit gevoelige gegevens. Het formulier maakt geen account aan en vereist geen wachtwoord."] },
+            { h2: "Waarom, en op welke rechtsgrond", p: ["U antwoorden, het plaatsbezoek regelen en de offerte opstellen: precontractuele maatregelen op uw verzoek (art. 6.1.b AVG).", "Het IP-adres en de beperking van het aantal verzendingen: het formulier beschermen tegen geautomatiseerde verzendingen — ons gerechtvaardigd belang (art. 6.1.f).", "Campagne-identificatoren en advertentiemeting: uitsluitend met uw toestemming (art. 6.1.a), die u op elk moment kunt intrekken."] },
+            { h2: "Wie uw gegevens ontvangt", p: ["Uw aanvraag komt per e-mail toe in de mailbox info@apollonconstruction.be, gehost door Hostinger. Ze wordt gelezen door het team van Apollon Construction, en door niemand anders.", "De website wordt gehost door Vercel Inc. (Verenigde Staten), dat de technische gegevens voor het tonen van de pagina's verwerkt onder de modelcontractbepalingen van de Europese Commissie.", "Als u de advertentiemeting aanvaardde, ontvangt Google Ireland Limited meetgegevens.", "We verkopen, verhuren of ruilen geen enkel gegeven."] },
+            { h2: "Hoelang we ze bewaren", p: ["Aanvraag zonder gevolg: 12 maanden, daarna verwijderd.", "Aanvaarde offerte en uitgevoerde werf: de dossierstukken worden 7 jaar bewaard, conform de Belgische boekhoudplicht."] },
+            { h2: "Cookies en meting", p: ["De website plaatst geen enkele advertentiecookie zolang u de toestemmingsbanner niet beantwoord hebt.", "Vóór uw antwoord draaien de tags in modus « geweigerd » (Consent Mode v2 van Google): er wordt geen identificerend gegeven opgeslagen.", "Uw keuze wordt bewaard in de lokale opslag van uw browser, op uw toestel. Wis de sitegegevens in uw browser om ze te wijzigen.", "Is er geen meet-identificator ingesteld, dan wordt er helemaal geen tag geladen."] },
+            { h2: "Uw rechten", p: ["U kunt inzage vragen in uw gegevens, verbetering, wissing, beperking van de verwerking, bezwaar maken, en uw gegevens in een overdraagbaar formaat ontvangen.", "Schrijf naar info@apollonconstruction.be: wij antwoorden binnen een maand.", "Bent u niet tevreden met ons antwoord, dan kunt u klacht indienen bij de Gegevensbeschermingsautoriteit, Drukpersstraat 35, 1000 Brussel (gegevensbeschermingsautoriteit.be)."] }
+          ]
+        : [
+            { h2: "Data controller", p: ["Apollon Group SRL (Apollon Construction), Oudesmidsestraat 20, 1700 Dilbeek, Belgium — BE 1025.392.245.", "For any question about your data: info@apollonconstruction.be."] },
+            { h2: "What we collect", p: ["When you fill in the quote form: your name, phone number, e-mail address, your profile (homeowner, architect, estate agent…), the service concerned and the message you write.", "Automatically, when the form is sent: the page you sent it from, the site that brought you here, any advertising campaign identifiers (gclid, utm) and your IP address.", "We never ask for sensitive data. The form creates no account and requires no password."] },
+            { h2: "Why, and on what legal basis", p: ["To reply, arrange the site visit and draw up the quote: pre-contractual steps taken at your request (art. 6.1.b GDPR).", "The IP address and the limit on the number of submissions: protecting the form against automated submissions — our legitimate interest (art. 6.1.f).", "Campaign identifiers and advertising measurement: only with your consent (art. 6.1.a), which you may withdraw at any time."] },
+            { h2: "Who receives your data", p: ["Your request arrives by e-mail in the info@apollonconstruction.be mailbox, hosted by Hostinger. It is read by the Apollon Construction team, and by no one else.", "The site is hosted by Vercel Inc. (United States), which processes the technical data needed to serve the pages under the European Commission's standard contractual clauses.", "If you accepted measurement, Google Ireland Limited receives advertising measurement data.", "We do not sell, rent or exchange any data."] },
+            { h2: "How long we keep it", p: ["Request with no follow-up: 12 months, then deleted.", "Accepted quote and completed project: the file is kept for 7 years, in line with Belgian accounting obligations."] },
+            { h2: "Cookies and measurement", p: ["The site sets no advertising cookie until you have answered the consent banner.", "Before you answer, the tags run in « denied » mode (Google Consent Mode v2): no identifying data is stored.", "Your choice is kept in your browser's local storage, on your device. To change it, clear the site data in your browser.", "If no measurement identifier is configured, no tag is loaded at all."] },
+            { h2: "Your rights", p: ["You may request access to your data, its correction, its erasure, restriction of processing, object to processing, and receive your data in a portable format.", "Write to info@apollonconstruction.be: we reply within one month.", "If our answer does not satisfy you, you may lodge a complaint with the Data Protection Authority, rue de la Presse 35, 1000 Brussels (dataprotectionauthority.be)."] }
+          ]
+    }
   };
 });
 
@@ -671,6 +788,8 @@ export const AA = ${JSON.stringify(AA, null, 1)};
 export const CASES = ${JSON.stringify(CASES)};
 export const VIDEOS = ${JSON.stringify(VIDEOS, null, 1)};
 export const PRIMES = ${JSON.stringify(PRIMES, null, 1)};
+export const LEGAL_UPDATED = ${JSON.stringify(LEGAL_UPDATED)};
+export const LEGAL = ${JSON.stringify(LEGAL, null, 1)};
 
 export function localizeService(s, lang, i) {
   const pick = (v) => (v && typeof v === "object" && !Array.isArray(v) && lang in v ? v[lang] : v);
