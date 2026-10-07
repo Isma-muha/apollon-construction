@@ -5,11 +5,13 @@ import { pageMetadata } from "@/lib/seo";
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
-export function generateMetadata({ params }) {
-  const L = LEGAL[params.lang].mentions;
-  return pageMetadata({ lang: params.lang, path: "/mentions-legales", title: L.seoTitle, description: L.seoDesc });
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const L = LEGAL[lang].mentions;
+  return pageMetadata({ lang, path: "/mentions-legales", title: L.seoTitle, description: L.seoDesc });
 }
 
-export default function Page({ params }) {
-  return <LegalPage lang={params.lang} doc="mentions" />;
+export default async function Page({ params }) {
+  const { lang } = await params;
+  return <LegalPage lang={lang} doc="mentions" />;
 }

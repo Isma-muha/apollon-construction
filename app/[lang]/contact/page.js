@@ -11,13 +11,14 @@ const SERIF = "'Libre Caslon Text',serif";
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
-export function generateMetadata({ params }) {
-  const t = T[params.lang].contact;
-  return pageMetadata({ lang: params.lang, path: "/contact", title: t.seoTitle, description: t.seoDesc });
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const t = T[lang].contact;
+  return pageMetadata({ lang, path: "/contact", title: t.seoTitle, description: t.seoDesc });
 }
 
-export default function ContactPage({ params }) {
-  const { lang } = params;
+export default async function ContactPage({ params }) {
+  const { lang } = await params;
   const t = T[lang];
   const ct = t.contact;
   const services = SERVICES.map((s, i) => localizeService(s, lang, i));

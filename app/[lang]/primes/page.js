@@ -12,13 +12,14 @@ const SERIF = "'Libre Caslon Text',serif";
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
-export function generateMetadata({ params }) {
-  const p = PRIMES[params.lang];
-  return pageMetadata({ lang: params.lang, path: "/primes", title: p.seoTitle, description: p.seoDesc });
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const p = PRIMES[lang];
+  return pageMetadata({ lang, path: "/primes", title: p.seoTitle, description: p.seoDesc });
 }
 
-export default function PrimesPage({ params }) {
-  const { lang } = params;
+export default async function PrimesPage({ params }) {
+  const { lang } = await params;
   const t = T[lang];
   const p = PRIMES[lang];
 

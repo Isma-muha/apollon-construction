@@ -12,8 +12,8 @@ export function generateStaticParams() {
 // Sans ça, /de entrait dans les pages et plantait sur T[lang] indéfini.
 export const dynamicParams = false;
 
-export default function LangLayout({ children, params }) {
-  const { lang } = params;
+export default async function LangLayout({ children, params }) {
+  const { lang } = await params;
   if (!LANGS.includes(lang)) notFound();
   return (
     <>

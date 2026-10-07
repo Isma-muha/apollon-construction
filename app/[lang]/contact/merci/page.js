@@ -11,13 +11,14 @@ export function generateStaticParams() {
 }
 
 // Page de confirmation après envoi du formulaire. Non indexée : sert d'URL de conversion Google Ads.
-export function generateMetadata({ params }) {
-  const fm = T[params.lang].contact.form;
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const fm = T[lang].contact.form;
   return { title: `${fm.sentTitle} — Apollon Construction`, robots: { index: false, follow: false } };
 }
 
-export default function ThanksPage({ params }) {
-  const { lang } = params;
+export default async function ThanksPage({ params }) {
+  const { lang } = await params;
   const t = T[lang];
   const fm = t.contact.form;
   return (

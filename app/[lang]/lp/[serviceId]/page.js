@@ -14,14 +14,15 @@ const SERIF = "'Libre Caslon Text',serif";
 export function generateStaticParams() {
   return LANGS.flatMap((lang) => SERVICES.map((s) => ({ lang, serviceId: s.id })));
 }
-export function generateMetadata({ params }) {
-  const s = SERVICES.find((x) => x.id === params.serviceId);
+export async function generateMetadata({ params }) {
+  const { lang, serviceId } = await params;
+  const s = SERVICES.find((x) => x.id === serviceId);
   if (!s) return {};
-  return { title: s.seoTitle[params.lang], description: s.seoDesc[params.lang], robots: { index: false, follow: false } };
+  return { title: s.seoTitle[lang], description: s.seoDesc[lang], robots: { index: false, follow: false } };
 }
 
-export default function LandingPage({ params }) {
-  const { lang, serviceId } = params;
+export default async function LandingPage({ params }) {
+  const { lang, serviceId } = await params;
   const t = T[lang];
   const lp = t.lp;
   const list = SERVICES.map((s, i) => localizeService(s, lang, i));
