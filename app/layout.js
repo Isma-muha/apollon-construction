@@ -5,7 +5,11 @@ export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Apollon Construction — Rénovation intérieure à Bruxelles",
   description: "Entreprise de rénovation à Bruxelles et en Brabant : salle de bain, électricité RGIE, plafonnage, peinture, cuisine, façade et toiture. Devis gratuit sous 48h.",
-  icons: { icon: "/logo/mark.svg" }
+  icons: { icon: "/logo/mark.svg" },
+  // Preuve de propriété du site pour Google Search Console (propriété « préfixe d'URL »
+  // https://www.apollonconstruction.be). Next.js la rend en <meta name="google-site-verification">.
+  // À conserver : la retirer ferait perdre l'accès à Search Console.
+  verification: { google: "JPj3g04tvVhDOlN3xJraPL4PPSa1a9TyAOdNaAL4VK8" }
 };
 
 export const viewport = { width: "device-width", initialScale: 1, themeColor: "#0e0f0d" };
