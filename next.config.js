@@ -52,7 +52,13 @@ const LANGS = ["fr", "nl", "en"];
 // Les deux métiers sont aujourd'hui deux pages distinctes : on renvoie vers la liste des
 // services, qui les présente toutes les deux, plutôt que d'en choisir une arbitrairement.
 const LEGACY = {
-  "/solutions": "/services",
+  // /solutions n'était pas un pôle « services » malgré son nom : son titre était
+  // « Énergie & technique : pompe à chaleur, solaire, électricité ». Son équivalent
+  // est la page énergie, pas la liste des services.
+  "/solutions": "/services/energie",
+  // /facade-toiture chapeautait les deux pages /isolation-facade et /toiture, qui
+  // existaient aussi séparément. Hub vers hub : on renvoie vers la liste des services,
+  // qui présente les deux métiers, plutôt que d'en privilégier un.
   "/facade-toiture": "/services",
   "/toiture": "/services/toiture",
   "/isolation-facade": "/services/isolation-facade"
