@@ -40,6 +40,41 @@ const securityHeaders = [
   // Strict-Transport-Security : posé par Vercel sur le domaine (max-age 2 ans), on ne le double pas.
 ];
 
+// ---------------------------------------------------------------- redirections héritées
+// L'ancien site (en ligne d'avril au 30 septembre 2026) exposait d'autres adresses, indexées
+// par Google pendant six mois. La refonte les a remplacées sans redirection : elles répondaient
+// 404, d'où le motif « Introuvable (404) » signalé par Search Console le 13 octobre.
+// Il utilisait le routage i18n de Next : français sans préfixe, 'nl' et 'en' préfixés.
+const LANGS = ["fr", "nl", "en"];
+
+// Anciennes pages dont le chemin n'existe plus tel quel.
+// /facade-toiture était le pôle « Façade & Toiture » (libellé nav.facade de l'ancien site).
+// Les deux métiers sont aujourd'hui deux pages distinctes : on renvoie vers la liste des
+// services, qui les présente toutes les deux, plutôt que d'en choisir une arbitrairement.
+const LEGACY = {
+  "/solutions": "/services",
+  "/facade-toiture": "/services",
+  "/toiture": "/services/toiture",
+  "/isolation-facade": "/services/isolation-facade"
+};
+
+// /contact et /primes ont gardé le même chemin : /nl/contact, /en/contact, /nl/primes et
+// /en/primes répondent déjà 200 sur le nouveau site. On ne redirige donc QUE leur version
+// française sans préfixe — rediriger les versions préfixées créerait une boucle.
+const LEGACY_FR_ONLY = { "/contact": "/fr/contact", "/primes": "/fr/primes" };
+
+function legacyRedirects() {
+  const out = [];
+  for (const [from, to] of Object.entries(LEGACY)) {
+    out.push({ source: from, destination: `/fr${to}`, permanent: true });
+    for (const l of LANGS) out.push({ source: `/${l}${from}`, destination: `/${l}${to}`, permanent: true });
+  }
+  for (const [from, to] of Object.entries(LEGACY_FR_ONLY)) {
+    out.push({ source: from, destination: to, permanent: true });
+  }
+  return out;
+}
+
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
@@ -48,7 +83,7 @@ const nextConfig = {
   images: { unoptimized: true },
   async redirects() {
     if (isExport) return [];
-    return [{ source: "/", destination: "/fr", permanent: true }];
+    return [{ source: "/", destination: "/fr", permanent: true }, ...legacyRedirects()];
   },
   async headers() {
     // Ignoré en export statique (pas de serveur pour les poser) : même garde que redirects().
